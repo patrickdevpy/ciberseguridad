@@ -1,0 +1,94 @@
+Anteriormente, usted aprendió acerca de los ocho dominios de Seguridad del Profesional Certificado en Seguridad de los Sistemas 
+de Información (CISSP). Los dominios pueden ayudarle a comprender mejor cómo pueden organizarse en categorías las tareas de un 
+analista de Seguridad. Además, los dominios pueden ayudar a establecer una comprensión de cómo gestionar el riesgo. 
+En esta lectura, aprenderá sobre métodos adicionales de ataque. También podrá reconocer los tipos de Riesgo que presentan 
+estos ataques
+
+Tipos de ataque
+Ataque de descifrado de contraseña
+Un ataque de descifrado de contraseña es un intento de acceder a dispositivos, sistemas, redes o datos protegidos por contraseña.
+Algunas formas de ataque de contraseña que conocerá más adelante en el programa de certificación son:
+
+Fuerza bruta
+
+Tabla rainbow
+
+Los ataques de descifrado de contraseña entran dentro del dominio de la Comunicación y la Seguridad de redes.
+
+Ataque de ingeniería social
+Laingeniería social es una técnica de manipulación que explota el error humano para obtener información privada, accesibilidad 
+u objetos de valor. Algunas formas de ataques de ingeniería social que seguirá conociendo a lo largo del Programa son: 
+
+Phishing
+
+Smishing
+
+Vishing
+
+Phishing dirigido
+
+Whaling
+
+Phishing en redes sociales
+
+Compromiso de correo electrónico empresarial (BEC)
+
+Ataque de "agujero de agua
+
+Cebo USB (bus universal en serie)
+
+Ingeniería social física
+
+Los ataques de ingeniería social están relacionados con el dominio de la Seguridad y la Gestión de riesgos.
+
+Ataque físico
+Un ataque físico es un incidente de Seguridad que afecta no sólo a los entornos digitales, sino también a los físicos donde 
+se implementa. Algunas formas de ataques físicos son:
+
+Cable USB malicioso
+
+Unidad flash maliciosa
+
+Clonación y robo de tarjetas
+
+Los ataques físicos entran dentro del dominio de la Seguridad de los recursos. 
+
+Inteligencia artificial antagónica
+La inteligencia artificial adversaria es una técnica que manipula la 
+inteligencia artificial y la tecnología de aprendizaje automático
+ para realizar ataques de forma más eficaz. La Inteligencia artificial antagonista se encuadra tanto en el ámbito de la 
+ Seguridad de redes y comunicaciones como en el de la Gestión de identidad y acceso.
+
+Ataque a la cadena de suministro
+ Ataque a la cadena de suministro dirigido a sistemas, aplicaciones, hardware y/o software para localizar una vulnerabilidad 
+ en la que se pueda implementar software malicioso. Dado que cada artículo vendido se somete a un proceso que implica a terceros,
+  esto significa que la violación de la Seguridad puede producirse en cualquier punto de la cadena de suministro. 
+  Estos ataques son costosos porque pueden afectar a múltiples organizaciones y a las personas que trabajan para ellas. 
+  Los ataques a la Cadena de suministro pueden corresponder a varios dominios, incluidos, entre otros, los dominios de 
+  Seguridad y Gestión de riesgos, Arquitectura de seguridad e ingeniería y Operaciones de seguridad.
+
+Ataque criptográfico
+Ataque criptográfico que afecta a formas seguras de Comunicación entre un remitente y un destinatario. 
+Algunas formas de ataques criptográficos son:
+
+Cumpleaños
+
+Colisión
+
+Degradación
+
+Los ataques criptográficos pertenecen al dominio de la Comunicación y la Seguridad de redes.
+
+Puntos clave
+Los ocho dominios de seguridad CISSP pueden ayudar a una organización y a su Equipo de seguridad a fortificarse contra una 
+violación de datos y a prepararse para ella. Las violaciones de datos van de lo simple a lo complejo y entran dentro de uno 
+o más dominios. Tenga en cuenta que los métodos de ataque discutidos son sólo algunos de muchos. 
+Estos y otros tipos de ataques se discutirán a lo largo del programa de certificación. 
+
+Recursos para más Información
+Para ver información detallada y definiciones de los términos tratados en esta lectura, visite el 
+glosario del Instituto Nacional de Estándares y Tecnología (NIST).
+
+Consejo profesional: Si no puede encontrar un término en el glosario del NIST, introduzca el término de búsqueda apropiado 
+(por ejemplo, "ataque de cumpleaños a la ciberseguridad") en su motor de búsqueda preferido para localizar la definición en 
+otra fuente fiable, como un sitio .edu o .gov.
