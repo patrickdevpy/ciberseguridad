@@ -1,0 +1,77 @@
+A medida que evolucionan las tácticas de los actores de amenazas, también lo hacen las funciones de los profesionales de
+ Seguridad. Tener un conocimiento sólido de los conceptos básicos de Seguridad respaldará su crecimiento en este campo.
+ 
+  Una forma de entender mejor estos conceptos básicos es organizarlos en categorías, denominadas dominios de Seguridad.
+   A partir de 2022, el CISSP ha definido ocho dominios para organizar el trabajo de los profesionales de la Seguridad.
+    Es importante entender que estos dominios están relacionados y que las brechas en un dominio pueden tener 
+    consecuencias negativas para toda la organización. También es importante entender los dominios porque pueden 
+    ayudarte a entender mejor tus objetivos profesionales y tu rol dentro de una organización. A medida que obtenga más 
+    información sobre los elementos de cada dominio, el trabajo que implica uno puede resultarle más atractivo que el de 
+    los demás. Este dominio puede convertirse en una ruta de acceso profesional que puede explorar más a fondo. 
+    El CISSP define ocho dominios en total, y analizaremos los ocho entre este vídeo y el siguiente. 
+    En este vídeo, abordaremos los cuatro primeros: seguridad y gestión de riesgos, seguridad de los recursos , 
+    arquitectura e ingeniería de seguridad y seguridad de la red y las comunicaciones. Empecemos por el primer dominio, 
+    la seguridad y la gestión de riesgos. La administración de seguridad y riesgos se centra en definir las metas y 
+    objetivos de seguridad, la mitigación de riesgos, el cumplimiento, la continuidad del negocio y la ley. Por ejemplo, 
+    es posible que los analistas de seguridad deban actualizar las políticas de la empresa relacionadas con 
+    la información médica privada si se realiza un cambio en una regulación de cumplimiento federal, como la Ley de 
+    Transferencia y Responsabilidad de los Seguros Médicos, también conocida como HIPAA. El segundo dominio es la 
+    Seguridad de los recursos. Este dominio se centra en proteger los activos digitales y físicos. También está 
+    relacionado con el almacenamiento, el mantenimiento, la retención y la destrucción de datos. Al trabajar con este 
+    dominio, es posible que los analistas de Seguridad tengan la tarea de asegurarse de que el equipo antiguo se deseche 
+    y destruya adecuadamente, incluido cualquier tipo de información confidencial. El tercer dominio es la arquitectura 
+    e ingeniería de Seguridad. Este dominio se centra en optimizar la Seguridad de los datos garantizando la existencia 
+    de herramientas sistemas y procesos eficaces. Como analista de seguridad, es posible que se le asigne la tarea de 
+    configurar un firewall. Un firewall es un dispositivo que se usa para monitorear y filtrar el tráfico entrante y 
+    saliente de la red de computadoras. La configuración correcta de un firewall ayuda a prevenir los ataques que 
+     afectar a la productividad. El cuarto dominio de seguridad es la seguridad de la red y la comunicación.
+      Este dominio se centra en administrar y proteger las redes físicas y las comunicaciones inalámbricas. 
+      Como analista de Seguridad , es posible que se le pida que analice el comportamiento de los usuarios dentro de 
+      su organización.
+Imagine descubrir que los usuarios se conectan a puntos de acceso inalámbricos no seguros. 
+Esto podría dejar a la organización y a sus empleados vulnerables a los ataques. Para garantizar la seguridad de 
+las comunicaciones, debe crear una política de red para prevenir y mitigar la exposición. 
+El mantenimiento de la seguridad de una organización es un esfuerzo de equipo y hay muchas partes móviles. 
+Como analista principiante, continuará desarrollando sus habilidades aprendiendo a mitigar los riesgos para mantener 
+la seguridad de las personas y los datos. No es necesario ser un experto en todos los dominios. Sin embargo, tener un 
+conocimiento básico de ellos le ayudará en su viaje como profesional de Seguridad.
+¡Lo estás haciendo genial! Acabamos de presentar los primeros cuatro dominios de Seguridad y, en el siguiente vídeo, 
+¡hablaremos de cuatro más! ¡Nos vemos pronto!
+
+Le presentaremos los siguientes cuatro dominios de seguridad : 
+administración de identidades y accesos ,
+ evaluación y pruebas de seguridad operaciones de seguridad y 
+ seguridad de desarrollo de software.
+Familiarizarse con estos dominios le permitirá navegar por el complejo mundo de la Seguridad. 
+Los dominios describen y organizan la forma en que un equipo de profesionales de Seguridad trabaja en conjunto. 
+Según la organización, las funciones de los analistas pueden situarse en la intersección de varios dominios o 
+centrarse en un dominio específico. Saber dónde encaja un rol en particular dentro del panorama de la seguridad lo 
+ayudará a prepararse para las entrevistas de trabajo y a trabajar como parte de un equipo de seguridad completo. 
+Pasemos al quinto dominio: la gestión de identidades y accesos.
+La gestión de identidad y acceso se centra en mantener los datos seguros, garantizando que los usuarios sigan las 
+políticas establecidas para controlar y administrar los activos físicos, como los espacios de oficina, y los activos lógicos, 
+como las redes y las aplicaciones . La validación de las identidades de los empleados y la documentación de las funciones de 
+acceso son esenciales para mantener la Seguridad física y digital de la organización. Por ejemplo, como analista de Seguridad, 
+es posible que se te asigne la tarea de configurar el acceso de los empleados a los edificios con tarjeta de acceso. 
+El sexto dominio es la evaluación y las pruebas de Seguridad. Este dominio se centra en la realización de pruebas de control 
+de seguridad, la recopilación y el análisis de datos y la realización de auditorías de seguridad para supervisar los riesgos, 
+las amenazas y las vulnerabilidades. Los analistas de seguridad pueden realizar auditorías periódicas de los permisos de 
+los usuarios para asegurarse de que los usuarios tengan el nivel de acceso correcto. Por ejemplo, el acceso a la información 
+de nómina suele estar limitado a ciertos empleados, por lo que es posible que se pida a los analistas que auditen 
+periódicamente los permisos para garantizar que ninguna persona no autorizada pueda ver los salarios de los empleados.
+El séptimo dominio son las operaciones de Seguridad. Este dominio se centra en la realización de investigaciones y la 
+implementación de medidas preventivas. Imagine que usted, como analista de Seguridad , recibe una alerta de que un 
+dispositivo desconocido se ha conectado a su red interna. Deberá seguir las políticas y los procedimientos de la organización 
+para detener rápidamente la posible amenaza.
+El octavo dominio final es la Seguridad del desarrollo de software. 
+Este dominio se centra en el uso de prácticas de programación seguras , que son un conjunto de directrices recomendadas que 
+se utilizan para crear aplicaciones y servicios seguros. Un analista de seguridad puede trabajar con los equipos de desarrollo 
+de software para garantizar que las prácticas de seguridad se incorporen al ciclo de vida del desarrollo de software . 
+Si, por ejemplo, uno de sus equipos asociados está creando una nueva aplicación para dispositivos móviles: aplicación 
+para dispositivos móviles, es posible que se le pida que informe sobre las políticas de contraseñas o que se asegure de que
+los datos de los usuarios estén protegidos y gestionados correctamente.
+Reproduce el video desde :3:17 y sigue la transcripción3:17
+Con esto finaliza nuestra introducción a los ocho dominios de Seguridad de CISSP. Ponte a prueba para entender mejor cada uno
+ de estos dominios y cómo afectan a la Seguridad general de una organización. 
+ Si bien es posible que todavía te resulten un poco confusos al principio del programa estos dominios se analizarán con 
+ mayor detalle en el próximo curso. ¡Nos vemos allí!
