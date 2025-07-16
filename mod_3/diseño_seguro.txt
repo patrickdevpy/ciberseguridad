@@ -23,6 +23,7 @@ El marco de ciberseguridad del NIST es un marco voluntario que consiste en está
 el riesgo de ciberseguridad. Es importante familiarizarse con este framework porque los equipos de Seguridad lo utilizan como base
 para gestionar los riesgos a corto y largo plazo. Gestionar y mitigar los riesgos y proteger los activos de una organización contra 
 los actores de amenazas son objetivos clave para los profesionales de la Seguridad . 
+
 Es importante comprender los diferentes motivos que puede tener un actor de amenazas, además de identificar los activos más valiosos 
 de su organización. Algunos de los actores de amenazas más peligrosos a tener en cuenta son los empleados descontentos. 
 Son los más peligrosos porque a menudo tienen acceso a información confidencial y saben dónde encontrarla. Para reducir este tipo de riesgo,
