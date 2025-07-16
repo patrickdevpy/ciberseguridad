@@ -1,0 +1,37 @@
+Hola, bienvenido de nuevo! Anteriormente, analizamos los marcos y los controles en general. 
+En este archivo, conocerá los marcos y controles específicos que las organizaciones pueden utilizar de forma voluntaria para minimizar 
+los riesgos para sus datos y proteger a los usuarios. ¡Empecemos!
+
+La tríada CID de la CIA es un modelo fundamental que ayuda a informar cómo las organizaciones consideran el riesgo al establecer 
+sistemas y políticas de Seguridad. CID es sinónimo de confidencialidad integridad y disponibilidad.
+
+La confidencialidad significa que solo los usuarios autorizados pueden acceder a activos o datos específicos 
+Por ejemplo, se deben establecer controles de acceso estrictos que definan quién debe y quién no debe tener acceso a los datos para 
+garantizar que los datos confidenciales permanezcan seguros.
+
+La integridad significa que los datos son correctos, auténticos y confiables. Para mantener la integridad , los profesionales de Seguridad 
+pueden usar una forma de protección de datos, como la encriptación, para evitar que los datos sean manipulados. 
+Disponibilidad significa que los datos son accesibles para quienes están autorizados a acceder a ellos. 
+Definamos un término que surgió durante nuestra discusión sobre la tríada CID de la CIA: recurso. Un recurso es un elemento que 
+se percibe como valioso para una organización. Y el valor está determinado por el costo asociado con el recurso en cuestión. 
+Por ejemplo, una aplicación que almacena datos confidenciales , como números de Seguridad Social o cuentas bancarias , es un recurso 
+valioso para una organización. Conlleva más riesgos y, por lo tanto, requiere controles de Seguridad más estrictos en comparación con 
+un sitio web que comparte contenido de noticias disponible públicamente. Como recordará, anteriormente en el curso , analizamos los 
+marcos y los controles en general. Ahora, analizaremos un marco específico desarrollado por el Instituto Nacional de Estándares y Tecnología,
+con sede en EE. UU. : el Marco de Ciberseguridad, también conocido como NIST CSF. 
+El marco de ciberseguridad del NIST es un marco voluntario que consiste en estándares directrices y mejores prácticas para gestionar 
+el riesgo de ciberseguridad. Es importante familiarizarse con este framework porque los equipos de Seguridad lo utilizan como base
+para gestionar los riesgos a corto y largo plazo. Gestionar y mitigar los riesgos y proteger los activos de una organización contra 
+los actores de amenazas son objetivos clave para los profesionales de la Seguridad . 
+Es importante comprender los diferentes motivos que puede tener un actor de amenazas, además de identificar los activos más valiosos 
+de su organización. Algunos de los actores de amenazas más peligrosos a tener en cuenta son los empleados descontentos. 
+Son los más peligrosos porque a menudo tienen acceso a información confidencial y saben dónde encontrarla. Para reducir este tipo de riesgo,
+los profesionales de Seguridad utilizarían el principio de disponibilidad, así como las directrices organizativas basadas en marcos para 
+garantizar que los miembros del personal solo puedan acceder a los datos que necesitan para realizar su trabajo. Los actores de amenazas 
+provienen de todo el mundo , y una fuerza laboral diversa de profesionales de Seguridad ayuda a las organizaciones a identificar las 
+intenciones de los atacantes. Una variedad de perspectivas pueden ayudar a las organizaciones a comprender y mitigar el impacto de la 
+actividad maliciosa. Con esto concluye nuestra introducción a la tríada del CID de la CIA y al marco del NIST CSF, que se utilizan para 
+desarrollar procesos que protejan a las organizaciones y a las personas a las que sirven. Es posible que se le pregunte en una entrevista 
+si conoce los marcos y principios de Seguridad. O es posible que te pidan que expliques cómo se utilizan para proteger los activos de la 
+organización. En cualquier caso, a lo largo de este programa , tendrás múltiples oportunidades para aprender más sobre ellos y aplicar lo 
+que hemos discutido a situaciones del mundo real. Próximamente, discutiremos la ética de la Seguridad. ¡Nos vemos pronto!
