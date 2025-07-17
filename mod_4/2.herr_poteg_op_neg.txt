@@ -1,0 +1,34 @@
+Herramientas para proteger las operaciones de Negocio a negocio (Business-to-Business)
+
+Anteriormente, se le presentaron varias Habilidades técnicas que los analistas de Seguridad necesitan desarrollar. 
+También se le presentaron algunas herramientas que los analistas de seguridad de nivel básico pueden tener en su caja de herramientas. 
+En esta lectura, aprenderá más sobre cómo las habilidades técnicas y las herramientas ayudan a los analistas de Seguridad a mitigar los 
+riesgos.
+
+El kit de herramientas de un analista de nivel básico
+Cada organización puede disponer de un juego de herramientas diferente, en función de sus necesidades de Seguridad. Como futuro analista, 
+es importante que esté familiarizado con las herramientas estándar del sector y que pueda demostrar su capacidad para aprender a utilizar 
+herramientas similares en un posible lugar de trabajo.
+
+Herramientas de administración de información y eventos de seguridad (SIEM):
+
+Una herramienta SIEM es una aplicación que recopila y analiza datos de registro para monitorizar las actividades críticas de una 
+organización. Un registro A es un registro de los eventos que se producen en los sistemas de una organización. Dependiendo de la cantidad 
+de datos con los que esté trabajando, podría llevarle horas o días filtrar los datos de registro por su cuenta. Las herramientas SIEM 
+reducen la cantidad de datos que un analista debe revisar proporcionando alertas para tipos específicos de amenazas, riesgos y 
+vulnerabilidades.
+
+Las herramientas SIEM proporcionan una serie de paneles que organizan visualmente los datos en categorías, permitiendo a los usuarios 
+seleccionar los datos que desean analizar. Las distintas herramientas SIEM tienen diferentes tipos de paneles que muestran la información 
+a la que se tiene acceso.
+
+Las herramientas SIEM también vienen con diferentes opciones de alojamiento, incluyendo on-premise y en la nube. Las organizaciones pueden 
+elegir una opción de alojamiento sobre otra basándose en la experiencia de un miembro del equipo de Seguridad. Por ejemplo, debido a que 
+una versión alojada en la nube tiende a ser más fácil de configurar, utilizar y mantener que una versión in situ, un Equipo de seguridad 
+con menos experiencia puede elegir esta opción para su organización.
+
+Analizadores de protocolos de red (packet sniffers)
+Un analizador de protocolos de red, también conocido como rastreador de paquetes, es una herramienta diseñada para capturar y analizar el 
+tráfico de datos en una red. Esto significa que la herramienta mantiene un registro de todos los datos que encuentra una computadora dentro 
+de la red de una organización. Más adelante en el Programa, tendrá la oportunidad de practicar el uso de algunas herramientas comunes del 
+Analizador de protocolos de red (packet sniffer).
