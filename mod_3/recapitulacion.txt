@@ -1,0 +1,16 @@
+Ahora está mejor preparado para comprender y ayudar a tomar decisiones relacionadas con la evaluación y la gestión de los riesgos. 
+Repasemos lo que hemos cubierto. 
+
+Hablamos de los marcos y controles de Seguridad y de cómo se utilizan para desarrollar procesos y procedimientos que protegen a las 
+rganizaciones y a las personas a las que sirven. También analizamos los componentes principales de los marcos , como la identificación 
+de los objetivos de Seguridad y el establecimiento de directrices para alcanzar esos objetivos.
+
+Luego, introdujimos marcos y controles específicos , incluida la tríada CID de la CIA y el CSF del NIST y cómo se utilizan para gestionar 
+el riesgo.
+
+Y, por último, hablamos sobre la ética de la Seguridad incluidas las cuestiones éticas más comunes a tener en cuenta, como la 
+confidencialidad, la protección de la privacidad y las leyes.
+
+Ya casi estás allí, solo falta una sección más en este curso. 
+Próximamente, aprenderá sobre las herramientas y los lenguajes de programación comunes que utilizan los analistas de Seguridad para 
+proteger las operaciones de la organización. ¡Espero que estéis tan emocionados como yo por seguir adelante!
