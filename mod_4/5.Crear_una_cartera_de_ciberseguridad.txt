@@ -1,0 +1,121 @@
+Crear una cartera de ciberseguridad
+
+A lo largo de este Programa de certificación, tendrá múltiples oportunidades de desarrollar un Portfolio profesional de Ciberseguridad para 
+mostrar sus habilidades y conocimientos en materia de Seguridad.
+
+En esta lectura, aprenderá lo que es un Portfolio y por qué es importante desarrollar un Portfolio profesional de ciberseguridad. 
+También conocerá las Opciones para crear un Portfolio en línea o autoalojado que pueda compartir con posibles empleadores cuando empiece a 
+buscar empleos en ciberseguridad.
+
+¿Qué es un Portfolio y por qué es necesario?
+Los profesionales de la Ciberseguridad utilizan los Portfolio para demostrar su formación, habilidades y conocimientos en materia de Seguridad. 
+Los profesionales suelen utilizar los portafolios cuando solicitan un empleo para demostrar a los posibles empleadores que les apasiona su 
+trabajo y que pueden hacer el trabajo que solicitan. Los portafolios son más profundos que un currículum, que suele ser un resumen de una o 
+dos páginas de la educación, la experiencia laboral y los logros pertinentes. Tendrá la oportunidad de elaborar un currículum, y finalizar su 
+Portfolio, en el último curso de este Programa.
+
+Opciones para crear su Portfolio
+Hay muchas maneras de presentar un Portfolio, incluyendo opciones de auto-presentación y en línea como:
+
+Carpeta de documentación
+
+Google Drive o Dropbox™
+
+Sitios de Google
+
+Repositorio Git
+
+Opción 1: Carpeta de documentos
+Descripción: Una carpeta de documentos es una carpeta creada y guardada en el disco duro de su computadora. Usted gestiona la carpeta, las 
+subcarpetas, los documentos y las imágenes que contiene.
+
+Las carpetas de documentos le permiten tener acceso directo a su documentación. Asegurarse de que sus documentos profesionales, imágenes y 
+demás información están bien organizados puede ahorrarle mucho tiempo cuando esté listo para solicitar un empleo. Por ejemplo, puede crear una 
+carpeta principal titulada algo así como "Documentos profesionales" Luego, dentro de su carpeta principal, podría crear subcarpetas con títulos 
+como:
+
+Currículum
+
+Educación
+
+Documentos de Portfolio
+
+Herramientas de ciberseguridad
+
+Programación
+
+Configuración: Las carpetas de documentación pueden crearse de varias formas, dependiendo del tipo de computadora que utilice. 
+Si no está seguro de cómo crear una carpeta en su dispositivo, puede buscar en Internet vídeos instructivos o documentos relacionados con el 
+tipo de computadora que utiliza.
+
+Opción 2: Google Drive o Dropbox
+Descripción: Google Drive y Dropbox ofrecen funciones similares que le permiten almacenar su documentación profesional en una plataforma en 
+la nube. Ambas opciones también cuentan con funciones para compartir archivos, por lo que podrá compartir fácilmente los documentos de su 
+Portfolio con posibles empleadores. Cualquier adición o cambio que realice en un documento dentro de esa carpeta se actualizará automáticamente 
+para cualquiera que tenga acceso a su portafolio.
+
+Al igual que con una carpeta de documentos, mantener bien organizado su Portfolio basado en Google Drive o Dropbox le resultará útil a medida 
+que comience o progrese en su carrera profesional.
+
+Configuración: Para saber cómo cargar y compartir archivos en estas aplicaciones, visite los sitios web de Google Drive y Dropbox para obtener 
+más información.
+
+Opción 3: Google Sites
+Descripción: Google Sites y otras opciones similares de alojamiento de sitios web disponen de una gran variedad de funciones fáciles de usar que 
+le ayudarán a presentar sus artículos de portfolio, como diseños personalizables, páginas web con capacidad de respuesta, funciones de contenido 
+integrado y publicación web.
+
+Las páginas web con capacidad de respuesta ajustan automáticamente su contenido para adaptarse a una variedad de dispositivos y tamaños de 
+pantalla. Esto es útil porque los posibles empleadores pueden revisar su contenido utilizando cualquier dispositivo y sus medios se mostrarán 
+tal y como usted pretende. Cuando esté listo, puede publicar su sitio web y recibir una URL Única. Puede añadir este enlace a su currículum 
+para que los responsables de contratación puedan acceder fácilmente a su trabajo.
+
+Configuración: Para saber cómo crear un sitio web en Google Sites, visite el sitio web de Google Sites.
+
+Opción 4: Repositorio Git
+Descripción: Un repositorio Git es una carpeta dentro de un proyecto. En este caso, el proyecto es su Portfolio, y puede utilizar su repositorio 
+para almacenar los documentos, laboratorios y capturas de pantalla que complete durante cada curso del programa de certificación. 
+Hay varios sitios de repositorios Git que puede utilizar, incluyendo:
+
+GitLab
+
+Bitbucket™
+
+GitHub
+
+Cada repositorio Git le permite mostrar sus habilidades y conocimientos en un espacio personalizable. Para crear una cartera de proyectos en 
+línea en cualquiera de los repositorios de la lista, necesita utilizar una versión de Markdown.
+
+Configuración: Para saber cómo crear una cuenta en GitHub y utilizar Markdown, siga los pasos descritos en el documento 
+Comenzar con GitHub.
+
+Proyectos Portfolio
+ASÍ COMO se mencionó anteriormente, usted tendrá múltiples oportunidades a lo largo del programa de certificación para desarrollar elementos 
+para incluir en su Portfolio. Estas oportunidades incluyen:
+
+Redacción de una declaración profesional
+
+Realización de una Auditoría de Seguridad
+
+Analizar la estructura y la seguridad de las redes
+
+Utilizar los comandos de Linux para gestionar los permisos de archivo
+
+Aplicación de filtros a las consultas SQL
+
+Identificar vulnerabilidades para un pequeño negocio (Business-to-Business)
+
+Documentación de incidentes con un Diario del gestor de incidentes
+
+Importación y análisis sintáctico de un archivo de texto en un escenario relacionado con la Seguridad
+
+Creación o revisión de un Currículum Vitae
+
+Nota: No incluya en su Portfolio ningún documento privado, con copyright o con derechos de propiedad. Además, si utiliza uno de los sitios 
+descritos en esta lectura, manténgalo en "privado" hasta que esté finalizado.
+
+Puntos clave
+Ahora que conoce algunas opciones para crear y alojar un Portfolio profesional, puede tenerlas en cuenta a medida que desarrolle elementos 
+para su Portfolio a lo largo del programa de certificación. Cuanto más proactivo sea en la creación de un portafolio pulido, mayores serán 
+sus posibilidades de impresionar a un posible empleador y obtener una nueva oportunidad de trabajo en la profesión de la ciberseguridad.
+
