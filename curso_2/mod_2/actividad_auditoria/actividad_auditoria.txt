@@ -1,0 +1,77 @@
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+Este escenario se basa en una empresa ficticia:
+
+Botium Toys es una pequeña empresa estadounidense que desarrolla y vende juguetes. 
+La empresa tiene una única ubicación física, que sirve como oficina principal, escaparate y almacén para sus productos. 
+Sin embargo, la presencia en línea de Botium Toy ha crecido, atrayendo a clientes en los EE.UU. y en el extranjero. 
+Como resultado, su departamento de tecnología de la información (TI) está bajo una presión cada vez mayor para apoyar su mercado en línea 
+en todo el mundo.
+
+La directora del departamento de TI ha decidido que es necesario realizar una auditoría interna de TI. 
+Le preocupa mantener el cumplimiento y las operaciones comerciales a medida que la empresa crece sin un plan claro. 
+Ella cree que una auditoría interna puede ayudar a proteger mejor la infraestructura de la empresa y ayudarles a identificar y mitigar los 
+posibles riesgos, amenazas o vulnerabilidades de los activos críticos. 
+El directivo también está interesado en asegurarse de que cumplen la normativa relacionada con el procesamiento interno y la aceptación de 
+pagos en línea y la realización de negocios en la Unión Europea (UE).
+
+El responsable de TI comienza aplicando el Marco de Ciberseguridad del Instituto Nacional de Estándares y Tecnología (NIST CSF), 
+estableciendo un ámbito y unos objetivos de auditoría, enumerando los activos gestionados actualmente por el departamento de TI y 
+completando una evaluación de riesgos. 
+El objetivo de la auditoría es proporcionar una visión general de los riesgos y/o multas que la empresa podría experimentar debido al estado 
+actual de su postura de seguridad.
+
+Su tarea consiste en revisar el alcance, los objetivos y el informe de evaluación de riesgos del responsable de TI. 
+A continuación, realice una auditoría interna completando una lista de comprobación de controles y cumplimiento.
+
+ealice la auditoría de seguridad cumplimentando la lista de comprobación de controles y conformidad.
+
+Para completar la lista de comprobación, abra los materiales de apoyo proporcionados en el Paso 1. A continuación:
+
+Revise Botium Toys: Alcance, objetivos e informe de evaluación de riesgos, centrándose en:
+
+Los activos gestionados actualmente por el departamento de TI
+
+Las viñetas bajo "Comentarios adicionales" en la sección Evaluación de riesgos
+
+Considere la información proporcionada en el informe mediante el documento Categorías de controles.
+
+A continuación, revise la lista de comprobación de controles y cumplimiento y seleccione "sí" o "no" para responder a la pregunta de cada 
+sección (nota: la sección de recomendaciones es opcional)*
+
+Nota: La lista de comprobación de controles y cumplimiento es lo que necesita completar para llevar a cabo esta Auditoría de seguridad. 
+
+Consejo profesional: Guarda una copia de tu trabajo
+Por último, asegúrate de descargar y guardar una copia de tu actividad completa en tu propio dispositivo. Puedes subirla a la plataforma de tu elección y compartirla con posibles empleadores para demostrar tus conocimientos y experiencia.
+
+Qué incluir en su respuesta
+
+Asegúrese de abordar los siguientes elementos en su actividad completada:
+
+Lista de comprobación de controles y cumplimiento
+
+se selecciona "Sí" o "No" para responder a la pregunta relacionada con cada control enumerado
+
+se selecciona "Sí" o "No" para responder a la pregunta relacionada con cada una de las mejores prácticas de cumplimiento
+
+Se proporciona una recomendación para el responsable de TI (opcional)
+
+Paso 3: Evalúe su actividad
+A continuación encontrará una autoevaluación de su lista de control y conformidad. 
+Utilizará estas declaraciones para revisar su propio trabajo. El proceso de autoevaluación es una parte importante 
+de la experiencia de aprendizaje porque le permite evaluar objetivamente su auditoría de seguridad.
+
+Hay un total de 5 puntos posibles para esta actividad y cada declaración vale 1 punto. 
+Los puntos corresponden a cada paso que ha completado para la actividad.
+
+Para completar la autoevaluación, abra primero su lista de verificación de evaluación de controles y cumplimiento. 
+A continuación, responda sí o no a cada afirmación.
+
+Cuando complete y envíe sus respuestas, recibirá una puntuación porcentual. Esta puntuación le ayudará a confirmar 
+si ha completado los pasos requeridos de la actividad. 
+La nota de aprobado recomendada para este proyecto es de al menos el 80% (o 4/5 puntos). 
+Si desea aumentar su puntuación, puede revisar su proyecto y volver a enviar sus respuestas para reflejar los 
+cambios realizados. Intente conseguir al menos 4 puntos antes de pasar al siguiente tema del curso.
+
