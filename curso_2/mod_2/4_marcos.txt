@@ -21,4 +21,4 @@ los planes que su organización tiene en marcha para mantener a la organización
 ataques de ingeniería social , brechas y otros incidentes de seguridad perjudiciales.
 Reproduce el video desde :2:7 y sigue la transcripción2:07
 Próximamente, revisaremos y discutiremos los Controles de seguridad, que se utilizan junto a los frameworks para alcanzar los objetivos 
-de seguridad de una organización.
+de seguridad de una organización. 
