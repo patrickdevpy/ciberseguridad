@@ -30,4 +30,5 @@ A continuación, los analistas consultarían un Manual de estrategias para dar l
 Claves
 Lo más importante que hay que saber es que los libros de jugadas, también denominados a veces runbooks, proporcionan acciones detalladas 
 para que los equipos de Seguridad las lleven a cabo en caso de Incidente. 
-Saber exactamente quién tiene que hacer qué y cuándo puede ayudar a reducir el impacto de un Incidente y reducir el riesgo de daños a los recursos críticos de una organización. 
+Saber exactamente quién tiene que hacer qué y cuándo puede ayudar a reducir el impacto de un Incidente y reducir el riesgo de daños a los 
+recursos críticos de una organización. 
