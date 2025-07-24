@@ -1,0 +1,28 @@
+Las cuatro capas del Modelo TCP/IP
+
+Ahora que hemos hablado de la estructura de una red y de cómo se producen las comunicaciones , es importante que sepa cómo los profesionales 
+de la seguridad identifican los problemas que pueden surgir. 
+El modelo TCP/IP es un marco que se utiliza para visualizar cómo se organizan y transmiten los datos a través de la red. 
+El modelo TCP/IP tiene cuatro capas. 
+Las cuatro capas son: 
+la capa de acceso a la red , la capa de Internet, la capa de transporte , y la capa de aplicación.
+
+Saber cómo organiza el modelo TCP/IP la actividad de la red permite a los profesionales de la seguridad vigilar y protegerse contra los riesgos. 
+Examinemos estas capas una por una.
+
+La capa uno es la capa de acceso a la red. 
+La capa de acceso a la red se ocupa de la creación de paquetes de datos y su transmisión a través de una red . 
+Esto incluye los dispositivos de hardware conectados a cables físicos y conmutadores que dirigen los datos a su destino. 
+
+La capa dos es la capa de Internet. 
+La capa de Internet es donde se adjuntan las direcciones IP a los paquetes de datos para indicar la ubicación del emisor y el receptor. 
+La capa de Internet también se centra en cómo se conectan las redes entre sí. 
+Por ejemplo, los paquetes de datos contienen información que determina si se quedarán en la LAN o se enviarán a una red remota, como Internet.
+
+La capa de transporte incluye protocolos para controlar el flujo de tráfico a través de una red. 
+Estos protocolos permiten o deniegan la comunicación con otros dispositivos e incluyen información sobre el estado de la conexión. 
+Las actividades de esta capa incluyen el control de errores, que garantiza que los datos fluyen sin problemas por la red.
+
+Por último, en la capa de aplicación , los protocolos determinan cómo los paquetes de datos interactuarán con los dispositivos receptores. 
+Las funciones que se organizan en la capa de aplicación incluyen la transferencia de archivos y los servicios de correo electrónico. 
+Ahora ya conoce el modelo TCP/IP y sus cuatro capas. Nos vemos en el siguiente vídeo.

@@ -1,0 +1,40 @@
+Herramientas de red
+
+aprenderá sobre los dispositivos comunes que componen una red. Empecemos.
+
+Un concentrador es un dispositivo de red que emite información a todos los dispositivos de la red. 
+Piense en un concentrador como en una torre de radio que emite una señal a cualquier radio sintonizada en la frecuencia correcta. 
+Otro dispositivo de red es un Switch. 
+Un conmutador establece conexiones entre dispositivos específicos de una red enviando y recibiendo datos entre ellos. 
+Un conmutador es más inteligente que un concentrador. 
+Sólo transmite datos al destino previsto. 
+Esto hace que los conmutadores sean más seguros que los concentradores, y les permite controlar el flujo de tráfico y mejorar el 
+rendimiento de la red.
+
+Otro dispositivo del que hablaremos es un router. 
+Un router es un dispositivo de red que conecta varias redes entre sí.
+
+Por ejemplo, si una computadora de una red desea enviar información a una tableta de otra red , 
+entonces la información se transferirá de la siguiente manera : 
+Primero, la información viaja desde la computadora hasta el router. 
+A continuación, el router lee la dirección de destino , y reenvía los datos al router de la red de destino. 
+Por último, el router receptor dirige esa información a la tableta.
+
+Por último, hablemos de los módems. 
+Un módem es un dispositivo que conecta el router a Internet , y lleva el acceso a Internet a la LAN.
+
+Por ejemplo, si una computadora de una red quiere enviar información a un dispositivo de una red en una ubicación geográfica diferente , 
+se transferiría de la siguiente manera : 
+La computadora enviaría la información al router , y el router transferiría entonces la información a través del módem a Internet. 
+El Módem del destinatario recibe la información , y la transfiere al router. 
+Finalmente, el router del destinatario reenvía esa información al dispositivo de destino. 
+Las herramientas de red como concentradores, conmutadores, enrutadores y módems son dispositivos físicos. 
+Sin embargo, muchas funciones realizadas por estos dispositivos físicos pueden ser completadas por herramientas de virtualización.
+
+Las herramientas de virtualización son piezas de software que realizan operaciones de red. 
+Las herramientas de virtualización llevan a cabo operaciones que normalmente realizaría un concentrador, un conmutador, 
+un router o un módem , y que ofrecen los proveedores de servicios en la Nube. 
+Estas herramientas ofrecen oportunidades de ahorro de costes y escalabilidad. 
+Aprenderá más sobre ellas más adelante en el programa de certificación. 
+Ahora ha explorado algunos dispositivos comunes que componen una red. 
+A continuación, va a aprender más sobre la computación en la nube, y cómo pueden diseñarse las redes utilizando los servicios en la nube.
