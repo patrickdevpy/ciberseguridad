@@ -1,0 +1,21 @@
+Bienvenido al Módulo 3
+
+Aprender a comunicarse de una forma nueva puede ser emocionante. 
+Quizás haya aprendido un nuevo idioma y pueda recordar esta sensación. 
+Quizás muchos de nosotros compartamos esta emoción con los niños pequeños cuando están ampliando su vocabulario. 
+Otros, incluyéndome a mí, recordamos una sensación de asombro cuando usamos por primera vez un lenguaje especializado para 
+comunicarnos con nuestra computadora. 
+En esta sección, seguiremos aprendiendo más sobre Linux y cómo comunicarnos con el SO a través de su shell. 
+Utilizará la línea de comandos para comunicarse con el SO. 
+Aprenderá a introducir comandos en el shell y conocerá algunos de los principales comandos de Linux que utilizará como analista de seguridad. 
+Específicamente, esto incluye navegar y gestionar el sistema de archivos. 
+También se centrará en autenticar y autorizar usuarios. 
+Esto significa que podrá utilizar una línea de comandos para añadir y eliminar usuarios del sistema y controlar a qué tienen acceso. 
+Por último, siempre hay algo más que aprender. 
+Cubriremos el acceso a recursos que apoyan el aprendizaje de nuevos comandos de Linux.
+
+Recuerdo cuando conocí la línea de comandos y me sorprendieron las capacidades que ofrecía. 
+No necesitaba hacer clic a través de múltiples pantallas para realizar tareas. 
+Aunque me llevó algo de práctica y tiempo acostumbrarme , ha sido una de las mayores herramientas a mi disposición. 
+Después de esta sección, tendrá una experiencia práctica en un área importante para el trabajo de un 
+analista de seguridad el uso de los comandos de Linux.

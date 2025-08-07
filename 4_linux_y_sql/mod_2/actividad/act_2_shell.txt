@@ -1,0 +1,146 @@
+Resumen de la actividad
+Anteriormente, usted discutió cómo el shell Bash le ayuda a comunicarse con el sistema operativo de una computadora. 
+
+Cuando se comunica con el shell, los comandos del shell pueden recibir entradas y devolver salidas o mensajes de error.
+
+En esta actividad de laboratorio, utilizarás el comando echo para examinar cómo se recibe la entrada y cómo se devuelve la salida en el shell. Luego, utilizarás el comando expr para explorar más a fondo la entrada y la salida mientras realizas algunos cálculos básicos en el shell.
+
+Esta actividad construirá las bases para entender cómo te comunicas con el sistema operativo Linux a través del shell. COMO analista de seguridad, necesitarás introducir comandos en el shell y reconocer cuando el shell devuelve una salida o un mensaje de error.
+
+A continuación, ¡explorarás el escenario!
+
+Este ejemplo es un recorrido de la actividad previa de Qwiklab, incluyendo instrucciones detalladas y soluciones. Puedes usar este ejemplo si no pudiste completar el laboratorio y/o si necesitas una guía extra para completar las tareas del laboratorio. También puede consultar este ejemplo para prepararse para el cuestionario calificado de este módulo.
+
+Escenario
+Como profesional de la seguridad, es importante entender el concepto de comunicación con su computadora a través del shell.
+
+En este escenario, usted tiene que ingresar una cadena de texto especificada que desea que el shell devuelva como salida. También tendrás que introducir algunos cálculos matemáticos para que el OS (sistema operativo) pueda devolver el resultado.
+
+Así es como lo harás: Primero, usarás el comando echo para generar alguna salida en el shell. Segundo, usarás el comando expr para realizar cálculos matemáticos básicos. A continuación, utilizarás el comando clear para borrar la ventana del intérprete de comandos Bash. Finalmente, tendrás la oportunidad de explorar más a fondo los comandos echo y expr.
+
+Prepárate para examinar la entrada y la salida en el intérprete de comandos Bash
+
+Tarea 1. Generar salida con el comando echo
+El comando echo en el shell Bash genera una cadena de texto específica. En esta tarea, utilizarás el comando echo para generar una salida en el shell Bash.
+
+Escribe echo hello en el intérprete de comandos y pulsa INTRO.
+
+El comando para completar este paso:
+
+echo hello
+
+La cadena hello debe ser devuelta:
+
+hello
+
+El comando echo hello es la entrada al shell, y hello es la salida del shell.
+
+Vuelva a ejecutar el comando, pero incluya comillas alrededor de los datos de la cadena. Escriba echo "hello" en el intérprete de comandos y pulse INTRO.
+
+El comando para completar este paso:
+
+echo "hello"
+
+La cadena hello debe ser devuelta de nuevo:
+
+hello
+
+Nota: La salida es la misma que antes. Las comillas son opcionales en este caso, pero indican al shell que agrupe una serie de caracteres. Esto puede ser útil si necesita pasar una cadena que contenga ciertos caracteres que podrían ser malinterpretados por el comando.
+
+3. Utilice el comando echo para mostrar su nombre en el shell.
+
+Escriba echo "name" en el intérprete de comandos, sustituyendo "name" por su propio nombre, y pulse INTRO.
+
+El comando para completar este paso:
+
+echo "Your name"
+
+El nombre que ha introducido como cadena debería aparecer como salida.
+
+Tarea 2. Generar salida con el comando expr
+En esta tarea, utilizarás el comando expr para generar alguna salida adicional en el shell Bash. El comando expr realiza cálculos matemáticos básicos y puede ser útil cuando necesitas realizar un cálculo rápidamente.
+
+Imagina que el sistema te ha mostrado que tienes 32 alertas, pero sólo 8 requieren acción. Quiere calcular cuántas alertas son falsos positivos para poder informar al equipo que configura las alertas.
+
+Para ello, tiene que restar el número de alertas que requieren una acción del número total de alertas.
+
+1. Calcule el número de falsos positivos utilizando el comando expr.
+
+Escriba expr 32 - 8 en el intérprete de comandos y pulse INTRO.
+
+El comando para completar este paso:
+
+expr 32 - 8
+
+El siguiente resultado debe ser devuelto:
+
+24
+
+Nota: El comando expr requiere que todos los términos y operadores de una expresión estén separados por espacios. Por ejemplo: expr 32 - 8 y no expr 32-8 .
+
+Ahora tiene que calcular el número medio de intentos de inicio de sesión que se esperan a lo largo de un año. A partir de la información que tienes, sabes que se han realizado una media de 3500 intentos de inicio de sesión cada mes en lo que va de año.
+
+Por lo tanto, deberías poder calcular el número total de inicios de sesión esperados en un año multiplicando 3500 por 12.
+
+2. Escribe expr 3500 * 12 en el intérprete de comandos y pulsa INTRO.
+
+El comando para completar este paso:
+
+expr 3500 * 12
+
+Ahora debería aparecer el resultado correcto:
+
+42000
+
+Tarea 3. Limpiar el shell Bash
+En esta tarea, utilizarás el comando clear para limpiar el intérprete de comandos Bash de toda la salida existente. Esto te permitirá comenzar con el cursor en la parte superior de la ventana del intérprete de comandos Bash.
+
+Cuando trabajas en un entorno de shell, la pantalla puede llenarse de datos de entrada y salida anteriores. Esto puede dificultar el procesamiento de lo que estás trabajando. Borrar la pantalla te permite crear un entorno de texto libre de desorden para que puedas centrarte en lo que es importante en ese momento.
+
+Escriba clear en el intérprete de comandos y pulse INTRO.
+
+El comando para completar este paso:
+
+clear
+
+Nota: Se borrarán todos los comandos y la salida anteriores, y el indicador de usuario y el cursor volverán a la parte superior izquierda de la ventana del intérprete de comandos.
+
+Tarea opcional: Realizar más cálculos con el comando expr
+Tiene la oportunidad de explorar más a fondo la entrada y la salida utilizando los comandos echo y expr.
+
+1. Genere al menos una nueva salida utilizando el comando echo.
+
+(Recuerde la salida echo "hello" que generó).
+
+El comando para completar este paso:
+
+Nota: Se borrarán todos los comandos y la salida anteriores, y el indicador de usuario y el cursor volverán a la parte superior izquierda de la ventana del intérprete de comandos.
+
+Tarea opcional: Realizar más cálculos con el comando expr
+Tiene la oportunidad de explorar más a fondo la entrada y la salida utilizando los comandos echo y expr.
+
+1. Genere al menos una nueva salida utilizando el comando echo.
+
+(Recuerde la salida echo "hello" que generó).
+
+El comando para completar este paso:
+
+2. Realiza al menos un nuevo cálculo utilizando el comando expr.
+
+Los operadores matemáticos que puede utilizar con el comando expr para sumar, restar, dividir y multiplicar son +, -, / y *.
+
+Nota: el  comando expr sólo realiza cálculos matemáticos con números enteros, por lo que no puede utilizar el punto decimal ni esperar un resultado fraccionario. Todos los resultados se redondean al entero más próximo. Además, todos los términos y operadores de una expresión deben ir separados por espacios. Por ejemplo: expr 25 + 15 y no expr 25+15 .
+
+Conclusión
+¡Buen trabajo!
+
+Ahora tienes experiencia práctica en el uso de comandos básicos del shell Bash de Linux para
+
+generar salida con el comando echo,
+
+generar salida con el comando expr, y
+
+limpiar el shell Bash con el comando clear.
+
+Entender la entrada y la salida es esencial cuando te comunicas a través del shell. Es importante que te sientas cómodo con estos conceptos básicos antes de continuar trabajando con comandos adicionales.
+

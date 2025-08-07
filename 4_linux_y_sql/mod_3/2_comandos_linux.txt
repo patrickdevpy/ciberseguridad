@@ -1,0 +1,44 @@
+Comandos Linux a través del shell Bash
+
+
+Bienvenido. Antes de adentrarnos en comandos específicos de Linux, vamos a explorar con más detalle los fundamentos de la 
+comunicación con el OS a través del shell. 
+Ser capaz de utilizar comandos de Linux es una habilidad fundamental para todos los profesionales de la Seguridad. 
+Como analista de seguridad, trabajará con registros de servidor y necesitará saber cómo navegar , 
+gestionar y analizar archivos de forma remota sin una interfaz gráfica de usuario. 
+Además, necesitará saber cómo verificar y configurar el acceso de usuarios y grupos. 
+También necesitará dar autorización y establecer permisos de archivo. Esto significa que desarrollar 
+habilidades con la línea de comandos es esencial para su trabajo como analista de seguridad. 
+Cuando aprendimos sobre la arquitectura de Linux, aprendimos que la shell es uno de los componentes principales de un sistema operativo. 
+También aprendimos que existen diferentes shells. 
+En esta sección, utilizaremos el shell Bash. 
+Bash es el shell por defecto en la mayoría de las distribuciones de Linux. 
+En su mayor parte, los comandos clave de Linux que estará aprendiendo en esta sección son los mismos en todos los shells. 
+Ahora que sabe qué shell estará utilizando, pasemos a cómo escribir en Bash. Como ya comentamos en una sección anterior , 
+comunicarse con su OS es como una conversación. 
+Usted teclea comandos, y el OS responde con una respuesta a su comando. 
+Un comando es una instrucción que le dice a la computadora que haga algo.
+
+Probaremos un comando en Bash. Note un signo de dólar antes del cursor. 
+Este es su prompt para introducir un nuevo comando. 
+Algunos comandos pueden decirle a la computadora que encuentre algo como un archivo específico. 
+Otros pueden decirle que lance un programa. 
+O, puede ser que emita una cadena específica de texto. 
+En la última sección , cuando hablamos de entrada y salida , exploramos cómo el comando echo hacía esto.
+
+Volvamos a introducir el comando echo. 
+Puede que note que el comando que acabamos de introducir no está completo. 
+Si vamos a usar el comando echo para dar salida a una cadena específica de texto, necesitamos especificar cuál es la cadena de texto. 
+Para eso están los argumentos. 
+Un argumento es la información específica que necesita un comando. 
+Algunos comandos aceptan varios argumentos. Así que ahora vamos a completar el comando echo con un argumento. 
+Estamos aprendiendo cosas muy técnicas , así que ¿qué tal si damos salida a las palabras: `` ¡Lo estás haciendo genial! 
+Añadiremos este argumento y luego pulsaremos intro para obtener la salida. 
+En este ejemplo, nuestro argumento era una cadena de texto. 
+Los argumentos también pueden proporcionar otro tipo de información. 
+Una cosa que es realmente importante en Linux es que todos los comandos y argumentos distinguen entre mayúsculas y minúsculas. 
+Esto incluye los nombres de archivos y directorios. 
+Tenga esto en cuenta mientras aprende más sobre cómo utilizar Linux en sus tareas diarias como analista de seguridad. 
+Bien, ahora que hemos cubierto los fundamentos de introducir comandos y argumentos de Linux a través del shell Bash, 
+estamos listos para aprender algunos comandos específicos. 
+Esto es emocionante, ¡así que pasemos a nuestro siguiente vídeo!
