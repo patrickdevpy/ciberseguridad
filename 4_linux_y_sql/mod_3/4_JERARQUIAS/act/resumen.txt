@@ -1,0 +1,129 @@
+Resumen de la actividad
+Anteriormente, aprendió sobre Linux y cómo comunicarse con el sistema operativo a través del shell. También aprendió a usar algunos de los comandos principales para navegar por el sistema de archivos de Linux y leer el contenido de los archivos que contiene.
+
+Estas son habilidades esenciales. Por ejemplo, al investigar el acceso no autorizado, puede navegar y leer un informe de acceso de usuario.
+
+En esta actividad de laboratorio, navegará por una estructura de archivos de Linux, buscará archivos y leerá el contenido de los archivos. También deberá responder algunas preguntas de opción múltiple basadas en la información contenida en estos archivos.
+
+Como analista de seguridad, es clave que sepa cómo navegar, administrar y analizar archivos de forma remota a través de un shell de Linux sin una interfaz gráfica de usuario.
+
+Escenario
+En este escenario, debe localizar y analizar la información de ciertos archivos ubicados en el directorio./home/analyst
+
+Así es como lo harás: Primero, obtendrás la información del directorio de trabajo actual en el que te encuentras y mostrarás el contenido del directorio. En segundo lugar, navegará al directorio y enumerará los subdirectorios que contiene. En tercer lugar, navegará al subdirectorio y mostrará el contenido del archivo. Por último, navegará al directorio y mostrará las primeras 10 líneas de un archivo que contiene.reportsusersQ1_added_users.txtlogs
+
+Para completar estas tareas, deberá usar los comandos que aprendió previamente en este curso. Bueno, es hora de practicar lo que has aprendido. ¡Hagámoslo!
+
+Nota: El laboratorio comienza con su cuenta de usuario, llamada analista, que ya ha iniciado sesión en el shell de Bash. Esto significa que puede comenzar con las tareas tan pronto como haga clic en el botón Iniciar laboratorio.
+Renuncia: Para un rendimiento y compatibilidad óptimos, se recomienda utilizar los navegadores Google Chrome o Mozilla Firefox al acceder a los laboratorios.
+Inicie su laboratorio
+Deberá comenzar el laboratorio antes de poder acceder a los materiales. Para hacer esto, haga clic en el botón verde "Iniciar laboratorio" en la parte superior de la pantalla.
+
+Cuando haya completado todas las tareas, consulte la sección Finalizar el laboratorio que sigue a las tareas para obtener información sobre cómo finalizar el laboratorio.
+
+Tarea 1. Obtener la información del directorio actual
+En esta tarea, debe usar los comandos que aprendió para comprobar el directorio de trabajo actual y enumerar su contenido.
+
+Muestre su directorio de trabajo.
+Muestra los nombres de los archivos y directorios en el directorio de trabajo actual.
+
+¿Qué directorio es su directorio de trabajo actual?
+/var/registros
+/inicio/analista
+/hogar
+/inicio/analista/registros
+
+
+¿Cuántos directorios contiene el directorio de trabajo actual?
+Uno
+Dos
+Cinco
+Cuatro
+
+Haga clic en Comprobar mi progreso para comprobar que ha completado esta tarea correctamente.
+
+Obtener la información del directorio actual
+Nota: No hay penalización por hacer clic en Comprobar mi progreso y se te mostrará una pista.
+Tarea 2. Cambiar directorio y enumerar los subdirectorios
+En esta tarea, debe navegar a un nuevo directorio y determinar los subdirectorios que contiene.
+
+Vaya al directorio./home/analyst/reports
+Muestre los archivos y subdirectorios en el directorio./home/analyst/reports
+
+¿Cuál es el nombre del subdirectorio en el directorio /home/analyst/reports?
+analista
+Usuarios
+Proyectos
+trozas
+
+Haga clic en Comprobar mi progreso para comprobar que ha completado esta tarea correctamente.
+
+Cambiar directorio y enumerar los subdirectorios
+Tarea 3. Localizar y leer el contenido de un archivo
+En esta tarea, debe navegar a un subdirectorio y leer el contenido de un archivo que contiene.
+
+Vaya al directorio./home/analyst/reports/users
+Enumere los archivos en el directorio actual.
+Muestra el contenido del archivo.Q1_added_users.txt
+
+¿En qué departamento trabaja el empleado con el nombre de usuario aezra?
+Recursos humanos
+Ventas
+Finanzas
+Tecnología de la información
+
+
+¿Cuál es el employee_id del usuario en el departamento de Tecnología de la Información?
+1104
+1188
+1177
+1001
+
+Haga clic en Comprobar mi progreso para comprobar que ha completado esta tarea correctamente.
+
+Localizar y leer el contenido de un archivo
+Tarea 4. Navegue a un directorio y busque un archivo
+En esta tarea, debe navegar a un nuevo directorio, buscar un archivo y examinar el contenido del archivo.
+
+Vaya al directorio./home/analyst/logs
+Muestra el nombre del archivo que contiene.
+Muestra las primeras 10 líneas de este archivo.
+
+¿Cuántos mensajes de advertencia hay en las primeras 10 líneas del archivo server_logs.txt?
+Dos
+Tres
+Uno
+Seis
+
+Haga clic en Comprobar mi progreso para comprobar que ha completado esta tarea correctamente.
+
+Navegue a un directorio y busque un archivo
+Conclusión
+¡Buen trabajo!
+
+Ahora tiene experiencia práctica en el uso de comandos básicos de shell de Linux Bash para
+
+navegar por las estructuras de directorios con el comando,cd
+mostrar el directorio de trabajo actual con el comando,pwd
+enumerar el contenido de un directorio con el comando, yls
+Mostrar el contenido de los archivos con los comandos and.cathead
+Navegar por directorios y leer el contenido de los archivos son habilidades fundamentales que a menudo usará cuando se comunique a través del shell.
+
+Finaliza tu laboratorio
+Antes de finalizar el laboratorio, asegúrese de que está satisfecho de haber completado todas las tareas y siga estos pasos:
+
+Haga clic en Finalizar laboratorio. Aparecerá un cuadro emergente. Haz clic en Enviar para confirmar que has terminado. Al finalizar el laboratorio, se eliminará el acceso al shell de Bash. No podrás volver a acceder al trabajo que has completado en él.
+Otro cuadro emergente le pedirá que califique el laboratorio y proporcione comentarios. Puede completar esto si así lo desea.
+Cierre la pestaña del navegador que contiene el laboratorio para volver a su curso.
+Actualice la pestaña del navegador del curso para marcar el laboratorio como completo.
+
+Conclusión
+¡Buen trabajo!
+
+Ahora tiene experiencia práctica en el uso de comandos básicos de shell de Linux Bash para
+
+navegar por las estructuras de directorios con el comando,cd
+mostrar el directorio de trabajo actual con el comando,pwd
+enumerar el contenido de un directorio con el comando, yls
+Mostrar el contenido de los archivos con los comandos and.cathead
+Navegar por directorios y leer el contenido de los archivos son habilidades fundamentales que a menudo usará cuando se comunique a través del shell
