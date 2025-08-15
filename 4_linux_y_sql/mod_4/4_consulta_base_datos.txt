@@ -1,0 +1,222 @@
+Consulta de una base de datos
+
+En esta lectura, repasarás esas consultas SQL básicas y aprenderás una nueva palabra clave que te ayudará a organizar tus resultados. 
+También aprenderás sobre la base de datos Chinook, que este curso utiliza para consultas en lecturas y cuestionarios.
+
+Consulta SQL básica
+Hay dos palabras clave esenciales en cualquier consulta SQL: SELECT y FROM. 
+Utilizará estas palabras clave cada vez que desee consultar una base de datos SQL. 
+Utilizarlas juntas ayuda a SQL a identificar qué datos necesita de una base de datos y la tabla de la que los está devolviendo.
+
+El video demostró esta consulta SQL:
+
+SELECT employee_id, device_id
+
+FROM employees;
+
+En las lecturas y cuestionarios, este curso utiliza una base de datos de ejemplo llamada Chinook para ejecutar consultas. 
+La base de datos Chinook incluye datos que podrían crearse en una empresa de medios digitales. 
+Un analista de seguridad empleado por esta empresa podría necesitar consultar estos datos. 
+Por ejemplo, la base de datos contiene once tablas, incluyendo una tabla employees, una tabla customers, y una tabla invoices. 
+Estas tablas incluyen datos como nombres y direcciones.
+
+A modo de ejemplo, puede ejecutar esta consulta para obtener datos de la tabla customers de la base de datos Chinook:
+
+SELECT customerid, city, country
+FROM customers;
+
+devuelve
+
++------------+---------------------+----------------+
+| CustomerId | City                | Country        |
++------------+---------------------+----------------+
+|          1 | São José dos Campos | Brazil         |
+|          2 | Stuttgart           | Germany        |
+|          3 | Montréal            | Canada         |
+|          4 | Oslo                | Norway         |
+|          5 | Prague              | Czech Republic |
+|          6 | Prague              | Czech Republic |
+|          7 | Vienne              | Austria        |
+|          8 | Brussels            | Belgium        |
+|          9 | Copenhagen          | Denmark        |
+|         10 | São Paulo           | Brazil         |
+|         11 | São Paulo           | Brazil         |
+|         12 | Rio de Janeiro      | Brazil         |
+|         13 | Brasília            | Brazil         |
+|         14 | Edmonton            | Canada         |
+|         15 | Vancouver           | Canada         |
+|         16 | Mountain View       | USA            |
+|         17 | Redmond             | USA            |
+|         18 | New York            | USA            |
+|         19 | Cupertino           | USA            |
+|         20 | Mountain View       | USA            |
+|         21 | Reno                | USA            |
+|         22 | Orlando             | USA            |
+|         23 | Boston              | USA            |
+|         24 | Chicago             | USA            |
+|         25 | Madison             | USA            |
++------------+---------------------+----------------+
+(Output limit exceeded, 25 of 59 total rows shown)
+
+
+SELECT INTO
+La palabra clave SELECT indica qué columnas devolver. Por ejemplo, puede devolver la columna customerid de la base de datos Chinook con
+
+SELECT customerid
+
+También puede seleccionar varias columnas separándolas con una coma. Por ejemplo, si desea obtener las columnas customerid y city, escriba SELECT customerid, city.
+
+Si desea obtener todas las columnas de una tabla, puede acompañar la palabra clave SELECT de un asterisco (*). La primera línea de la consulta será SELECT *.
+
+Nota: Aunque las tablas que se consultan en este curso son relativamente pequeñas, el uso de SELECT * puede no ser aconsejable cuando se trabaja con bases de datos y tablas de gran tamaño; en esos casos, la salida final puede ser difícil de entender y podría ser lenta de ejecutar.
+
+FROM
+La palabra clave SELECT siempre va acompañada de la palabra clave FROM. FROM indica qué tabla consultar. Para utilizar la palabra clave FROM, debe escribirla después de la palabra clave SELECT, a menudo en una nueva línea, y seguirla con el nombre de la tabla que está consultando. Si desea devolver todas las columnas de la tabla customers, puede escribir:
+
+SELECT *
+
+FROM customers;
+
+Si desea finalizar la consulta aquí, coloque un punto y coma (;) al final para indicar a SQL que se trata de la consulta completa.
+
+Nota: Los saltos de línea no son necesarios en las consultas SQL, pero a menudo se utilizan para que la consulta sea más fácil de entender. Si lo prefiere, también puede escribir la consulta anterior en una sola línea como
+
+SELECT * FROM customers;
+
+ORDER BY
+Las tablas de bases de datos suelen ser muy complicadas, y aquí es donde resultan útiles otras palabras clave de SQL. ORDER BY es una palabra clave importante para organizar los datos que se extraen de una tabla.
+
+ORDER BY secuencia los registros devueltos por una consulta en función de una o varias columnas especificadas. Puede ser en orden ascendente o descendente.
+
+Ordenación ascendente
+Para utilizar la palabra clave ORDER BY, escríbala al final de la consulta y especifique una columna en la que basar la ordenación. En este ejemplo, SQL devolverá las columnas customerid, city y country de la tabla customers, y los registros se ordenarán por la columna city:
+
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+
+devuelve
+
++------------+--------------+----------------+
+| CustomerId | City         | Country        |
++------------+--------------+----------------+
+|         48 | Amsterdam    | Netherlands    |
+|         59 | Bangalore    | India          |
+|         36 | Berlin       | Germany        |
+|         38 | Berlin       | Germany        |
+|         42 | Bordeaux     | France         |
+|         23 | Boston       | USA            |
+|         13 | Brasília     | Brazil         |
+|          8 | Brussels     | Belgium        |
+|         45 | Budapest     | Hungary        |
+|         56 | Buenos Aires | Argentina      |
+|         24 | Chicago      | USA            |
+|          9 | Copenhagen   | Denmark        |
+|         19 | Cupertino    | USA            |
+|         58 | Delhi        | India          |
+|         43 | Dijon        | France         |
+|         46 | Dublin       | Ireland        |
+|         54 | Edinburgh    | United Kingdom |
+|         14 | Edmonton     | Canada         |
+|         26 | Fort Worth   | USA            |
+|         37 | Frankfurt    | Germany        |
+|         31 | Halifax      | Canada         |
+|         44 | Helsinki     | Finland        |
+|         34 | Lisbon       | Portugal       |
+|         52 | London       | United Kingdom |
+|         53 | London       | United Kingdom |
++------------+--------------+----------------+
+(Output limit exceeded, 25 of 59 total rows shown)
+
+La palabra clave ORDER BY ordena los registros basándose en la columna especificada tras esta palabra clave. Por defecto, como se muestra en este ejemplo, la secuencia será en orden ascendente. Esto significa que
+
+si elige una columna que contenga datos numéricos, ordenará la salida de menor a mayor. Por ejemplo, si se ordena en customerid, los números de identificación se ordenan de menor a mayor.
+
+si la columna contiene caracteres alfabéticos, como en el ejemplo con la columnacity, ordena los registros desde el principio del alfabeto hasta el final.
+
+Ordenación descendente
+También puede utilizar ORDER BY con la palabra clave DESC para ordenar en orden descendente. La palabra clave DESC es la abreviatura de "descendente" y le indica a SQL que ordene los números de mayor a menor, o alfabéticamente de la Z a la A. Esto se puede hacer siguiendo ORDER BY con la palabra clave DESC. Por ejemplo, puede ejecutar esta consulta para examinar cómo difieren los resultados cuando se aplica DESC:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+
+devuelve 
+
++------------+---------------------+----------------+
+| CustomerId | City                | Country        |
++------------+---------------------+----------------+
+|         33 | Yellowknife         | Canada         |
+|         32 | Winnipeg            | Canada         |
+|         49 | Warsaw              | Poland         |
+|          7 | Vienne              | Austria        |
+|         15 | Vancouver           | Canada         |
+|         27 | Tucson              | USA            |
+|         29 | Toronto             | Canada         |
+|         10 | São Paulo           | Brazil         |
+|         11 | São Paulo           | Brazil         |
+|          1 | São José dos Campos | Brazil         |
+|          2 | Stuttgart           | Germany        |
+|         51 | Stockholm           | Sweden         |
+|         55 | Sidney              | Australia      |
+|         57 | Santiago            | Chile          |
+|         28 | Salt Lake City      | USA            |
+|         47 | Rome                | Italy          |
+|         12 | Rio de Janeiro      | Brazil         |
+|         21 | Reno                | USA            |
+|         17 | Redmond             | USA            |
+|          5 | Prague              | Czech Republic |
+|          6 | Prague              | Czech Republic |
+|         35 | Porto               | Portugal       |
+|         39 | Paris               | France         |
+|         40 | Paris               | France         |
+|         30 | Ottawa              | Canada         |
++------------+---------------------+----------------+
+(Output limit exceeded, 25 of 59 total rows shown)
+
+Ahora, las ciudades situadas al final del alfabeto aparecen en primer lugar.
+
+Ordenación basada en varias columnas
+También puede elegir varias columnas para ordenar. Por ejemplo, puede elegir primero la columna country y después la columna city. A continuación, SQL ordena la salida por country, y para las filas con el mismo country, las ordena basándose en city. Puede ejecutar esto para explorar cómo SQL muestra esto:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY country, city;
+
+devuelve
+
++------------+---------------------+----------------+
+| CustomerId | City                | Country        |
++------------+---------------------+----------------+
+|         56 | Buenos Aires        | Argentina      |
+|         55 | Sidney              | Australia      |
+|          7 | Vienne              | Austria        |
+|          8 | Brussels            | Belgium        |
+|         13 | Brasília            | Brazil         |
+|         12 | Rio de Janeiro      | Brazil         |
+|          1 | São José dos Campos | Brazil         |
+|         10 | São Paulo           | Brazil         |
+|         11 | São Paulo           | Brazil         |
+|         14 | Edmonton            | Canada         |
+|         31 | Halifax             | Canada         |
+|          3 | Montréal            | Canada         |
+|         30 | Ottawa              | Canada         |
+|         29 | Toronto             | Canada         |
+|         15 | Vancouver           | Canada         |
+|         32 | Winnipeg            | Canada         |
+|         33 | Yellowknife         | Canada         |
+|         57 | Santiago            | Chile          |
+|          5 | Prague              | Czech Republic |
+|          6 | Prague              | Czech Republic |
+|          9 | Copenhagen          | Denmark        |
+|         44 | Helsinki            | Finland        |
+|         42 | Bordeaux            | France         |
+|         43 | Dijon               | France         |
+|         41 | Lyon                | France         |
++------------+---------------------+----------------+
+(Output limit exceeded, 25 of 59 total rows shown)
+
+Puntos clave
+SELECT y FROM son palabras clave importantes en las consultas SQL. Se utiliza SELECT para indicar qué columnas devolver y FROM para indicar qué tabla consultar. También puede incluir ORDER BY en su consulta para organizar la salida. Estos conocimientos básicos de SQL le ayudarán a realizar consultas más avanzadas. 
+
