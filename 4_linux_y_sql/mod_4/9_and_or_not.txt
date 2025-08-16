@@ -1,0 +1,171 @@
+Filtrados con AND, OR y NOT
+
+
+En la lección anterior , aprendimos incluso más formas de filtrar consultas en SQL para trabajar con algunas tareas típicas de los analistas de Seguridad. Sin embargo, cuando trabajamos con preguntas de Seguridad reales , a menudo tenemos que filtrar por varias condiciones. Las vulnerabilidades, por ejemplo , pueden depender de más de un factor. Por ejemplo, una vulnerabilidad de Seguridad puede estar relacionada con máquinas que utilizan un cliente de correo electrónico específico en un sistema operativo específico. Por lo tanto, para encontrar las posibles vulnerabilidades , necesitamos encontrar máquinas que utilicen tanto el cliente de correo electrónico como el sistema operativo. Para hacer una consulta con varias condiciones que deben cumplirse , utilizamos el operador AND entre dos condiciones distintas. AND es un operador que especifica que ambas condiciones deben cumplirse simultáneamente.
+
+Volviendo a nuestra analogía con las frutas y verduras, es lo mismo que pedirle a alguien que seleccione manzanas de la caja grande donde las manzanas son grandes y frescas. Esto significa que nuestros resultados no incluirán manzanas pequeñas , incluso si están frescas , ni manzanas podridas, incluso si son grandes. Solo incluirán manzanas grandes y frescas. Las manzanas deben cumplir ambas condiciones. Volviendo a nuestra base de datos , la tabla de máquinas muestra todos los sistemas operativos y clientes de correo electrónico. Queremos una lista de máquinas que ejecutan el sistema operativo 1 y una lista de máquinas que utilizan el cliente de correo electrónico 1. Usaremos los círculos izquierdo y derecho del diagrama de Venn para representar estos grupos.
+
+Necesitamos SQL para seleccionar las máquinas que tienen OS 1 y Email Client 1. El área rellenada en la intersección de estos círculos representa esta condición. Tomemos esto e implementémoslo en SQL. En primer lugar, vamos a empezar por crear las primeras líneas de la consulta y decirle a SQL que SELECTE * all columns FROM de la tabla de máquinas. Luego, agregaremos la cláusula WHERE. Examinemos esto más de cerca. Primero, indicamos la primera condición que debe cumplir , que la columna del sistema operativo tenga un valor de '0S 1'.
+
+Luego, usamos AND para unir esto a otra condición. Y por último, introducimos la otra condición, en este caso, que la columna del cliente de correo electrónico debería tener un valor de « Cliente de correo electrónico 1 '' ¡Y así es como se usa el operador AND en SQL! Vamos a ejecutar esto para obtener los resultados de la consulta. ¡Perfecto! ¡Todos los resultados coinciden con nuestras dos condiciones! Sigamos y exploremos más formas de combinar diferentes condiciones trabajando con el operador del quirófano. El operador OR es un operador que especifica que se puede cumplir cualquiera de las condiciones.
+
+En un diagrama de Venn , digamos que cada círculo representa una condición. Cuando se unen con OR , SQL seleccionará todas las filas que cumplan una de las condiciones. Y también está bien si cumple ambas condiciones. Ejecutemos otra consulta y usemos el operador OR. Supongamos que queremos que el filtro identifique las máquinas que tienen OS 1 u OS 3 porque ambos tipos necesitan un parche. Escribiremos estas condiciones. Examinemos esto más de cerca.
+
+Después de WHERE, nuestra primera condición indica que queremos filtrar, de modo que la consulta seleccione máquinas con 'OS 1'. Usamos el operador OR porque también queremos encontrar registros que coincidan con otra condición. Esta condición adicional se coloca después de O e indica que también se deben seleccionar máquinas que ejecuten « OS 3 ». Al ejecutar la consulta , nuestros resultados ahora incluyen registros que tienen un valor de OS 1 o OS 3 en la columna del sistema operativo. Buen trabajo, estamos realizando algunas consultas complejas. El último operador que analizaremos es el operador NOT . NO niega una condición.
+
+En un diagrama, podemos mostrar esto seleccionando todas las entradas que no coincidan con nuestra condición. La condición está representada por el círculo. La parte rellenada fuera del círculo representa lo que se devuelve. Se trata de todos los datos que no coinciden con la condición. Por ejemplo, al elegir fruta , puedes buscar cualquier fruta que no sea una manzana. Eso es mucho más eficiente que decirle a tu amigo que quieres un plátano, una naranja o una lima, etc. Supongamos que desea actualizar todos los dispositivos de su empresa, excepto los que utilizan OS 3.
+
+Llevando esto a SQL , podemos escribir esta consulta. Colocamos NOT después de WHERE y antes del estado del filtro. Ejecución de estas consultas nos da la lista de todas las máquinas que no están ejecutando OS 3, y ahora sabemos qué máquinas actualizar. Acabamos de analizar un montón de contenido nuevo , ¡pero está aprendiendo cada vez más SQL que puede utilizar en su viaje para convertirse en analista ! En el siguiente vídeo , aprenderemos a combinar y unir dos tablas para ampliar los tipos de consultas que podemos ejecutar. ¡Nos vemos allí!
+
+
+Más sobre filtros con AND, OR y NOT
+
+Anteriormente, exploró cómo añadir filtros que contienen los operadores AND, OR y NOT a sus consultas SQL. En esta lectura, continuará explorando cómo estos operadores pueden ayudarle a refinar sus consultas.
+
+Operadores lógicos
+AND, OR, y NOT le permiten filtrar sus consultas para devolver la información específica que le ayudará en su trabajo como analista de seguridad. Todos ellos se consideran operadores lógicos.
+
+Y 
+En primer lugar, AND se utiliza para filtrar a partir de dos condiciones. AND especifica que ambas condiciones deben cumplirse simultáneamente.
+
+Por ejemplo, un problema de ciberseguridad podría afectar sólo a aquellas cuentas de clientes que cumplan tanto la condición de ser gestionadas por un representante de soporte con un ID de 5 como la de estar ubicadas en EE.UU.. Para encontrar los nombres y correos electrónicos de esos clientes concretos, debe colocar las dos condiciones a ambos lados del operador AND en la cláusula WHERE:
+
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+
++-----------+----------+-------------------------+---------+--------------+
+| FirstName | LastName | Email                   | Country | SupportRepId |
++-----------+----------+-------------------------+---------+--------------+
+| Jack      | Smith    | jacksmith@microsoft.com | USA     |            5 |
+| Kathy     | Chase    | kachase@hotmail.com     | USA     |            5 |
+| Victor    | Stevens  | vstevens@yahoo.com      | USA     |            5 |
+| Julia     | Barnett  | jubarnett@gmail.com     | USA     |            5 |
++-----------+----------+-------------------------+---------+--------------+
+
+La ejecución de esta consulta devuelve cuatro filas de información sobre los clientes. Puede utilizar esta información para ponerse en contacto con ellos en relación con el problema de seguridad.
+
+O 
+El operador OR también conecta dos condiciones, pero OR especifica que puede cumplirse cualquiera de ellas. Devuelve resultados en los que se cumple la primera condición, la segunda o ambas.
+
+Por ejemplo, si es responsable de encontrar a todos los Clientes que se encuentran en EE.UU. o Canadá para poder comunicarles información sobre una actualización de seguridad, puede utilizar el operador OR para encontrar todos los registros necesarios. Como demuestra la siguiente consulta, debe colocar las dos condiciones a ambos lados del operador OR en la cláusula WHERE:
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+
++-----------+------------+--------------------------+---------+
+| FirstName | LastName   | Email                    | Country |
++-----------+------------+--------------------------+---------+
+| François  | Tremblay   | ftremblay@gmail.com      | Canada  |
+| Mark      | Philips    | mphilips12@shaw.ca       | Canada  |
+| Jennifer  | Peterson   | jenniferp@rogers.ca      | Canada  |
+| Frank     | Harris     | fharris@google.com       | USA     |
+| Jack      | Smith      | jacksmith@microsoft.com  | USA     |
+| Michelle  | Brooks     | michelleb@aol.com        | USA     |
+| Tim       | Goyer      | tgoyer@apple.com         | USA     |
+| Dan       | Miller     | dmiller@comcast.com      | USA     |
+| Kathy     | Chase      | kachase@hotmail.com      | USA     |
+| Heather   | Leacock    | hleacock@gmail.com       | USA     |
+| John      | Gordon     | johngordon22@yahoo.com   | USA     |
+| Frank     | Ralston    | fralston@gmail.com       | USA     |
+| Victor    | Stevens    | vstevens@yahoo.com       | USA     |
+| Richard   | Cunningham | ricunningham@hotmail.com | USA     |
+| Patrick   | Gray       | patrick.gray@aol.com     | USA     |
+| Julia     | Barnett    | jubarnett@gmail.com      | USA     |
+| Robert    | Brown      | robbrown@shaw.ca         | Canada  |
+| Edward    | Francis    | edfrancis@yachoo.ca      | Canada  |
+| Martha    | Silk       | marthasilk@gmail.com     | Canada  |
+| Aaron     | Mitchell   | aaronmitchell@yahoo.ca   | Canada  |
+| Ellie     | Sullivan   | ellie.sullivan@shaw.ca   | Canada  |
++-----------+------------+--------------------------+---------+
+
+La consulta devuelve todos los Clientes de EE.UU. o Canadá.
+
+Nota: aunque ambas condiciones se basen en la misma columna, deberá escribir las dos condiciones completas. Por ejemplo, la consulta del ejemplo anterior contiene el filtro WHERE country = 'Canada' OR country = 'USA'. 
+
+NOT 
+A diferencia de los dos operadores anteriores, el operador NOT sólo funciona con una única condición, y no con varias. El operador NOT niega una condición. Esto significa que SQL devuelve todos los registros que no coinciden con la condición especificada en la consulta.
+
+Por ejemplo, si un Problema de ciberseguridad no afecta a los clientes de EE.UU. pero podría afectar a los de otros países, puede devolver todos los clientes que no estén en EE.UU.. Esto sería más eficaz que crear condiciones individuales para todos los demás países. Para utilizar el operador NOT para esta tarea, escriba la siguiente consulta y coloque NOT directamente después de WHERE:
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+
++-----------+-------------+-------------------------------+----------------+
+| FirstName | LastName    | Email                         | Country        |
++-----------+-------------+-------------------------------+----------------+
+| Luís      | Gonçalves   | luisg@embraer.com.br          | Brazil         |
+| Leonie    | Köhler      | leonekohler@surfeu.de         | Germany        |
+| François  | Tremblay    | ftremblay@gmail.com           | Canada         |
+| Bjørn     | Hansen      | bjorn.hansen@yahoo.no         | Norway         |
+| František | Wichterlová | frantisekw@jetbrains.com      | Czech Republic |
+| Helena    | Holý        | hholy@gmail.com               | Czech Republic |
+| Astrid    | Gruber      | astrid.gruber@apple.at        | Austria        |
+| Daan      | Peeters     | daan_peeters@apple.be         | Belgium        |
+| Kara      | Nielsen     | kara.nielsen@jubii.dk         | Denmark        |
+| Eduardo   | Martins     | eduardo@woodstock.com.br      | Brazil         |
+| Alexandre | Rocha       | alero@uol.com.br              | Brazil         |
+| Roberto   | Almeida     | roberto.almeida@riotur.gov.br | Brazil         |
+| Fernanda  | Ramos       | fernadaramos4@uol.com.br      | Brazil         |
+| Mark      | Philips     | mphilips12@shaw.ca            | Canada         |
+| Jennifer  | Peterson    | jenniferp@rogers.ca           | Canada         |
+| Robert    | Brown       | robbrown@shaw.ca              | Canada         |
+| Edward    | Francis     | edfrancis@yachoo.ca           | Canada         |
+| Martha    | Silk        | marthasilk@gmail.com          | Canada         |
+| Aaron     | Mitchell    | aaronmitchell@yahoo.ca        | Canada         |
+| Ellie     | Sullivan    | ellie.sullivan@shaw.ca        | Canada         |
+| João      | Fernandes   | jfernandes@yahoo.pt           | Portugal       |
+| Madalena  | Sampaio     | masampaio@sapo.pt             | Portugal       |
+| Hannah    | Schneider   | hannah.schneider@yahoo.de     | Germany        |
+| Fynn      | Zimmermann  | fzimmermann@yahoo.de          | Germany        |
+| Niklas    | Schröder    | nschroder@surfeu.de           | Germany        |
++-----------+-------------+-------------------------------+----------------+
+(Output limit exceeded, 25 of 46 total rows shown)
+
+SQL devuelve todas las entradas en las que los clientes no son de EE.UU..
+
+Consejo profesional: Otra forma de encontrar valores que no sean iguales a un determinado valor es utilizando el operador <> o el operador !=. Por ejemplo, WHERE country <> 'USA' y WHERE country != 'USA' son los mismos filtros que WHERE NOT country = 'USA'. 
+
+Combinación de operadores lógicos
+Los operadores lógicos pueden combinarse en filtros. Por ejemplo, si sabe que EE.UU. y Canadá no están afectados por un problema de ciberseguridad, puede combinar los operadores para devolver los clientes de todos los países además de estos dos. En la siguiente consulta, NOT se coloca antes de la primera condición, se une a una segunda condición con AND, y luego NOT también se coloca antes de esa segunda condición. Puede ejecutarla para explorar lo que devuelve:
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+
++-----------+-------------+-------------------------------+----------------+
+| FirstName | LastName    | Email                         | Country        |
++-----------+-------------+-------------------------------+----------------+
+| Luís      | Gonçalves   | luisg@embraer.com.br          | Brazil         |
+| Leonie    | Köhler      | leonekohler@surfeu.de         | Germany        |
+| Bjørn     | Hansen      | bjorn.hansen@yahoo.no         | Norway         |
+| František | Wichterlová | frantisekw@jetbrains.com      | Czech Republic |
+| Helena    | Holý        | hholy@gmail.com               | Czech Republic |
+| Astrid    | Gruber      | astrid.gruber@apple.at        | Austria        |
+| Daan      | Peeters     | daan_peeters@apple.be         | Belgium        |
+| Kara      | Nielsen     | kara.nielsen@jubii.dk         | Denmark        |
+| Eduardo   | Martins     | eduardo@woodstock.com.br      | Brazil         |
+| Alexandre | Rocha       | alero@uol.com.br              | Brazil         |
+| Roberto   | Almeida     | roberto.almeida@riotur.gov.br | Brazil         |
+| Fernanda  | Ramos       | fernadaramos4@uol.com.br      | Brazil         |
+| João      | Fernandes   | jfernandes@yahoo.pt           | Portugal       |
+| Madalena  | Sampaio     | masampaio@sapo.pt             | Portugal       |
+| Hannah    | Schneider   | hannah.schneider@yahoo.de     | Germany        |
+| Fynn      | Zimmermann  | fzimmermann@yahoo.de          | Germany        |
+| Niklas    | Schröder    | nschroder@surfeu.de           | Germany        |
+| Camille   | Bernard     | camille.bernard@yahoo.fr      | France         |
+| Dominique | Lefebvre    | dominiquelefebvre@gmail.com   | France         |
+| Marc      | Dubois      | marc.dubois@hotmail.com       | France         |
+| Wyatt     | Girard      | wyatt.girard@yahoo.fr         | France         |
+| Isabelle  | Mercier     | isabelle_mercier@apple.fr     | France         |
+| Terhi     | Hämäläinen  | terhi.hamalainen@apple.fi     | Finland        |
+| Ladislav  | Kovács      | ladislav_kovacs@apple.hu      | Hungary        |
+| Hugh      | O'Reilly    | hughoreilly@apple.ie          | Ireland        |
++-----------+-------------+-------------------------------+----------------+
+(Output limit exceeded, 25 of 38 total rows shown)
+
+Claves
+Los operadores lógicos le permiten crear filtros más específicos dirigidos a la información que necesita relacionada con la Seguridad. El operador AND requiere que dos condiciones sean verdaderas simultáneamente, el operador OR requiere que una o ambas condiciones sean verdaderas, y el operador NOT niega una condición. Los operadores lógicos pueden combinarse entre sí para crear consultas aún más específicas. 
+
