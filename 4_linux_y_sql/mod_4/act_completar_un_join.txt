@@ -1,0 +1,162 @@
+Ejemplar: Completar un JOIN
+
+Resumen de actividades
+Como analista de seguridad, a menudo necesitará datos de más de una tabla.
+
+Anteriormente, aprendió que una base de datos relacional es una base de datos estructurada que contiene tablas relacionadas entre sí.
+
+Las uniones SQL le permiten combinar tablas que contienen una columna compartida. Esto resulta útil cuando se necesita conectar información que aparece en tablas diferentes.
+
+En esta actividad de laboratorio, utilizará las uniones SQL para conectar tablas separadas y recuperar la información necesaria.
+
+Prepárese para aplicar lo que ha aprendido y unir algunos datos
+
+Este ejemplo es un recorrido de la actividad anterior de Qwiklab, que incluye instrucciones y soluciones detalladas. Puedes usar este ejemplo si no pudiste completar el laboratorio y/o si necesitas una guía extra para completar las tareas del laboratorio. También puede consultar este ejemplo para preparar el cuestionario de este módulo.
+
+Nota: Los términos fila y registro se utilizan indistintamente.
+
+Escenario
+En este escenario, usted investigará un incidente de seguridad reciente que comprometió algunas máquinas.
+
+Usted es responsable de obtener la información requerida de la base de datos para la investigación.
+
+Así es como hará esta tarea: Primero, usará un INNER JOIN para identificar qué empleados están usando qué máquinas. En segundo lugar, utilizará left y right joins para encontrar las máquinas que no pertenecen a ningún usuario específico y los usuarios que no tienen ninguna máquina específica asignada. Por último, utilizará una unión interna para listar todos los intentos de inicio de sesión realizados por todos los empleados.
+
+Ya está listo para unir tablas en SQL
+
+Nota: En este laboratorio trabajará con la base de datos de la organización y las tablas que contiene.
+
+El laboratorio comienza con la base de datos de la organización en el shell MariaDB que ya está abierto. Esto significa que puede comenzar con las tareas tan pronto como haga clic en el  botónIniciar Laboratorio.
+
+Si sale involuntariamente de la base de datos de la organización en el intérprete de comandos MariaDB, puede volver a conectarse ejecutando el  comandosudo mysql organization.
+
+Tarea 1. Emparejar empleados con sus máquinas
+En primer lugar, debe identificar qué empleados utilizan qué máquinas. Los datos se encuentran en las tablas de máquinas y employees.
+
+Debe utilizar un INNER JOIN de SQL para devolver los registros que necesita basándose en una columna de conexión. En el escenario, ambas tablas incluyen la columna device_id, que utilizará para realizar la unión.
+
+Ejecute la siguiente consulta para recuperar todos los registros de la tabla machines:
+
+
+FROM machines;
+
+Observará que esta consulta no es suficiente para realizar la unión y recuperar la información que necesita.
+
+2. Complete la consulta para realizar una unión interna entre las tablas machines y employees en la columna device_id. Sustituya X y Y por este nombre de columna:
+
+
+SELECT * 
+FROM machines 
+INNER JOIN employees ON machines.X = employees.Y;
+
+Nota: Colocar la  tabla employees después de INNER JOIN la convierte en la tabla correcta.
+
+Para completar un JOIN es necesario enlazar las tablas unidas en una columna común. En el caso de las tablas employees y machines, la columna device_id es común.
+
+La consulta correcta para resolver este paso:
+
+
+SELECT * 
+FROM machines 
+INNER JOIN employees ON machines.device_id = employees.device_id;
+
+
+¿Cuántas filas devuelve la unión interna?
+
+Respuesta: La consulta inner join devolvió 185 filas.
+
+Tarea 2. Devolver más datos
+Ahora debe devolver la información de todas las máquinas y de los empleados que tienen máquinas. A continuación, debe hacer lo contrario y recuperar la información de todos los empleados y las máquinas que tienen asignadas.
+
+Para ello, realizará un LEFT JOIN a la izquierda y un RIGHT JOIN a la derecha en las tablas employees y machines. Los resultados incluirán todos los registros de una u otra tabla. Debe enlazar estas tablas utilizando la columna común device_id.
+
+Ejecute la siguiente consulta SQL para conectar las tablas machines y employees mediante una LEFT JOIN. Debe sustituir la palabra clave X en la consulta:
+
+
+SELECT * 
+FROM machines 
+X JOIN employees ON machines.device_id = employees.device_id;
+
+
+La consulta correcta para resolver este paso:
+
+
+SELECT * 
+FROM machines 
+LEFT JOIN employees ON machines.device_id = employees.device_id;
+
+
+Nota: En un left join, todos los registros de la tabla referenciada después de FROM y antes de LEFT JOIN se incluyen en el resultado. En este caso,  se incluyen todos los registros de la  tablamachines, independientemente de si están asignados a un empleado o no.
+
+¿Cuál es el valor de la columna nombre de usuario del último registro devuelto?
+
+Respuesta: El último nombre de usuario devuelto es NULO.
+
+2. Ejecute la siguiente consulta SQL para conectar las tablas machines y employees mediante un RIGHT JOIN. Debe sustituir la palabra clave X en la consulta para resolver el problema:
+
+
+
+SELECT * 
+FROM machines
+X JOIN employees ON machines.device_id = employees.device_id;
+
+
+Nota: En una unión a la derecha, todos los registros de la tabla a la que se hace referencia después de RIGHT JOIN se incluyen en el resultado. En este caso, se incluyen todos los registros de la tabla empleados, independientemente de si tienen una máquina o no.
+
+La consulta correcta para resolver este paso
+
+
+
+SELECT * 
+FROM machines 
+RIGHT JOIN employees ON machines.device_id = employees.device_id;
+
+
+
+¿Cuál es el valor de la columna nombre de usuario del último registro devuelto?
+
+Respuesta: El valor en la columna nombre de usuario para el último registro devuelto es areyes.
+
+Tarea 3. Recuperar datos de intentos de inicio de sesión
+Para continuar investigando el incidente de seguridad, debe recuperar la información de todos los empleados que han realizado intentos de inicio de sesión. Para lograrlo, realizará un inner join en employees y log_in_attempts tables, vinculándolos en la columna común username.
+
+Ejecute la siguiente consulta SQL para realizar una unión interna en las tablas employees y log_in_attempts. Sustituya X por el nombre de la tabla correcta. A continuación, sustituya Y y Z por el nombre de la columna que conecta las dos tablas:
+
+
+
+SELECT * 
+FROM employees 
+INNER JOIN X ON Y = Z;
+
+
+
+Nota: Debe especificar el nombre de la tabla con el nombre de la columna (tabla.columna) al unir las tablas.
+
+La consulta correcta para resolver este paso:
+
+
+SELECT * 
+FROM employees 
+INNER JOIN log_in_attempts ON employees.username = log_in_attempts.username;
+
+
+¿Cuántos registros devuelve esta unión interna?
+
+Respuesta: La unión interna devuelve 200 registros.
+
+Conclusión
+¡Buen trabajo!
+
+Ha completado esta actividad y debería ser capaz de utilizar las uniones para combinar datos de varias tablas de una base de datos.
+
+Ahora tiene experiencia práctica en el uso de
+
+INNER JOIN,
+
+LEFT JOINy
+
+RIGHT JOIN.
+
+Buen trabajo utilizando uniones SQL para obtener los datos precisos que necesita.
+
+
