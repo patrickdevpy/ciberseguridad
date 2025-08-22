@@ -1,0 +1,98 @@
+Actividad: Clasificar los recursos conectados a una red doméstica
+
+
+Paso 1: Acceder a la plantilla home assets inventory
+
+Paso 2: Identificar los recursos
+En la hoja de cálculo del Inventario de activos, busque la cabecera de la columna Activos. Piense en los dispositivos que pueden estar conectados a la red doméstica. Examine los dispositivos en el gráfico del escenario para ayudarle en la lluvia de ideas.
+
+Elija tres dispositivos que no figuren ya en la hoja de cálculo y añádalos a las filas vacías de la columna Activos.
+
+Nota: Ya se han añadido algunos dispositivos, como un router de red, un escritorio y un teléfono inteligente para invitados, para su referencia.
+
+
+Paso 3: Rellene las características de cada activo
+Enumere las características importantes, incluido el acceso a la red, el propietario y la ubicación de cada activo que haya identificado.
+
+He aquí una explicación de cada característica:
+
+Accesoa la red describe la frecuencia con la que el dispositivo se conecta a la red.
+
+Propietario describe a la persona responsable del dispositivo.
+
+Ubicación describe dónde se encuentra el dispositivo en relación con el enrutador.
+
+
+Paso 4: Evalúe el acceso de los dispositivos de red
+Revise la información que ha anotado en las columnas Acceso a la red, Propietario y Ubicación.
+
+En la columna Notas, anote 1 ó 2 detalles o características de cada dispositivo. Para ello, hágase preguntas sobre cada uno:
+
+¿Qué tipo de información se almacena en el dispositivo?
+
+¿Cómo se conecta a la red?
+
+¿Es cuidadoso el propietario a la hora de protegerlo?
+
+Por ejemplo, el ordenador de sobremesa contiene información sensible, como fotos, a la que sólo el propietario debe tener acceso. Por el contrario, el router de la red utiliza una frecuencia para los dispositivos domésticos inteligentes y otra para el resto de dispositivos.
+
+Nota: Tenga en cuenta que puede haber alguna variación dentro de cada categoría. Intente identificar los detalles que podrían afectar a la confidencialidad, integridad o disponibilidad de la información que está conectada a la red.
+
+
+Paso 5: Clasifique la sensibilidad de los dispositivos de red
+Es hora de clasificar los recursos basándose en la información que ha recopilado. Para ello, piense en el impacto que podría tener un recurso en su empresa si su Seguridad se viera comprometida:
+
+¿Qué tipo de Información sería revelada o robada?
+
+¿Podría un atacante alterar la Información del dispositivo?
+
+¿Qué le ocurriría a la empresa si se destruyera esta información?
+
+Por ejemplo, el router de la red está clasificado como confidencial porque el propietario ha concedido un acceso limitado al dispositivo a usuarios específicos.
+
+Busque la columna Sensibilidad en el Inventario de activos. Escriba uno de los cuatro niveles de sensibilidad que aprendió previamente.
+
+Nota: Puede utilizar la tabla Categorías como guía para elegir una clasificación adecuada.
+
+
+Consejo profesional: Guarde la plantilla
+Por último, asegúrese de guardar una copia en blanco de la plantilla que ha utilizado para completar esta actividad. Puede utilizarla para seguir practicando o en sus proyectos profesionales. Estas plantillas le ayudarán a elaborar sus procesos de reflexión y a demostrar su experiencia a posibles empleadores.
+
+Qué incluir en su respuesta
+
+Asegúrese de incluir los siguientes elementos en su actividad completada:
+
+Lista de los 3 dispositivos de la red doméstica
+
+Enumere el acceso a la red, el propietario y la ubicación de cada dispositivo
+
+1-2 notas sobre el acceso a la red
+
+Una clasificación de sensibilidad
+
+
+
+Evaluación del Ejemplar
+
+
+Compare el ejemplar con su Inventario de activos completado. Revise su trabajo utilizando cada uno de los criterios del ejemplar. ¿Qué ha hecho bien? ¿En qué puede mejorar? Utilice sus respuestas a estas preguntas como guía a medida que siga avanzando en el curso.
+
+Nota: El ejemplar representa una forma posible de completar la actividad. Es probable que la suya difiera en ciertos aspectos. Lo importante es que su inventario de recursos enumere las características comunes de los dispositivos conectados a la red y los evalúe en función de su nivel de sensibilidad.
+
+
+El ejemplo utiliza detalles del escenario dado y se adhiere a las siguientes directrices:
+
+Identifique 3 dispositivos en la red doméstica
+
+Enumere los detalles de acceso a la red, propietario y ubicación de cada dispositivo
+
+Incluya 1-2 notas sobre el acceso a la red
+
+Clasifique cada recurso en función del nivel de sensibilidad
+
+El ejemplo sólo enumera los dispositivos con acceso a la red porque eso entra dentro del ámbito de este escenario. Sin embargo, los inventarios de recursos podrían incluir dispositivos ajenos a la red. Por ejemplo, un propietario también podría llevar un registro de recursos físicos como una caja fuerte o recursos digitales como vídeos familiares.
+
+Clasificar los recursos en función de su nivel de importancia puede ser subjetivo. Gran parte de la Clasificación de activos depende de identificar al propietario de un recurso, su ubicación y otras características importantes. Esta información debe evaluarse antes de determinar quién debe tener acceso a un recurso y qué está autorizado a hacer. Recuerde que la Clasificación ayuda a determinar el nivel de Impacto que un recurso puede tener en un negocio si fuera revelado, alterado o destruido.
+
+Puntos clave
+Disponer de un inventario de los dispositivos de su red doméstica es una forma útil de proteger sus recursos personales. También es un artefacto útil que puede mostrar a posibles empleadores cuando se entreviste para puestos de analista de seguridad. Recursos como éste demuestran su Mentalidad de seguridad y su capacidad para pensar de forma crítica sobre las vulnerabilidades de los activos.
