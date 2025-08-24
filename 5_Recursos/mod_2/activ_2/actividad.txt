@@ -1,0 +1,100 @@
+Actividad: Mejorar la autenticación, autorización y contabilidad de una pequeña empresa (Business to Business)
+
+Resumen de la actividad
+
+En esta actividad, evaluará los controles de acceso utilizados por una empresa. Analizará su proceso actual, identificará los problemas y hará recomendaciones para mejorar sus prácticas de seguridad.
+
+Anteriormente, aprendió que los controles de acceso son controles de seguridad que gestionan el acceso, la autorización y la responsabilidad de la información. Los controles de autenticación se utilizan para verificar quién es alguien, mientras que los controles de autorización se utilizan para conceder permisos a un usuario y establecer límites sobre las cosas que se le permite hacer. Cuando se hacen bien, los controles de acceso son la clave para disminuir la probabilidad de un riesgo para la seguridad.
+
+Asegúrese de completar esta actividad antes de continuar. El siguiente punto del curso le proporcionará un ejemplo completado para que lo compare con su propio trabajo.
+
+Escenario
+
+Revise el escenario que aparece a continuación. A continuación, complete las instrucciones paso a paso.
+
+Usted es el primer profesional de la ciberseguridad contratado por una empresa en expansión.
+
+Recientemente, se ha realizado un ingreso desde la empresa a una cuenta bancaria desconocida. El director financiero dice que no cometieron ningún error. Afortunadamente, pudieron detener el pago. El propietario le ha pedido que investigue lo sucedido para evitar futuros incidentes.
+
+Para ello, tendrá que hacer un poco de contabilidad sobre el incidente para comprender mejor lo sucedido. En primer lugar, revisará el registro de accesos del incidente. A continuación, tomará notas que puedan ayudarle a identificar a un posible actor de la amenaza. Después, detectará los problemas con los controles de acceso que fueron aprovechados por el usuario. Por último, recomendará mitigaciones que puedan mejorar los controles de acceso de la empresa y reducir la probabilidad de que este incidente vuelva a producirse.
+
+Instrucciones paso a paso
+
+Siga las instrucciones y responda a la siguiente pregunta para completar la actividad. A continuación, vaya al siguiente punto del curso para comparar su trabajo con un ejemplo completado.
+
+Paso 3: Revisar el registro de incidentes de este incidente de nómina
+Los registros de eventos contienen información relacionada con el funcionamiento y el uso de un sistema. Pueden utilizarse para Identificar actividades sospechosas, Detectar vulnerabilidades y Rastrear usuarios.
+
+Busque la pestaña Registro de eventos de la hoja de cálculo del ejercicio de contabilización. Revise cuidadosamente el registro de eventos de este Incidente para comenzar su investigación. Fíjese en el tipo de Evento, la fecha, la hora y la dirección IP del usuario en los detalles del registro.
+
+Tome 1-2 notas de la Información que ha aprendido sobre el usuario al revisar los detalles del registro de Eventos. Añada sus notas a la columna Notas de la hoja de trabajo Control de accesibilidad.
+
+Paso 4: Identificar los problemas de Control de acceso que provocaron el Incidente
+Los detalles del registro le dicen mucho sobre un momento concreto. Puede encontrar otros detalles útiles sobre un Evento cruzando esa información con otras fuentes.
+
+En esta empresa trabajan diferentes empleados. Actualmente, todos ellos gestionan los Recursos de la empresa mediante una unidad de disco compartida en la nube.
+
+Busque la pestaña Directorio de empleados de la hoja de cálculo Ejercicio de contabilización. Compare la Información encontrada en la pestaña Directorio de empleados con la Información de la pestaña Registro de eventos. Observe cualquier similitud entre los detalles del registro de Eventos y los detalles del Directorio de empleados.
+
+A continuación, enumere 1 ó 2 problemas que descubra con la forma en que la empresa gestiona el acceso de los empleados en la columna Problemas de la hoja de cálculo Control de acceso.
+
+Paso 5: Recomendar mitigaciones que puedan evitar una futura violación
+Ha finalizado la contabilización del pago extraño y ha descubierto fallos en la forma en que la empresa gestiona su Información.
+
+Busque la columna Recomendación(es) de la hoja de trabajo Control de acceso. Haga al menos 2 recomendaciones de mitigaciones que la empresa pueda implementar para prevenir incidentes como éste en el futuro.
+
+Por ejemplo, una recomendación podría ser disponer de procedimientos para revocar el acceso a los archivos cuando un empleado ya no trabaje en la empresa.
+
+Qué incluir en su respuesta
+
+Asegúrese de incluir los siguientes elementos en su actividad finalizada:
+
+1-2 notas sobre el usuario
+
+1-2 problemas de control de acceso
+
+2 recomendaciones para mitigar el control de acceso
+
+Evaluación del ejemplar
+
+Compare el ejemplar con su inventario de recursos completado. Revise su trabajo utilizando cada uno de los criterios del ejemplar. ¿Qué ha hecho bien? ¿En qué puede mejorar? Utilice sus respuestas a estas preguntas como guía a medida que siga avanzando en el curso.
+
+Nota: El ejemplar representa una forma posible de completar la actividad. Es probable que la suya difiera en ciertos aspectos. Lo importante es que su revisión del Incidente de seguridad tenga en cuenta los Controles de accesibilidad eficaces que pueden implementarse y cómo la falta de controles puede poner en peligro la información.
+
+
+Revisemos los detalles de la hoja de trabajo de Control de acceso completada:
+
+Nota(s) sobre el usuario:
+
+El Evento tuvo lugar el 10/03/23.
+
+El usuario es Legal/Administrador.
+
+La dirección IP de la computadora utilizada para iniciar sesión es 152.207.255.255.
+
+Los registros de eventos pueden ayudarle a menudo a identificar el quién, el qué y el porqué de un Incidente de Seguridad.
+
+Problema(s) de Control de acceso:
+
+Robert Taylor, Jr. es un contratista con acceso de administrador.
+
+Su contrato finalizó en 2019, pero su cuenta accedió a los sistemas de nómina en 2023.
+
+A menudo, este tipo de incidentes se producen porque los sistemas están mal configurados o se utilizan de forma inadecuada. Ese es el caso de cómo esta empresa está compartiendo Información entre sus empleados.
+
+Recomendaciones:
+
+Las cuentas de usuario deberían caducar a los 30 días.
+
+Los contratistas deberían tener un acceso limitado a los Recursos de la empresa.
+
+Habilite la autenticación de múltiples factores (MFA).
+
+Parece que un antiguo empleado es potencialmente el Agente de amenaza. Sin embargo, es posible que no fuera la persona responsable de este Incidente de Seguridad.
+
+Es habitual que la gente reutilice las credenciales de inicio de sesión en muchos servicios. Y si esas credenciales se ven comprometidas en una plataforma, un atacante puede utilizarlas para acceder a otras. En este caso, Implementar Controles de acceso, como políticas de contraseñas, permisos de archivo limitados y MFA puede proteger a la empresa de incidentes como este.
+
+
+Puntos clave
+Esta actividad pone de relieve lo fácil que puede ser perder la pista de los usuarios, lo que puede dejar a una empresa expuesta a riesgos innecesarios si no se aplican controles de acceso eficaces. La actividad también demuestra el Riesgo de operar un negocio con acceso abierto y compartido a los Recursos. Establecer límites sobre quién puede acceder a la información y qué se le permite hacer debería ser el punto de partida de cualquier plan de seguridad.
+

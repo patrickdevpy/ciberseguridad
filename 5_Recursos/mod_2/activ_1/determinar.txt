@@ -1,0 +1,93 @@
+Actividad: Determinar las prácticas adecuadas de tratamiento de Datos
+
+Resumen de la actividad
+
+En esta actividad, revisará los resultados de una evaluación del riesgo de los datos. Determinará si se están aplicando procesos eficaces de tratamiento de datos para proteger la privacidad de la información.
+
+Los datos se encuentran entre los activos más valiosos del mundo actual. Todo, desde la propiedad intelectual hasta las redes WiFi para invitados, debe protegerse con una combinación de controles técnicos, operativos y de gestión. La aplicación del principio del mínimo privilegio es esencial para proteger la privacidad de la información.
+
+Asegúrese de completar esta actividad antes de continuar. El siguiente punto del curso le proporcionará un ejemplo completado para que lo compare con su propio trabajo.
+
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+Usted trabaja para una empresa de tecnología educativa que ha desarrollado una aplicación para ayudar a los profesores a calificar automáticamente las tareas. La aplicación maneja una amplia gama de datos que recopila de instituciones académicas, instructores, padres y estudiantes.
+
+Su equipo fue alertado de una filtración de datos de planes internos de la empresa en las redes sociales. Una investigación del equipo descubrió que un empleado compartió accidentalmente esos documentos confidenciales con un socio comercial externo. Se está llevando a cabo una auditoría sobre la filtración para determinar cómo pueden evitarse incidentes similares.
+
+Un supervisor le proporcionó información sobre la filtración. Al parecer, los empleados de la empresa no respetaron el principio del menor privilegio durante una reunión de ventas. Se le ha pedido que analice la situación y encuentre la forma de evitar que vuelva a ocurrir.
+
+En primer lugar, tendrá que evaluar los detalles del incidente. Después, revisará los controles establecidos para evitar las filtraciones de datos. A continuación, identificará formas de mejorar la privacidad de la información en la empresa. Por último, justificará por qué cree que sus recomendaciones harán que el manejo de datos en la empresa sea más seguro.
+
+Instrucciones paso a paso
+
+Paso 1: Acceder a la plantilla
+
+Paso 2: Analizar la situación
+El principio del menor privilegio es un control de seguridad fundamental que ayuda a mantener la privacidad de la información. Sin embargo, el menor privilegio empieza a perder su eficacia cuando se da acceso a la información a demasiados usuarios. Las fugas de datos suelen producirse cuando la información pasa de unas personas a otras sin supervisión.
+
+Para comenzar su análisis, revise el siguiente resumen del incidente proporcionado por su supervisor:
+
+Un representante de éxito de clientes recibió acceso a una carpeta de documentos internos de un gerente. Contenía archivos asociados a una nueva oferta de productos, incluidos análisis de clientes y materiales de marketing. El gerente olvidó anular el acceso a la carpeta. Más tarde, el representante copió un enlace a los materiales de marketing para compartirlo con un socio comercial durante una llamada de ventas. En su lugar, el representante compartió un enlace a toda la carpeta. Durante la llamada de ventas, el socio comercial recibió el enlace a los documentos internos y lo publicó en su página de las redes sociales.
+
+Después de revisar el resumen, escriba de 20 a 60 palabras (de 2 a 3 frases) en la fila Problema(s) de la hoja de trabajo Fuga de datos describiendo los factores que condujeron a la fuga de datos.
+
+Paso 3: Revisar los controles actuales de privacidad de los Datos
+Las fugas de datos son un riesgo importante debido a la cantidad de datos que maneja la aplicación. La empresa utilizó el Marco de Ciberseguridad (CSF) del NIST para desarrollar su plan para abordar sus preocupaciones sobre la privacidad de la información.
+
+Revise el recurso Instantánea del plan de seguridad de la hoja de trabajo. A continuación, revise el recurso NIST SP 800-53: AC-6 de la hoja de trabajo.
+
+Después, escriba 20-60 palabras (2-3 frases ) en la fila Revisión de la hoja de trabajo Fuga de datos para resumir lo que ha aprendido sobre NIST SP 800-53: AC-6.
+
+Paso 4: Identificar las mejoras del Control
+La aplicación del mínimo privilegio por parte de la empresa se basa en la Publicación Especial 800-53 (SP 800-53) del NIST. El NIST desarrolló la SP 800-53 para proporcionar a las empresas un plan de privacidad de la información personalizable. Se trata de un recurso exhaustivo que describe una amplia gama de categorías de control, incluido el mínimo privilegio.
+
+Utilice el recurso NIST SP 800-53: AC-6 para determinar dos mejoras de control que podrían haber evitado la fuga de datos. Enumere las dos mejoras en la fila Recomendación(es) de la hoja de trabajo.
+
+Paso 5: Justifique sus recomendaciones
+Al final de su análisis, es el momento de comunicar sus conclusiones a su supervisor. Es importante que justifique sus recomendaciones para que el supervisor pueda transmitir esta información a otros responsables de la empresa.
+
+Considere las cuestiones que ha identificado anteriormente. A continuación, escriba de 20 a 60 palabras (de 2 a 3 frases ) en la fila Justificación describiendo por qué cree que las mejoras de control que recomienda reducirán la probabilidad de que se produzca otra fuga de datos.
+
+Consejo profesional: Guarde la plantilla
+Por último, asegúrese de guardar una copia en blanco de la plantilla que ha utilizado para completar esta actividad. Puede utilizarla para seguir practicando o en sus proyectos profesionales. Estas plantillas le ayudarán a elaborar sus procesos de reflexión y a demostrar su experiencia a posibles empleadores.
+
+Qué incluir en su respuesta
+
+Asegúrese de abordar los siguientes elementos en su actividad completada:
+
+2-3 frases analizando los factores que condujeron al incidente
+
+2-3 frases resumiendo el NIST SP 800-53: AC-6
+
+2 recomendaciones de mejora del control para mejorar el mínimo privilegio
+
+2-3 frases que justifiquen sus recomendaciones
+
+
+
+Evaluación del ejemplar
+
+Compare el ejemplar con su actividad finalizada. Revise su trabajo utilizando cada uno de los criterios del ejemplar. ¿Qué ha hecho bien? ¿En qué puede mejorar? Utilice sus respuestas a estas preguntas como guía para seguir avanzando en el curso.
+
+Nota: El ejemplar representa una forma posible de completar la actividad. Es probable que la suya difiera en ciertos aspectos. Lo importante es que su actividad refleje su análisis de las prácticas adecuadas de tratamiento de datos.
+
+
+A continuación, revise los detalles de la hoja de trabajo de fuga de datos completada:
+
+Problemas
+Muchas personas descuidaron la confidencialidad de la información. El gerente debería haber hecho un mejor trabajo de seguimiento de la carpeta interna limitando el acceso al representante y a sí mismo. También podría haber hecho un mejor trabajo comunicando sus planes de compartir la información de marketing antes de publicarla en las Redes sociales.
+
+Revisar
+NIST SP 800-53 es un recurso diseñado para ayudar a las organizaciones a abordar los riesgos de la privacidad de los datos. El documento define los Controles de seguridad, describe las estrategias de Implementación y sugiere mejoras de control individuales. CA-6 es una sección sobre Controles de acceso que se relacionan con el principio de privilegio mínimo.
+
+Recomendaciones
+Basándose en la sugerencia de NIST SP 800-53: CA-6, la fuga de Datos podría haberse evitado con los siguientes controles:
+
+Revocar automáticamente el acceso a la Información tras un periodo de tiempo.
+
+Auditar periódicamente los privilegios de los usuarios.
+
+Justificación
+Automatizar las tareas de Seguridad siempre que sea posible es una buena forma de reducir las posibilidades de error humano. En este caso, la creación de una política que establezca fechas de caducidad para los enlaces de acceso podría haber evitado la filtración. Exigir a los gestores que auditen regularmente quién puede acceder a sus archivos es otra forma de mantener la privacidad de la información.
