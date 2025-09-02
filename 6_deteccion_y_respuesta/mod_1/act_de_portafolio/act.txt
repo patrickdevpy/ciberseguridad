@@ -1,0 +1,129 @@
+Actividad de Portfolio: Documentar un incidente con el Diario del gestor de incidentes
+
+Resumen de la actividad
+
+En esta actividad, revisará los detalles de un incidente de seguridad y documentará el incidente utilizando su Diario del gestor de incidentes. Anteriormente, aprendió sobre la importancia de la documentación en el proceso de respuesta ante incidentes. También ha aprendido cómo se utiliza el Diario del gestor de incidentes para registrar información sobre incidentes de seguridad a medida que se gestionan.
+
+A lo largo de este curso, puede aplicar sus habilidades de documentación utilizando su Diario del gestor de incidentes. Con este diario, puede registrar información sobre las experiencias que tendrá analizando escenarios de incidentes de seguridad a través de las actividades del curso. 
+
+Para cuando complete este curso, tendrá múltiples entradas en su Diario del gestor de incidentes que podrá utilizar como referencia útil para recordar conceptos y herramientas. Más adelante, añadirá este documento a su cartera de ciberseguridad, que podrá compartir con posibles empleadores o reclutadores. Para repasar la importancia de crear un portafolio profesional y las opciones para crear tu portafolio, lee 
+Crear un porta
+folio de ciberseguridad.
+
+Asegúrate de completar esta actividad y responder a las preguntas que siguen antes de continuar. El siguiente punto del curso le proporcionará un ejemplo completado para comparar con su propio trabajo. 
+
+Nota: Puede utilizar su Diario del gestor de incidentes como un espacio personal en el que puede realizar un seguimiento de su viaje de aprendizaje a medida que aprende sobre los conceptos de detección y respuesta ante incidentes e interactúa con diferentes herramientas de ciberseguridad. Siéntete libre de incluir tus pensamientos, reflexiones y cualquier otro detalle o información importante.
+
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+Una pequeña clínica sanitaria estadounidense especializada en la prestación de servicios de atención primaria experimentó un incidente de seguridad un martes por la mañana, aproximadamente a las 9:00 a.m. Varios empleados informaron de que no podían utilizar sus ordenadores para acceder a archivos como registros médicos. La empresa dejó de funcionar porque los empleados no podían acceder a los archivos y programas informáticos necesarios para realizar su trabajo.
+
+Además, los empleados también informaron de que en sus ordenadores aparecía una nota de rescate. En ella se decía que todos los archivos de la empresa habían sido cifrados por un grupo organizado de piratas informáticos poco éticos conocidos por atacar organizaciones de los sectores de la sanidad y el transporte. A cambio de restaurar el acceso a los archivos cifrados, la nota de rescate exigía una gran suma de dinero a cambio de la clave de descifrado.
+
+Los atacantes consiguieron acceder a la red de la empresa mediante correos electrónicos de phishing dirigidos, que se enviaron a varios empleados de la empresa. Los mensajes contenían un archivo adjunto malicioso que instalaba malware en el ordenador del empleado una vez descargado.
+
+Una vez que los atacantes obtuvieron acceso, desplegaron su ransomware, que cifró archivos críticos. La empresa no pudo acceder a los datos críticos de los pacientes, lo que provocó importantes interrupciones en sus operaciones comerciales. La empresa se vio obligada a apagar sus sistemas informáticos y a ponerse en contacto con varias organizaciones para informar del incidente y recibir asistencia técnica.
+
+Instrucciones paso a paso
+
+Siga las instrucciones para completar cada paso de la actividad. A continuación, responda a las 5 preguntas que aparecen al final de la actividad antes de pasar al siguiente elemento del curso para comparar su trabajo con un ejemplo completado.
+
+Paso 1: Acceder a la plantilla
+Para utilizar la plantilla para este elemento del curso, haga clic en el enlace y seleccione Utilizar plantilla.
+
+Paso 2: Revisar el escenario
+Revise los detalles del escenario. Considera los siguientes detalles clave:
+
+Una pequeña clínica sanitaria estadounidense sufrió un incidente de seguridad el martes a las 9:00 a.m. que interrumpió gravemente sus operaciones comerciales.
+
+La causa del incidente de seguridad fue un correo electrónico de phishing que contenía un archivo adjunto malicioso. Una vez descargado, se desplegó un ransomware que encriptó los archivos (informáticos) de la organización.
+
+Un grupo organizado de piratas informáticos poco éticos dejó una nota de rescate en la que se indicaba que los archivos de la empresa estaban cifrados y exigía dinero a cambio de la clave de descifrado
+
+Paso 3: Registrar un asiento en el diario
+Utilice el Diario del gestor de incidentes para documentar su primera anotación en el diario sobre el escenario dado. Asegúrese de rellenar todos los campos:
+
+En la sección Fecha, registre la fecha de su anotación en el diario. Debe ser la fecha real en la que se registra la entrada, no una fecha ficticia.
+
+En la sección Entrada, indique un número de asiento. Por ejemplo, si es su primer asiento, introduzca 1.
+
+En la sección Descripción , introduzca una descripción del asiento.
+
+En la sección Herramienta(s) utilizada (s), si se utilizó alguna herramienta de ciberseguridad, enumérela(s) aquí.
+
+En la sección Las 5 W , registre los detalles sobre el escenario dado.
+
+¿Quién causó el incidente?
+
+¿Qué ha ocurrido?
+
+¿Cuándo se produjo el incidente?
+
+WHERE ¿Dónde ocurrió el incidente?
+
+¿Por qué ocurrió el incidente?
+
+En la fila de notas adicionales, anota cualquier idea o pregunta que tengas sobre la situación planteada.
+
+Consejo profesional: Guarde una copia de su trabajo
+Por último, asegúrese de guardar una copia de su Diario del gestor de incidentes para poder acceder a él rápidamente a medida que avance en el curso. Puede utilizarlo para su cartera profesional para demostrar sus conocimientos y/o experiencia a posibles empleadores.
+
+Qué incluir en su respuesta
+
+Asegúrese de incluir los siguientes elementos en su actividad completada:
+
+La fecha y el número de la anotación en el diario
+
+Una descripción de la anotación en el diario
+
+1-2 frases sobre cada una de las 5 W del escenario:
+
+¿Quién causó el incidente?
+
+¿Qué ocurrió?
+
+¿Cuándo ocurrió el incidente?
+
+WHERE: ¿Dónde ocurrió el incidente?
+
+¿Por qué ocurrió el incidente?
+
+1-2 frases sobre cualquier pensamiento o pregunta adicional sobre el escenario.
+
+Paso 4: Evalúe su actividad
+A continuación encontrará una autoevaluación para su Diario del gestor de incidentes. Utilizará estas autoevaluaciones para revisar su propio trabajo. El proceso de autoevaluación es una parte importante de la experiencia de aprendizaje porque le permite evaluar objetivamente su primera entrada en el Diario del gestor de incidentes.
+
+Hay un total de 5 puntos posibles para esta actividad y cada afirmación vale 1 punto. Los puntos corresponden a cada paso que ha completado para la actividad.
+
+Para completar la autoevaluación, abra primero su Diario del gestor de incidentes. A continuación, responda sí o no a cada afirmación.
+
+Cuando complete y envíe sus respuestas, recibirá una puntuación porcentual. Esta puntuación le ayudará a confirmar si ha completado los pasos requeridos de la actividad. La nota de aprobado recomendada para este proyecto es de al menos el 80% (o 4/5 puntos). Si desea aumentar su puntuación, puede revisar su proyecto y volver a enviar sus respuestas para reflejar los cambios realizados. Intente conseguir al menos 4 puntos antes de pasar al siguiente tema del curso.
+
+Evaluación del ejemplar
+
+Compare el ejemplar con su actividad finalizada. Revise su trabajo utilizando cada uno de los criterios del ejemplar. ¿Qué ha hecho bien? ¿En qué puede mejorar? Utilice sus respuestas a estas preguntas como guía para seguir avanzando en el curso.
+
+Nota: El ejemplar representa una de las muchas formas posibles de completar esta actividad. Es probable que la suya difiera en ciertos aspectos. Lo importante es que su Diario del gestor de incidentes registre los detalles del escenario. Saber cómo utilizar el Diario del gestor de incidentes para registrar notas y detalles adicionales durante la investigación de un incidente es importante porque puede utilizarse como referencia para futuros esfuerzos de respuesta a incidentes.
+
+
+El ejemplar contiene una entrada de diario completada. La entrada del diario está fechada, numerada y proporciona una breve descripción del escenario. Además, en la sección Las 5 W, el asiento del diario aborda lo siguiente sobre el escenario:
+
+¿Quién provocó el Incidente?
+
+¿Qué ocurrió?
+
+¿Cuándo ocurrió el Incidente?
+
+¿Dónde ocurrió el Incidente?
+
+¿Por qué ocurrió el incidente?
+
+Por último, la entrada del diario incluye preguntas adicionales sobre el escenario en la sección Notas adicionales.
+
+Nota: El ejemplo contiene la primera entrada del Diario del gestor de incidentes. A medida que avance en el curso, irá completando las siguientes entradas del Diario del gestor de incidentes.
+
+Puntos clave
+Esta actividad le permitió practicar la aplicación de sus habilidades de documentación para completar una entrada del diario sobre un escenario de ransomware. La documentación precisa y minuciosa es un aspecto crítico en la respuesta a incidentes porque ayuda a garantizar que no se pierda ni se pase por alto información importante, y también le permite capturar aspectos de un incidente para su uso futuro. Siga practicando sus habilidades de documentación creando entradas adicionales en el diario a medida que complete las actividades del curso. Al final del curso, añadirá este documento a su Portfolio de ciberseguridad. 
+
