@@ -1,0 +1,57 @@
+Actividad: Investigación de analizadores de protocolos de red
+
+Resumen de la actividad
+
+En esta actividad, se centrará en los dos analizadores de protocolos de red: Wireshark y tcpdump. Su objetivo es adquirir unos conocimientos básicos sobre Wireshark y tcpdump, cómo funcionan y cuáles son sus características.
+
+Como ya ha aprendido, un analizador de protocolos de red (packet sniffer) es una herramienta diseñada para capturar y analizar el tráfico de datos dentro de una red. Los analizadores de protocolos de red ayudan a los analistas de seguridad a examinar y comprender los flujos de tráfico de la red.
+
+Asegúrese de completar esta actividad antes de continuar. El siguiente punto del curso le proporcionará un ejemplo completado para que lo compare con su propio trabajo.
+
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+En su papel de analista de ciberseguridad, se le ha pedido que investigue las diferencias y similitudes entre Wireshark y tcpdump y que cree un gráfico que describa sus hallazgos.
+
+Instrucciones paso a paso
+
+Siga las instrucciones y responda a la pregunta para completar la actividad. A continuación, vaya al siguiente elemento del curso para comparar su trabajo con un ejemplar completado.
+
+Paso 1: Acceder a la plantilla
+Para utilizar la plantilla para este elemento del curso, haga clic en el enlace y seleccione Utilizar plantilla.
+
+Enlace a la plantilla:
+ 
+Plantilla de diagrama
+
+Paso 2: Realice una investigación en línea
+Para empezar, realice una investigación en línea para obtener más información sobre tcpdump y Wireshark. Puede empezar utilizando la documentación oficial de Wireshark y la documentación de tcpdump:
+
+tcpdump - Recursos y documentación
+
+Wireshark - Guía oficial del usuario
+
+También puede realizar una búsqueda en Internet para encontrar recursos que expliquen cómo funcionan estas herramientas. Intente buscar información utilizando estos términos:
+
+Características y funcionalidades de Wireshark
+
+características y funcionalidades de tcpdump
+
+comparación entre tcpdump y Wireshark
+
+
+Paso 3: Rellene el diagrama
+Una vez que haya completado su investigación sobre Wireshark y tcpdump, rellene la plantilla e incluya al menos dos características de cada herramienta. Éstas podrían estar relacionadas con las capacidades de la herramienta, el tipo de análisis que realizan, características contrastadas, interfaces de usuario, escenarios de uso y cualquier otra distinción notable. A continuación, incluya tres similitudes entre tcpdump y Wireshark. 
+
+Consejo profesional: Guarde la plantilla
+Por último, asegúrese de guardar una copia en blanco de la plantilla que ha utilizado para completar esta actividad. Puede utilizarla para seguir practicando o en sus proyectos profesionales. Estas plantillas le ayudarán a elaborar sus procesos de reflexión y a demostrar su experiencia a posibles empleadores.
+
+Qué incluir en su respuesta
+
+Asegúrese de abordar los siguientes elementos en su actividad completada:
+
+Al menos 2diferencias entre Wireshark y tcpdump
+
+Al menos 3similitudes entre Wireshark y tcpdump
+
