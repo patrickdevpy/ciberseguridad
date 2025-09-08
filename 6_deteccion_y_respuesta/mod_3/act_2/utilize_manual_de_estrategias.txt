@@ -1,0 +1,104 @@
+Actividad: Utilice un Manual de estrategias para responder a un incidente de Phishing
+
+Resumen de la actividad
+
+En esta actividad, responderá a un incidente de phishing que implica un hash de archivo malicioso. Se trata del mismo hash de archivo SHA256 que investigó y verificó como malicioso en una 
+actividad anterior
+. Seguirá las instrucciones del libro de jugadas para investigar y resolver el ticket de alerta del incidente.
+
+Anteriormente, aprendió cómo los libros de jugadas describen paso a paso las acciones necesarias para responder adecuadamente a un incidente de seguridad. Una acción coordinada, eficaz y rápida es fundamental durante la respuesta a un incidente. Un libro de jugadas puede ayudar a los equipos de seguridad a minimizar el impacto de un incidente y reducir el tiempo de respuesta al mismo. Como analista de seguridad, los libros de jugadas pueden servirle de guía para apoyar eficazmente los esfuerzos de respuesta a incidentes de una organización.
+
+Escenario
+
+Revise el escenario. A continuación, complete las instrucciones paso a paso.
+
+Usted es un analista de nivel uno del centro de operaciones de seguridad (SOC) en una empresa de servicios financieros. Anteriormente, recibió una alerta de phishing sobre la descarga de un archivo sospechoso en el ordenador de un empleado. Tras investigar el hash del archivo adjunto al correo electrónico, se ha comprobado que el archivo adjunto es malicioso. Ahora que dispone de esta información, debe seguir el proceso de su organización para completar la investigación y resolver la alerta.
+
+Las políticas y procedimientos de seguridad de su organización describen cómo responder a alertas específicas, incluyendo qué hacer cuando recibe una alerta de phishing.
+
+En el libro de jugadas, hay un diagrama de flujo e instrucciones escritas para ayudarle a completar su investigación y resolver la alerta. Al final de su investigación, actualizará el ticket de alerta con sus conclusiones sobre el incidente.
+
+Nota: Utilice el diario del gestor de incidentes que inició en 
+una actividad
+ anterior para tomar notas durante la actividad y hacer un seguimiento de sus hallazgos. 
+
+
+Instrucciones paso a paso
+
+Siga las instrucciones y responda a la pregunta para completar la actividad. A continuación, pase al siguiente punto del curso para comparar su trabajo con un ejemplar completado.
+
+Paso 1: Acceder a la plantilla
+Para utilizar la plantilla para este elemento del curso, haga clic en el enlace y seleccione Utilizar plantilla.
+
+Enlace a la plantilla: 
+Ticket de alerta
+
+Paso 2: Acceda a los materiales de apoyo
+Los siguientes materiales de apoyo le ayudarán a completar esta actividad. Manténgalos abiertos mientras avanza hacia los siguientes pasos.
+
+Enlace a los materiales de apoyo: 
+Phishing Playbook (con diagrama de flujo)
+
+Paso 3: Revisar el Manual de estrategias y el Diagrama de flujo
+Antes de empezar a investigar la alerta, dedique un momento a revisar el libro de jugadas y el diagrama de flujo, ya que los utilizará a lo largo de toda la investigación.
+
+Las instrucciones del Manual de Phishing proporcionan instrucciones detalladas por escrito sobre cada paso representado en el diagrama de flujo.
+
+El diagrama de flujo del phishing proporciona una visión general de alto nivel y una representación visual de la secuencia de pasos y subpasos que deberá seguir para responder a una alerta de phishing.
+
+Nota: Los pasos de este diagrama de flujo no son una guía definitiva para responder a un incidente de phishing. Las organizaciones tienen sus propios conjuntos de políticas, normas y procedimientos que determinan las acciones de respuesta esperadas ante los incidentes.
+
+Paso 4: Actualizar el estado del ticket de alerta
+En la plantilla de ticket Alerta , comience la investigación actualizando la lista desplegable Estado del ticket a Investigando.
+
+Paso 5: Evaluación de la alerta
+Para este ejercicio, comience por el segundo paso del libro de jugadas, Evaluar la alerta, porque ya ha recibido y accedido al ticket de alerta de phishing.
+
+Como analista de seguridad, querrá obtener una comprensión completa de por qué se activó la alerta. Cree una nueva entrada en su diario de gestor de incidentes para registrar los detalles de este incidente de seguridad y recopilar sus ideas. Consultará estas notas a medida que avance por los pasos del libro de jugadas. 
+
+A continuación, evalúe el contenido del ticket de alerta, incluido el contenido de la sección Información adicional . He aquí algunos ejemplos de elementos que debe examinar cuando evalúe los detalles del ticket de alerta:
+
+Gravedad de la alerta: Según las instrucciones del libro de jugadas, una gravedad de alerta Media o Alta es un buen indicio de que un ticket podría requerir una escalada.
+
+Detallesdel remitente: Analizar los detalles del remitente de un correo electrónico es importante porque puede revelar incoherencias que pueden indicar un intento de phishing. A menudo, los correos electrónicos de phishing intentan hacerse pasar por entidades de confianza. Por ejemplo, si hay una falta de coincidencia entre la dirección de correo electrónico del remitente y el nombre del remitente, es un buen indicio de que el correo electrónico podría ser un correo de phishing.
+
+Cuerpo del mensaje: Es importante analizar el cuerpo del mensaje (y la línea de asunto) de un correo electrónico porque los correos electrónicos de phishing suelen contener errores gramaticales, lo que puede ser un indicio de un intento de phishing.
+
+Archivos adjuntos o enlaces: Los correos electrónicos de phishing contienen enlaces o archivos adjuntos maliciosos que se utilizan para robar información confidencial o descargar software o códigos maliciosos en el dispositivo del destinatario. Compruebe si se ha adjuntado algún archivo a este correo electrónico.
+
+Una vez que haya evaluado el contenido del ticket de alerta, responda a las 5 W de este incidente para reunir la información que necesita para comprender la naturaleza de la alerta. Las 5 W son
+
+¿Quién causó el incidente?
+
+¿Qué ha ocurrido?
+
+¿Cuándo se produjo el incidente?
+
+¿Dónde ocurrió el incidente?
+
+¿Por qué se produjo?
+
+Al final de este paso, debería tener 2-3 razones sobre por qué cree que la alerta de phishing es o no legítima.
+
+Paso 6: Determinar si la alerta debe escalarse
+Tras evaluar los detalles de la alerta, utilice los pasos 3.0 y 3.1 del Manual de Phishing para determinar si el correo electrónico contiene enlaces o archivos adjuntos y si estos enlaces o archivos adjuntos son maliciosos. Recuerde que ya ha determinado que el correo electrónico contiene un archivo adjunto que ha sido verificado como malicioso a través de su hash de archivo.
+
+Proceda al paso 3.2 del Manual de Phishing si ha determinado que la alerta debe ser escalada. Si ha determinado que la alerta no debe escalarse, continúe con el Paso 4 del Manual de Phishing.
+
+Paso 7: Actualizar el estado del ticket de alerta
+Ahora que ha examinado los detalles del correo electrónico, complete el último paso del libro de jugadas y actualice el ticket de alerta en la plantilla de actividades. Dependiendo de si desea escalar o cerrar la alerta:
+
+En la columna Estado del ticket de la plantilla del ticket de alerta, actualice el estado del ticket a Cerrado o Escalado.
+
+En la columna Comentarios del ticket de la plantilla de ticket de alerta, utilice los detalles que haya encontrado para explicar los pasos dados y por qué ha decidido escalar o cerrar el ticket. Incluya 2-3 razones de por qué cree que esta alerta debe ser escalada o cerrada.
+
+Qué incluir en su respuesta
+
+Asegúrese de abordar los siguientes pasos en su actividad finalizada:
+
+En el ticket de Alerta, actualice la columna Estado del ticket utilizando la lista desplegable.
+
+En la sección de comentarios del ticket en el ticket de Alerta, proporcione una frase describiendo brevemente la alerta y lo sucedido.
+
+En la sección de comentarios del ticket en el ticket de Alerta, proporcione 2-3 frases describiendo las razones por las que decidió escalar o cerrar el ticket. Apoye sus razones utilizando detalles específicos del ticket de alerta.
+

@@ -1,0 +1,45 @@
+Actividad: Revisar un informe final
+
+Resumen de la actividad
+
+En esta actividad, revisará un ejemplo de informe final y responderá a una serie de preguntas tipo test.
+
+Hasta ahora, usted ha aprendido acerca de las acciones involucradas en la fase de la Actividad Post-Incidente del Ciclo de Vida de Respuesta a Incidentes del NIST. Esto incluye la elaboración del informe final, que es la documentación que proporciona una revisión exhaustiva de un incidente. Incluye detalles esenciales de todos los acontecimientos relacionados con el incidente y recomendaciones para su prevención en el futuro.
+
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+Usted se ha incorporado recientemente al equipo de seguridad como analista de nivel uno del centro de operaciones de seguridad (SOC) en una empresa minorista de tamaño medio. Además de sus tiendas físicas, su empresa también realiza operaciones de comercio electrónico, que representan el 80% de sus ventas.
+
+Usted está pasando su primera semana de formación familiarizándose con los procesos y procedimientos de seguridad de la empresa. Recientemente, la empresa experimentó un importante incidente de seguridad relacionado con una violación de datos de más de un millón de usuarios. Dado que se trató de un incidente de seguridad reciente y de gran envergadura, su equipo está trabajando para evitar que incidentes como éste vuelvan a producirse. Esta violación se produjo antes de que usted empezara a trabajar en la empresa. Se le ha pedido que revise el informe final.
+
+Para comprender el ciclo de vida del incidente, los objetivos de su revisión son los siguientes:
+
+Objetivo 1: Identificar exactamente qué ocurrió.
+
+Objetivo 2: Identificar cuándo ocurrió.
+
+Objetivo 3: Identificar las acciones de respuesta que tomó la empresa.
+
+Objetivo 4: Identificar las recomendaciones futuras.
+
+Nota: Utilice el diario del gestor de incidentes que inició en 
+una actividad
+ anterior para tomar notas durante la actividad y llevar un registro de sus 
+ 
+ Instrucciones paso a paso
+
+Consulte el material de apoyo para responder a las preguntas del cuestionario que aparecen a continuación. Después de completar el cuestionario, podrá comparar sus respuestas con los comentarios que se le proporcionen.
+
+Paso 1: Acceda a los materiales de apoyo
+Los siguientes materiales de apoyo le ayudarán a completar esta actividad. Manténgalos abiertos mientras avanza con las preguntas.
+
+
+Para utilizar los materiales de apoyo para este tema del curso, haga clic en el enlace y seleccione "Utilizar plantilla".
+
+Enlace a los materiales de apoyo: 
+Informe
+ final
+
+ Paso 2: Responder a las preguntas sobre el informe final
