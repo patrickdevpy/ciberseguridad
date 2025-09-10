@@ -1,0 +1,84 @@
+Actividad de Portfolio: Finalice su Diario del gestor de incidentes
+Paso 1: Acceder a la plantilla
+Si no ha guardado o empezado a utilizar su Diario del gestor de incidentes, haga clic en el siguiente enlace y seleccione Utilizar plantilla.
+
+Enlace a la plantilla: 
+Diario del gestor de incidentes
+
+Paso 2: Revisar las entradas del diario
+Es posible que tenga varias entradas en su Diario del gestor de incidentes. Si en tu diario faltan entradas o están incompletas, vuelve atrás y revisa las secciones anteriores de este curso para añadir entradas adicionales a tu diario. Esta es una lista de las actividades del curso que puede volver a revisar para completar su diario:
+
+Actividad: Documentar un incidente con un Diario del gestor de incidentes
+
+Actividad: Analiza tu primer paquete
+
+Actividad: Captura de paquetes
+
+Actividad: Investigar el hash de un archivo sospechoso
+
+Actividad: Utilizar un libro de jugadas para responder a un ataque
+
+Actividad: Revisar un Informe final
+
+Actividad: Explorar firmas y registros con Suricata
+
+Actividad: Realizar una consulta con Splunk
+
+Actividad: Realizar una consulta con Chronicle
+
+Como mínimo, debería tener las siguientes entradas en su Diario del gestor de incidentes:
+
+Al menos 4 entradas de diario fechadas y numeradas, incluyendo:
+
+2 entradas en el diario que documenten una investigación de incidentes utilizando las 5 W
+
+2 anotaciones en el diario que describan el uso de una herramienta de ciberseguridad
+
+Revise su Diario del gestor de incidentes y realice los cambios necesarios. A continuación se indican algunos aspectos a tener en cuenta durante la revisión:
+
+Errores de gramática, puntuación y ortografía
+
+Anotaciones faltantes, inexactas o incompletas en el diario
+
+Paso 3: Actualice las entradas de su diario
+Actualice las entradas del diario que registran una investigación de incidentes.
+
+En la sección Descripción de una entrada del Diario del gestor de incidentes, incluya una breve descripción de la entrada (20-50 palabras). También puede identificar en qué fase(s) del Ciclo de vida de respuesta ante incidentes del NIST se produjo la investigación del incidente y por qué. A modo de recordatorio, las fases son: Preparación; Detección y análisis; Contención, erradicación y recuperación; y Actividad posterior al incidente. 
+
+Parte 2 - Completar el Diario del gestor de incidentes
+
+Paso 1: Escribir una entrada de reflexión
+Tómate un momento para reflexionar sobre lo que has aprendido hasta ahora en este curso. Copia y pega las siguientes preguntas en la sección Reflexiones/Notas de tu Diario del gestor de incidentes. A continuación, escribe una respuesta de dos o tres frases (40-60 palabras) a cada pregunta.
+
+¿Hubo alguna actividad específica que supusiera un reto para ti? ¿Por qué sí o por qué no?
+
+¿Ha cambiado su comprensión de la detección y respuesta ante incidentes desde que realizó este curso?
+
+¿Ha habido alguna herramienta o concepto específico que le haya gustado más? ¿Por qué?
+
+Consejo profesional: Guarda una copia de tu trabajo
+Por último, asegúrate de guardar una copia de tu actividad terminada. Puedes utilizarla en tu portafolio profesional para demostrar tus conocimientos y/o experiencia a posibles empleadores.
+
+Qué incluir en tu respuesta
+
+Asegúrate de incluir lo siguiente en tu actividad completada:
+
+ 4 entradas del diario cumplimentadas, con la sección Fecha, Entrada y Descripción (50-80 palabras)
+
+2 de las 4 entradas documentan una investigación de un incidente en la sección Las 5 W (4-6 frases o viñetas)
+
+2 de las 4 entradas describen el uso de una herramienta de ciberseguridad en la sección Herramienta(s) utilizada (s) (3-5 frases o viñetas)
+
+La sección Reflexiones/Notas aborda el tema de reflexión (6-9 frases o viñetas)
+
+Nota: Algunos de estos puntos pueden tratarse en la misma entrada del diario. Por ejemplo, una anotación en el diario puede contener descripciones sobre una herramienta de ciberseguridad y las 5 W de un incidente.
+
+Paso 2: Evalúe su actividad
+A continuación encontrará una autoevaluación para su Diario del gestor de incidentes. Utilizará estas autoevaluaciones para revisar su propio trabajo. El proceso de autoevaluación es una parte importante de la experiencia de aprendizaje porque le permite evaluar objetivamente su Diario del gestor de incidentes.
+
+Hay un total de 5 puntos posibles para esta actividad, y cada afirmación vale 1 punto. Los puntos corresponden a cada paso que ha completado para la actividad.
+
+Para completar la autoevaluación, abra primero su Diario del gestor de incidentes. A continuación, responda sí o no a cada afirmación.
+
+Cuando complete y envíe sus respuestas, recibirá una puntuación porcentual. Esta puntuación le ayudará a confirmar si ha completado los pasos requeridos de la actividad. La nota de aprobado recomendada para este proyecto es de al menos el 80% (o 4/5 puntos). Si desea aumentar su puntuación, puede revisar su proyecto y volver a enviar sus respuestas para reflejar los cambios realizados. Intente conseguir al menos 4 puntos antes de pasar al siguiente tema del curso.
+

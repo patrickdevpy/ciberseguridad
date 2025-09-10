@@ -1,0 +1,265 @@
+Ejemplar: Explorar las firmas con SuricataEstado: 
+
+Resumen de la actividad
+Anteriormente, aprendiste sobre el análisis de paquetes y la sintaxis básica y los componentes de las firmas y reglas de los Sistemas de detección de intrusiones (IDS). También aprendió a examinar una firma preescrita y su salida de registro en Suricata, un sistema de detección de intrusiones de código abierto, un sistema de prevención de intrusiones y una herramienta de análisis de red.
+
+En esta actividad de laboratorio, explorará más acerca de las alertas y registros de Suricata, incluyendo el proceso general de creación de reglas.
+
+La herramienta Suricata supervisa las interfaces de red y aplica reglas a los paquetes que pasan por la interfaz. Suricata determina si cada paquete debe generar una alerta y ser descartado, rechazado o si se le permite pasar a través de la interfaz.
+
+Las redes de origen y destino deben especificarse en la configuración de Suricata. Se pueden escribir reglas personalizadas para especificar qué tráfico debe procesarse.
+
+Examinará una regla y practicará el uso de Suricata para activar alertas en el tráfico de red. También analizará las salidas de registro, como un archivo fast.log y eve.json. Esto le ayudará a entender algunas de las alertas y registros generados por Suricata.
+
+¡Empecemos con Suricata!
+
+Este ejemplo es un recorrido por la actividad anterior de Qwiklab, incluyendo instrucciones detalladas y soluciones. Puede utilizar este ejemplo si no pudo completar el laboratorio o si necesita orientación adicional para completar las tareas del laboratorio. También puede consultar este ejemplo para preparar el cuestionario de este módulo.
+
+Nota:Los términosreglas yfirmas se utilizan indistintamente en esta actividad de laboratorio.
+
+Escenario
+En este escenario, usted es un analista de seguridad que debe monitorear el tráfico en la red de su empleador. Deberá configurar Suricata y utilizarlo para activar alertas.
+
+Así es como realizará esta tarea:Primero, explorará las reglas personalizadas en Suricata.Segundo, ejecutará Suricata con una regla personalizada para activarla y examinará los registros de salida en el archivofast.log.Finalmente, examinará la salida adicional que Suricata genera en el archivo de registro estándareve.json.
+
+Para realizar las pruebas de esta actividad de laboratorio, se le ha proporcionado un archivosample.pcap y un archivocustom.rules. Estos archivos se encuentran en su carpeta de inicio. Éstos se encuentran en su carpeta de inicio.
+
+Definamos los archivos con los que trabajarás en esta actividad de laboratorio:
+
+El archivosample.pcap es un archivo de captura de paquetes que contiene un ejemplo de datos de tráfico de red, que utilizará para probar las reglas de Suricata. Esto le permitirá simular y repetir el ejercicio de monitorización del tráfico de red.
+
+El archivocustom.rules contiene una regla personalizada cuando se inicia la actividad del laboratorio. Añadirás reglas a este archivo y las ejecutarás contra los datos de tráfico de red en el archivosample.pcap.
+
+El archivofast.log contendrá las alertas que Suricata genere. El archivofast.log está vacío cuando se inicia el laboratorio. Cada vez que pruebe una regla, o un conjunto de reglas, con los datos de tráfico de red de muestra, Suricata añadirá una nueva línea de alerta al archivofast.log cuando se cumplan todas las condiciones de cualquiera de las reglas. El archivofast.log puede localizarse en el directorio/var/log/suricata después de que Suricata se ejecute.El archivofast.log se considera un formato depreciado y no se recomienda para tareas de respuesta ante incidentes o caza de amenazas, pero puede utilizarse para realizar comprobaciones rápidas o tareas relacionadas con la garantía de calidad.
+
+El archivoeve.json es el registro principal, estándar y predeterminado de los eventos generados por Suricata. Contiene información detallada sobre las alertas activadas, así como otros eventos de telemetría de red, en formato JSON. El archivoeve.json se genera cuando Suricate se ejecuta, y también puede localizarse en el directorio/var/log/suricata.
+
+Cuando crees una nueva regla, tendrás que probarla para confirmar si ha funcionado como se esperaba. Puede utilizar el archivofast.log para comparar rápidamente el número de alertas generadas cada vez que ejecuta Suricata para probar una firma con el archivosample.pcap.
+
+Es hora de empezar.
+
+Nota:El laboratorio comienza con tu cuenta de usuario, llamada analista, ya logueada en un shell Bash. Esto significa que puede comenzar con las tareas tan pronto como haga clic en el botónIniciar laboratorio.
+
+Tarea 1. Examinar una regla personalizada en Suricata
+El directorio/home/analyst contiene un archivocustom.rules que define las reglas de tráfico de red que captura Suricata.
+
+En esta tarea, explorará la composición de la regla de Suricata definida en el archivocustom.rules.
+
+Utilice el comandocat para mostrar la regla en el archivocustom.rules:
+
+
+cat custom.rules
+
+
+Nota:El comandoless también se puede utilizar para leer el contenido del archivo una página a la vez, lo que lo hace útil para leer salidas largas.
+
+El comando devuelve la regla como salida en el shell:Nota:El comandoless también se puede utilizar para leer el contenido del archivo una página a la vez, lo que lo hace útil para leer salidas largas.
+
+El comando devuelve la regla como salida en el shell:
+
+
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"GET on wire"; flow:established,to_server; content:"GET"; http_method; sid:12345; rev:3;)
+
+
+Esta regla consta de tres componentes: unaacción, unencabezado ylas opciones de la regla.
+
+Examinemos cada componente con más detalle.
+
+ALT: Firma con la palabra alerta resaltada como acción. 
+
+Laacción es la primera parte de la firma. Determina la acción a tomar si se cumplen todas las condiciones.
+
+Las acciones difieren entre los lenguajes de reglas del Sistema de detección de intrusiones en la red (NIDS), pero algunas acciones comunes sonalert,drop,pass yreject.
+
+En nuestro ejemplo, el archivo contiene un únicoalert como acción. La palabra clave alert ordena alertar sobre el tráfico de red seleccionado. El IDS inspeccionará los paquetes de tráfico y enviará un alert en caso de que coincida.
+
+Tenga en cuenta que la accióndrop también genera una alerta, pero elimina el tráfico. La accióndrop sólo se produce cuando Suricata se ejecuta en modo IPS.
+
+La acciónpass permite que el tráfico pase a través de la interfaz de red. La regla de paso se puede utilizar para anular otras reglas. Se puede hacer una excepción a una regla drop con una regla pass. Por ejemplo, la siguiente regla tiene una firma idéntica a la del ejemplo anterior, excepto que señala una dirección IP específica para permitir que sólo pase el tráfico procedente de esa dirección:
+
+
+pass http 172.17.0.77 any -> $EXTERNAL_NET any (msg:"BAD USER-AGENT";flow:established,to_server;content:!”Mozilla/5.0”; http_user_agent; sid: 12365; rev:1;)
+
+
+La acciónreject no permite el paso del tráfico. En su lugar, se enviará un paquete de restablecimiento TCP y Suricata eliminará el paquete coincidente. Un paquete de restablecimiento TCP indica a los ordenadores que dejen de enviarse mensajes entre sí.
+
+En esta actividad de laboratorio, lo más habitual es que utilices la reglaalert.
+
+Nota:El orden de las reglas se refiere al orden en que Suricata las evalúa. Las reglas se cargan en el orden en que están definidas en el archivo de configuración. Sin embargo, Suricata procesa las reglas en un orden predeterminado diferente: aprobado, descartado, rechazado y alerta. El orden de las reglas afecta al veredicto final de un paquete.
+
+Cabecera
+
+Texto alternativo: Cabecera resaltada http $HOME_NET any - > $EXTERNAL_NET any
+
+La siguiente parte de la firma es lacabecera. La cabecera define el tráfico de red de la firma, que incluye atributos como protocolos, direcciones IP de origen y destino, puertos de origen y destino y dirección del tráfico.
+
+El siguiente campo después de la palabra clave de acción es el campo de protocolo. En nuestro ejemplo, el protocolo eshttp, que determina que la regla sólo se aplica al tráfico HTTP.
+
+Los parámetros del campo de protocolohttp son$HOME_NET any -> $EXTERNAL_NET any. La flecha indica la dirección del tráfico que viene de$HOME_NET y va a la dirección IP de destino$EXTERNAL_NET.
+
+$HOME_NETes una variable Suricata definida en/etc/suricata/suricata.yaml que puede utilizar en sus definiciones de reglas como marcador de posición de su red local o doméstica para identificar el tráfico que se conecta a o desde los sistemas de su organización.
+
+En este laboratorio$HOME_NET se define como la subred 172.21.224.0/20.
+
+La palabraany significa que Suricata capta el tráfico de cualquier puerto definido en la red$HOME_NET.
+
+Nota:El símbolo$ indica el inicio de una variable. Las variables se utilizan como marcadores de posición para almacenar valores.
+
+Hasta ahora, sabemos que esta firma dispara una alerta cuando detecta cualquier tráfico http que sale de la red doméstica y se dirige a la red externa.
+
+Opciones de la regla
+
+
+Texto alternativo: Opciones de regla resaltadas que incluyen msg, flow, content, http_method, sid y rev
+
+Las numerosas opcionesde regla disponibles le permiten personalizar las firmas con parámetros adicionales. La configuración de las opciones de las reglas ayuda a delimitar el tráfico de red para que pueda encontrar exactamente lo que busca. ASÍ COMO EN NUESTRO EJEMPLO, las opciones de las reglas suelen ir entre paréntesis y separadas por punto y coma.
+
+Examinemos con más detalle las opciones de regla de nuestro ejemplo:
+
+La opciónmsg: proporciona el texto de la alerta. En este caso, la alerta imprimirá el texto“GET on wire”, que especifica por qué se ha disparado la alerta.
+
+La opciónflow:established,to_server determina que paquetes del cliente al servidor deben ser comparados. (En este caso, un servidor se define como el dispositivo que responde al paquete SYN inicial con un paquete SYN-ACK)
+
+La opcióncontent:"GET" indica a Suricata que busque la palabraGET en el contenido de la partehttp.method del paquete.
+
+La opciónsid:12345(ID de firma) es un valor numérico único que identifica la regla.
+
+La opciónrev:3 indica la revisión de la firma, que se utiliza para identificar la versión de la firma. En este caso, la versión de revisión es 3.
+
+En resumen, esta firma activa una alerta siempre que Suricata observa el textoGET como método HTTP en un paquete HTTP de la red doméstica que va a la red externa.
+
+Tarea 2. Activar una regla personalizada en Suricata
+Ahora que está familiarizado con la composición de la regla personalizada de Suricata, debe activar esta regla y examinar los registros de alerta que genera Suricata.
+
+Enumere los archivos en la carpeta/var/log/suricata:
+
+
+ls -l /var/log/suricata
+
+
+Observe que antes de ejecutar Suricata, no hay archivos en el directorio/var/log/suricata.
+
+2. Ejecutesuricata utilizando los archivoscustom.rules ysample.pcap:
+
+
+sudo suricata -r sample.pcap -S custom.rules -k none
+
+
+Este comando inicia la aplicación Suricata y procesa el archivosample.pcap utilizando las reglas del archivocustom.rules. Devuelve una salida que indica cuántos paquetes fueron procesados por Suricata.
+
+Nota:En este laboratorio, el uso desudo es necesario para procesar archivos de captura de paquetes con Suricata, aunque puede no ser necesario en un entorno real.
+
+Ahora examinará las opciones del comando:
+
+La opción-r sample.pcap especifica un archivo de entrada para imitar el tráfico de red. En este caso, el archivo sample.pcap.
+
+La opción-S custom.rules indica a Suricata que utilice las reglas definidas en el archivocustom.rules.
+
+La opción-k none indica a Suricata que desactive todas las comprobaciones de sumas de comprobación.
+
+Como recordatorio, las sumas de comprobación son una forma de detectar si un paquete ha sido modificado en tránsito. Dado que está utilizando tráfico de red de un archivo de captura de paquetes de muestra, no necesitará que Suricata compruebe la integridad de la suma de comprobación.
+
+Suricata añade una nueva línea de alerta al archivo/var/log/suricata/fast.log cuando se cumplen todas las condiciones de cualquiera de las reglas.
+
+3. Vuelve a listar los archivos en la carpeta/var/log/suricata:
+
+
+ls -l /var/log/suricata
+
+
+Observe que después de ejecutar Suricata, ahora hay cuatro archivos en el directorio/var/log/suricata, incluidos los archivosfast.log yeve.json. Examinarás estos archivos con más detalle.
+
+4. Utilice el comandocat para mostrar el archivofast.log generado por Suricata:
+
+
+cat /var/log/suricata/fast.log
+
+
+La salida devuelve entradas de alerta en el registro:
+
+
+11/23/2022-12:38:34.624866  [**] [1:12345:3] GET on wire [**] [Classification: (null)] [Priority: 3] {TCP} 172.21.224.2:49652 -> 142.250.1.139:80
+11/23/2022-12:38:58.958203  [**] [1:12345:3] GET on wire [**] [Classification: (null)] [Priority: 3] {TCP} 172.21.224.2:58494 -> 142.250.1.139:80
+
+
+Cada línea o entrada en el archivofast.log corresponde a una alerta generada por Suricata cuando procesa un paquete que cumple las condiciones de una regla generadora de alertas. Cada línea de alerta incluye el mensaje que identifica la regla que activó la alerta, así como el origen, destino y dirección del tráfico.
+
+Tarea 3. Examinar la salida eve.json
+En esta tarea, debe examinar la salida adicional que Suricata genera en el archivoeve.json.
+
+Como se mencionó anteriormente, este archivo se encuentra en el directorio/var/log/suricata/.
+
+El archivoeve.json es el archivo de registro estándar y principal de Suricata y contiene muchos más datos que el archivofast.log. Estos datos se almacenan en formato JSON, lo que los hace mucho más útiles para su análisis y procesamiento por parte de otras aplicaciones.
+
+Utilice el comandocat para mostrar las entradas del archivoeve.json:
+
+
+cat /var/log/suricata/eve.json
+
+
+La salida devuelve el contenido en bruto del archivo. Observará que se devuelven muchos datos que no son fáciles de entender en este formato.
+
+2. Utilice el comandojq para mostrar las entradas en un formato mejorado:
+
+
+jq . /var/log/suricata/eve.json | less
+
+
+Nota:Puede utilizar las teclasf ybminúsculas para avanzar o retroceder por la salida. Además, si introduces un comando incorrectamente y no vuelve al indicador de la línea de comandos, puedes pulsarCTRL+C para detener el proceso y forzar al intérprete de comandos a volver al indicador de la línea de comandos.
+
+3. PulseQ para salir del comandoless y volver al indicador de la línea de comandos.
+
+Observe lo fácil que es leer la salida ahora en comparación con la salida del comando cat.
+
+Nota:La herramientajq es muy útil para procesar datos JSON, sin embargo, una explicación completa de sus capacidades está fuera del alcance de este laboratorio.
+
+¿Cuál es el valor de la propiedad severity para la primera alerta devuelta por el comando jq?
+
+Respuesta: El valor de la propiedad severity para la primera alerta es 3.
+
+4. Utilice el comandojq para extraer datos de eventos específicos del archivoeve.json:
+
+
+jq -c "[.timestamp,.flow_id,.alert.signature,.proto,.dest_ip]" /var/log/suricata/eve.json
+
+
+Nota:El comandojq anterior extrae los campos especificados en la lista entre corchetes de la carga útil JSON. Los campos seleccionados son la marca de tiempo (.timestamp ), el identificador de flujo (.flow_id ), la firma o mensaje de alerta (.alert.signature ), el protocolo (.proto ) y la dirección IP de destino (.dest_ip ).
+
+¿Cuál es la dirección IP de destino que aparece para el último evento en el archivo 'eve.json'?
+
+Respuesta: La dirección IP de destino es 142.250.1.102.
+
+¿Cuál es la firma de alerta de la primera entrada de alerta del archivo "eve.json"?
+
+Respuesta: El primer evento del archivoeve.json tiene "GET on WIRE" como firma de alerta.
+
+A continuación se muestra un ejemplo de la salida del comando anterior. flow_id es el campo numérico largo resaltado en naranja en cada fila devuelta.
+
+
+["2022-11-23T12:38:34.624866+0000",14500150016149,"GET on wire","TCP","142.250.1.139"]
+["2022-11-23T12:38:58.958203+0000",1647223379236084,"GET on wire","TCP","142.250.1.102"]
+
+
+5. Utilice el comandojq para mostrar todos los registros de eventos relacionados con unflow_id específico del archivoeve.json. El valorflow_id es un número de 16 dígitos y variará para cada una de las entradas del registro. SustituyaX por cualquiera de los valoresflow_id devueltos por la consulta anterior:
+
+
+1jq "select(.flow_id==X)" /var/log/suricata/eve.json
+
+
+Nota:Un flujo de red se refiere a una secuencia de paquetes entre un origen y un destino que comparten características comunes como direcciones IP, protocolos, etc. En ciberseguridad, los flujos de tráfico de red ayudan a los analistas a comprender el comportamiento del tráfico de red para identificar y analizar amenazas. Suricata asigna un únicoflow_id a cada flujo de red. Todos los registros de un flujo de red comparten el mismoflow_id. Esto convierte al campoflow_id en un campo útil para correlacionar el tráfico de red que pertenece a los mismos flujos de red.
+
+Conclusión
+¡Buen trabajo!
+
+Ha completado esta actividad y debería ser capaz de utilizar Suricata para activar alertas sobre el tráfico de red.
+
+Ahora tiene experiencia práctica en la ejecución de Suricata para
+
+crear reglas personalizadas y ejecutarlas en Suricata,
+
+supervisar el tráfico capturado en un archivo de captura de paquetes, y
+
+examinar la salida defast.log yeve.json.
+
+Has desarrollado una habilidad clave en tu camino para convertirte en un analista de seguridad.
+

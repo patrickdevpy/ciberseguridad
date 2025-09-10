@@ -1,0 +1,117 @@
+Guía para la configuración de Wazuh
+
+Esta lectura le presentará Wazuh, una potente plataforma de código abierto que funciona como una moderna herramienta de gestión de información y eventos de seguridad (SIEM). Como otras soluciones SIEM, Wazuh está diseñada para recolectar, agregar y analizar cantidades masivas de datos de seguridad para ayudar a identificar y responder a las amenazas.
+
+Por estas razones, Wazuh es una alternativa ideal a otras herramientas SIEM bien conocidas como Splunk y Google SecOps. Mientras que esas plataformas son líderes en la industria, sus pruebas gratuitas y el acceso de los estudiantes se han vuelto cada vez más restringido, a menudo requieren una dirección de correo electrónico de la empresa u organización.
+
+Afortunadamente, Wazuh proporciona una solución perfecta. AS una plataforma gratuita y de código abierto, permite a cualquiera adquirir una valiosa experiencia práctica con las mismas habilidades básicas utilizadas por los analistas de seguridad profesionales, sin enfrentarse a ninguna barrera financiera o de acceso. Puede realizar todas las tareas esenciales de un profesional de la seguridad, incluidos el análisis de registros, la detección de amenazas y la investigación de incidentes, en un sistema que controla por completo.
+
+Nota: La siguiente lectura es un suplemento opcional al ítem del curso, 
+Actividad: Realiza una consulta con Wazuh
+. Tanto esta lectura como la siguiente actividad son opcionales y no afectarán su finalización del curso. Usted puede elegir saltarse esta lectura y/o la actividad por cualquier razón, y continuar progresando a través del resto del curso.
+
+Esta lectura incluye instrucciones detalladas para comenzar con el siguiente ítem del curso, 
+Actividad: Realizar una consulta con Wazuh
+. Utilice esta lectura para obtener instrucciones paso a paso sobre cómo instalar una máquina virtual Wazuh, configurarla e ingerir datos para su análisis.
+
+Esta guía proporciona un método probado para instalar y utilizar Wazuh con éxito, incluyendo pasos clave para la resolución de problemas que otros estudiantes han encontrado útiles.
+
+Instrucciones
+Parte 1 - Despliegue de la máquina virtual Wazuh
+Para utilizar Wazuh, configurará un servidor local en su ordenador utilizando una máquina virtual. Esto no requiere un correo electrónico de la empresa o cualquier servicio de pago.
+
+Descargue e instale 
+Oracle VirtualBox
+ para 
+ejecutar la máquina virtual.
+
+Busque en línea "Wazuh máquina virtual OVA" para encontrar y descargar el archivo pre-construido servidor Wazuh.
+
+Abre VirtualBox y ve a Archivo > Importar dispositivo...
+
+Selecciona el archivo .ova de Wazuh que has descargado. Sigue las instrucciones para importarlo.
+
+
+Parte 2 - Configurar la máquina virtual
+Antes de iniciar la VM, debes configurar su memoria para evitar errores.
+
+En la ventana principal de VirtualBox, selecciona tu VM Wazuh importada.
+
+Haga clic en el botón Configuración.
+
+Vaya a la pestaña Sistema. Ajusta el deslizador de Memoria Base a 4096 MB (4 GB). Este es un paso crítico para asegurar que su ordenador tiene suficientes recursos para ejecutar tanto su sistema operativo como la VM.
+
+Haz clic en Aceptar para guardar la configuración.
+
+
+Parte 3 - Acceda al Panel de Control de Wazuh
+Ahora inicie la VM, configure una carpeta compartida para obtener sus datos, y luego acceda al panel de control desde su navegador. 
+
+Inicie la VM: Haga clic en el botón Inicio en VirtualBox. Una vez que arranque, puedes pulsar la tecla Ctrl derecha para recuperar el ratón de la ventana de la VM.
+
+Configura la carpeta compartida: En la barra de menús de VirtualBox, ve a Dispositivos > Carpetas compartidas > Configuración de carpetas compartidas...
+
+Haz clic en el icono Añadir nueva carpeta compartida (signo más verde).
+
+Para la Ruta de la Carpeta, navega y selecciona la carpeta tutorialdata que descomprimiste.
+
+En Nombre de carpeta, introduzca ranúnculo-compartido. Asegúrese de que la casilla Auto-mount está marcada y haga clic en OK.
+
+
+        3.  Fije los permisos: Después de que la VM arranque, inicie sesión con root / wazuh (utilice estas credenciales de root para acceder a los registros). Ejecute los siguientes comandos para obtener los permisos correctos para la carpeta compartida: 
+
+            usermod -aG vboxsf root
+            reboot      
+
+root permissions
+12
+usermod -aG vboxsf root
+reboot
+       4.  Iniciar sesión y acceder: Después de que la VM se reinicie, vuelva a iniciar sesión (con las credenciales de root anteriores). Ejecute el comando ip a para encontrar la dirección IP de su VM. Es probable que la dirección empiece por 192.  Abra un navegador web en su computadora y vaya a https://<su_dirección_IP_de_la_VM>. Permita e inicie sesión en el tablero Wazuh con admin / admin. 
+
+Parte 4 - Ingesta y Análisis de Datos
+Ahora que su VM está funcionando, puede obtener los datos para su análisis.
+
+Acceda a los Datos: En la línea de comandos de la VM, ejecute cd /media/sf_buttercup-shared. VirtualBox añade el prefijo sf_ para indicar la carpeta compartida.
+
+Cree el archivo de ingestión: Ejecute nano ingest.yml y copie/pegue el siguiente contenido. Nota: Este es un archivo YAML; sea preciso con el espaciado.
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /media/sf_buttercup-shared/mailsv/*.log
+    - /media/sf_buttercup-shared/vendor_sales/*.csv
+    - /media/sf_buttercup-shared/www1/*.log
+    - /media/sf_buttercup-shared/www2/*.log
+    - /media/sf_buttercup-shared/www3/*.log
+output.logstash:
+  hosts: ["localhost:5044"]
+
+ingest.yml
+1234567891011
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /media/sf_buttercup-shared/mailsv/*.log
+    - /media/sf_buttercup-shared/vendor_sales/*.csv
+    - /media/sf_buttercup-shared/www1/*.log
+    - /media/sf_buttercup-shared/www2/*.log
+    - /media/sf_buttercup-shared/www3/*.log
+output.logstash:
+
+
+   Pulsa Ctrl+X, luego escribe Y, y pulsa Enter para guardar. 
+
+  3. Ejecuta Ingestion: Ejecute /usr/share/filebeat/bin/filebeat -c ingest.yml -e. El comando procesará los registros y los enviará al panel de control.
+
+      4. Verificar y analizar: Una vez finalizado el comando, vaya a su navegador. Si no ves los registros inmediatamente, espera unos minutos y actualízalos.
+
+Vuelva al Cuadro de mandos y localice la opción Descubrir en la opción Explorar.
+
+En el intervalo de tiempo, elija Absoluto, seleccione una fecha de inicio muy antigua (por ejemplo, 1 de enero de 2000) y haga clic en Actualizar.
+
+En la barra de búsqueda, escriba * y pulse Intro. Ya está listo para responder a las preguntas de la actividad. Nota: Si obtiene menos de 100 resultados, deberá revisar los pasos anteriores. 
+
+¡Listo! Una vez que su ambiente Wazuh esté configurado, puede comenzar el siguiente ítem del curso, Actividad: Realizar una consulta con Wazuh.

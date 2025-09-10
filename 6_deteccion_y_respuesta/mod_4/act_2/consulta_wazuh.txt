@@ -1,0 +1,79 @@
+Actividad: Realiza una consulta con Wazuh
+
+Paso 1: Acceder al material de apoyo
+Los siguientes materiales de apoyo le ayudarán a completar esta actividad. Los datos contienen información de registros y eventos de los servidores de correo y las cuentas web de Buttercup Games. Esto incluye información como registros de acceso y autenticación, registros de correo electrónico y mucho más.
+
+
+Para descargar estos datos, haga clic en el enlace y, a continuación, en el icono de descarga.
+
+Enlace a los materiales de apoyo: archivo 
+tutorialdata.zip
+ 
+ Paso 2: Acceder al panel de control de Wazuh
+Para empezar, asegúrese de que su máquina virtual Wazuh se está ejecutando y que tiene acceso al panel de control. Puede encontrar la dirección IP de su VM ejecutando ip a en su línea de comandos. Abra su navegador web y navegue a https://<su_dirección_IP_de_su_VM>.
+
+Paso 3: Verificar y localizar los datos
+Los datos de esta actividad deberían haber sido ingestados y deberían poder buscarse. En el panel de control de Wazuh, vaya a la opción Descubrir en la opción Explorar para acceder a la barra de búsqueda completa.
+
+Paso 4: Realizar una búsqueda básica
+Ahora que ha localizado la barra de búsqueda correcta, realice su primera consulta para confirmar que los datos se han ingestado y se pueden buscar. Siga estos pasos para realizar una consulta:
+
+En el menú desplegable de intervalos de tiempo de la parte superior derecha, seleccione Absoluto. En el calendario, seleccione una fecha de inicio antigua (como el 1 de enero de 2000) y haga clic en Actualizar.
+
+En la barra de búsqueda, introduzca su consulta de búsqueda: *.
+
+Haga clic en el botón de búsqueda (lupa). Su búsqueda debería recuperar más de 100.000 eventos.
+
+Paso 5: Evaluar los campos
+Cuando Wazuh indexa los datos, adjunta campos a cada evento. Estos campos pasan a formar parte de los datos de eventos que se pueden buscar. Esto ayuda a los analistas de seguridad a buscar y encontrar fácilmente los datos específicos que necesitan. Ahora que has ejecutado tu primera consulta, examina los resultados de la búsqueda y los campos.
+
+Para cada evento, los campos son host, source y sourcetype. En Campos disponibles, a la izquierda, puedes examinar estos mismos campos.
+
+Examine los valores de los campos haciendo clic en el campo de la lista Campos disponibles. Debería observar lo siguiente
+
+host.keyword: El campo host especifica el nombre del host de red desde el que se originó el evento. En esta búsqueda, hay cinco hosts:
+
+mailsv - Servidor de correo de Buttercup Games. Examine los eventos generados desde este host.
+
+www1 - Esta es una de las aplicaciones web de Buttercup Games.
+
+www2 - Esta es una de las aplicaciones web de Buttercup Games.
+
+www3 - Esta es una de las aplicaciones web de Buttercup Games.
+
+vendor_sales - Información sobre las ventas al por menor de Buttercup Games.
+
+log.file.path.keyword: este campo indica el nombre del archivo del que procede el evento. Debe identificar ocho archivos diferentes. Fíjese en /mailsv/secure.log, que es un archivo de registro que contiene información relacionada con los intentos de autenticación y autorización en el servidor de correo.
+
+Paso 6: Acotar la búsqueda
+Debido a que se le ha asignado la tarea de explorar cualquier inicio de sesión SSH fallido para la cuenta raíz en el servidor de correo, necesitará limitar los resultados de búsqueda para los eventos del servidor de correo.
+
+En la barra de búsqueda, actualice la consulta para filtrar los eventos del host mailsv: host.keyword: mailsv
+
+Los resultados de la búsqueda deberían reducirse a más de 9.000 eventos generados por el servidor de correo.
+
+Paso 7: Buscar un login fallido para root
+Ahora que ha reducido los resultados de la búsqueda a los eventos generados por el servidor de correo, siga reduciendo la búsqueda para localizar cualquier inicio de sesión SSH fallido para la cuenta raíz.
+
+En la barra de búsqueda, introduzca la siguiente consulta: host.keyword: mailsv AND (fail* OR failed) AND root
+
+Esta búsqueda amplía la búsqueda de la tarea anterior y busca las palabras clave fail (utilizando un comodín para encontrar failure, failed, etc.) y root.
+
+Paso 8: Evaluar los resultados de la búsqueda
+Su búsqueda de la tarea anterior debería haber obtenido resultados de búsqueda para más de 300 eventos. Navegue a otras páginas de los resultados de búsqueda para observar los eventos que no aparecen en la primera página de resultados.
+
+Consejo profesional: El panel de control de Wazuh resalta los términos de búsqueda en los resultados de búsqueda para que sea más fácil identificar dónde aparecen los términos de búsqueda en los datos.
+
+Paso 9: Responder a las preguntas sobre los resultados de la búsqueda 
+
+En esta actividad, has utilizado el panel de control de Wazuh para realizar una búsqueda y una investigación. Usando Wazuh, fuiste capaz de:
+
+Ingerir datos de registro de muestra
+
+Buscar en los datos indexados
+
+Evaluar los resultados de la búsqueda
+
+Identificar diferentes fuentes de datos
+
+Localizar inicios de sesión SSH fallidos para la cuenta raíz
