@@ -1,0 +1,24 @@
+Guía de referencia: Conceptos de Python del Módulo 1
+
+Esta guía de referencia contiene el lenguaje Python introducido durante el Módulo 1. La guía está organizada en las siguientes secciones:
+
+Comentarios
+
+Funciones
+
+Sentencias condicionales
+
+Sentencias iterativas
+
+Dentro de cada sección, los elementos aparecen generalmente en el orden en que fueron introducidos.
+
+Acceda a la guía y guárdela
+Puede guardar una copia de esta guía para consultarla en el futuro. Puede utilizarla como recurso para prácticas adicionales o en sus futuros proyectos profesionales.
+
+Para acceder a una versión descargable de este elemento del curso, haga clic en el siguiente enlace y seleccione Utilizar plantilla.
+
+Guía de referencia: Conceptos de Python del Módulo 1
+
+O
+
+Si no dispone de una cuenta de Google, puede descargar el artículo directamente desde el siguiente archivo adjunto:
