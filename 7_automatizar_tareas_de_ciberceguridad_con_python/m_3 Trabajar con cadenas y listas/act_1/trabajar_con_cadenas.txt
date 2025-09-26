@@ -1,0 +1,233 @@
+Ejemplar: trabajar con cuerdas en Python
+Introducción
+Los analistas de seguridad trabajan con muchos datos de cadenas. Por ejemplo, algunos analistas de seguridad trabajan en la creación y actualización de IDS, como ID de empleado e ID de dispositivo, que comúnmente se representan como cadenas. Como otro ejemplo, cierta actividad de red se almacenará como datos de cadena. Estarse cómodo trabajando con cuerdas en Python es esencial para el trabajo de un analista de seguridad.
+
+En este laboratorio, practicará la creación de código Python y trabaja con cuerdas. Trabajará con una identificación de empleado, una ID de dispositivo y una URL, todo representado como datos de cadena.
+
+Consejos para completar este laboratorio
+Guión
+Está trabajando como analista de seguridad, y usted es responsable de escribir programas en Python para automatizar la actualización de ID de empleados, extraer personajes de una ID de dispositivo y extraer componentes de una URL.
+
+Tarea 1
+En su organización, las identificaciones de empleados actualmente tienen cuatro dígitos o cinco dígitos de longitud. En esta tarea, se le otorga una identificación de empleado numérico de cuatro dígitos almacenada en una variable llamada Employee_ID. Convierta esto en un formato de cadena y almacene el resultado en la misma variable. Más tarde, actualizará esta cadena de ID de empleado para que cumpla con un nuevo formato estandarizado.
+
+Complete el siguiente código. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `Employee_ID` a un número de cuatro dígitos como valor inicial
+​
+Employee_id = 4186
+​
+# Muestra el tipo de datos de `Employee_ID`
+​
+Imprimir (Tipo (Empleado_id))
+​
+# Reasignar `Employee_id` al mismo valor pero en forma de una cadena
+​
+Employee_id = Str (Employee_id)
+​
+# Muestra el tipo de datos de `Employee_id` ahora
+​
+Imprimir (Tipo (Empleado_id))
+​
+<class 'int'>
+<class 'str'>
+Sugerencia 1
+Sugerencia 2
+Pregunta 1
+¿Qué observa sobre el tipo de datos de Empleado_ID la primera vez que se muestra? ¿Qué observa sobre el tipo de datos de Employee_ID la segunda vez que se muestra (después de reasignar la variable)?
+
+La primera vez que se muestra, el tipo de datos de Employee_ID es entero. La segunda vez que se muestra (después de reasignar la variable), el tipo de datos de Employee_ID es cadena.
+
+Tarea 2
+Imagine que acaba de ser informado de un nuevo criterio para las identificaciones de los empleados. Todos deben tener cinco dígitos de largo para fines de estandarización.
+
+En esta tarea, escribirá una declaración condicional que muestra un mensaje si la longitud de la ID de empleado es inferior a cinco dígitos.
+
+Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `Employee_ID` a un número de cuatro dígitos como valor inicial
+​
+Employee_id = 4186
+​
+# Reasignar `Employee_id` al mismo valor pero en forma de una cadena
+​
+Employee_id = Str (Employee_id)
+​
+# Declaración condicional que muestra un mensaje si la longitud de ID de empleado es inferior a 5 dígitos
+​
+Si Len (Empleado_id) <5:
+    Imprimir ("Esta identificación de empleado tiene menos de cinco dígitos. No cumple con los requisitos de longitud").
+    
+Esta identificación de empleado tiene menos de cinco dígitos. No cumple con los requisitos de longitud.
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Tarea 3
+En esta tarea, se basará en el código anterior. Si una identificación de empleado es solo cuatro dígitos, usará la concatenación para crear un número de identificación de empleados de cinco dígitos.
+
+La concatenación es un proceso que le permite fusionar las cuerdas. El operador de adición (+) en Python le permite concatenar dos cuerdas.
+
+Escriba una declaración IF que evalúe si la longitud de Employee_ID es inferior a 5. Cuando la condición se evalúa de verdad, reasigne Employee_ID concatenando "E" frente a la identificación de empleados de cuatro dígitos para crear una identificación de empleado de cinco caracteres. Luego, visite el empleado_id nuevamente. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `Employee_ID` a un número de cuatro dígitos como valor inicial
+​
+Employee_id = 4186
+​
+# Reasignar `Employee_id` al mismo valor pero en forma de una cadena
+​
+Employee_id = Str (Employee_id)
+​
+# Muestra el `Employee_id` tal como está actualmente
+​
+Imprimir (Empleado_id)
+​
+# Declaración condicional que actualiza el `Employee_ID` si su longitud es inferior a 5 dígitos
+​
+Si Len (Empleado_id) <5:
+    Employee_id = "E" + Employee_id
+​
+# Muestra el `Employee_ID` después de la actualización
+​
+Imprimir (Empleado_id)
+​
+4186
+E4186
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Tarea 4
+Ahora pasará a la siguiente parte de su tarea. Imagine que los personajes de una ID de dispositivo transmiten información técnica sobre el dispositivo. Deberá extraer caracteres en posiciones específicas de la ID del dispositivo. Comience extrayendo el cuarto personaje.
+
+La variable Device_ID representa una ID de dispositivo que contiene caracteres alfanuméricos; Ya está almacenado como una cadena.
+
+Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `dispositivos_id` a una cadena que contiene caracteres alfanuméricos
+​
+dispositivo_id = "R262C36"
+​
+# Extraiga el cuarto carácter en `dispositivo_id` y muestralo
+​
+print (dispositivo_id [3])
+​
+2
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Tarea 5
+Ahora también necesitará extraer los primeros a los terceros personajes de la ID del dispositivo. Así que tome una porción de la identificación del dispositivo. Puede lograr esto usando notación de soporte en Python. Luego, muestre la porción para examinar el resultado.
+
+Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `dispositivos_id` a una cadena que contiene caracteres alfanuméricos
+​
+dispositivo_id = "R262C36"
+​
+# Extraiga el primero a los terceros caracteres en `dispositivos_id` y muestre el resultado
+​
+dispositivo_id [0: 3]
+​
+'R26'
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Tarea 6
+Ahora procederá a la última parte de su tarea. Esto implica extraer componentes de una URL.
+
+Trabajará con índices de cadena para mostrar varios componentes de una URL almacenada en la variable de URL. Primero, extraerá y mostrará el protocolo de la URL y los caracteres: // que lo siguen usando el corte de cadenas. Considere que el protocolo está en el formato seguro de HTTPS al determinar los índices para su porción.
+
+Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `URL` a una URL específica
+​
+url = "https://exampleurl1.com"
+​
+# Extraiga el protocolo de `url` junto con la sintaxis que lo sigue, muestra el resultado
+​
+Imprimir (URL [0: 8])
+​
+https: //
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Tarea 7
+Más adelante en este laboratorio, extraerá la extensión del dominio. Para prepararse para esto, use el método .index () para identificar el índice donde la extensión del dominio .com se encuentra en la URL dada.
+
+Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `URL` a una URL específica
+​
+url = "https://exampleurl1.com"
+​
+# Muestra el índice donde la extensión del dominio ".com" se encuentra en `URL`
+​
+imprimir (url.index (". com"))
+​
+19
+Sugerencia 1
+Sugerencia 2
+Tarea 8
+Es una buena idea guardar datos importantes en variables al programar. Esto permite un seguimiento rápido y fácil y la reutilización de la información.
+
+Almacene la salida del método .index () en una variable llamada IND, que es abreviatura de índice. Este índice representa la posición donde la extensión del dominio ".com" comienza en la URL. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda. Tenga en cuenta que ejecutar esta celda no producirá una salida.
+
+# Asignar `URL` a una URL específica
+​
+url = "https://exampleurl1.com"
+​
+# Asignar `Ind` a la salida de aplicar` .index () `a` url` para extraer el índice inicial de ".com" en `url`
+​
+ind = url.index (". com")
+​
+Sugerencia 1
+Sugerencia 2
+Tarea 9
+Puede usar String Sleting para extraer también la extensión del dominio de una URL. Para hacerlo, puede crear una porción. El índice inicial debe ser la variable IND. Esto contiene el índice donde comienza la extensión del dominio. El índice final debe ser Ind + 4 (ya que ".com" tiene cuatro caracteres). A veces, como en esta situación, es más fácil expresar el índice final en relación con el índice inicial. Examine el siguiente código, ejecutarlo como está y observe la salida.
+
+# Asignar `URL` a una URL específica
+​
+url = "https://exampleurl1.com"
+​
+# Asignar `Ind` a la salida de aplicar` .index () `a` url` para extraer el índice inicial de ".com" en `url`
+​
+ind = url.index (". com")
+​
+# Extraer la extensión del dominio en `url` y mostrarla
+​
+Imprimir (URL [Ind: Ind+4])
+​
+.com
+Pregunta 2
+¿Qué sale este código y por qué?
+
+Este código genera el nombre de dominio .com guardando primero la posición inicial del nombre de dominio en la variable IND y luego extrayendo 4 caracteres consecutivos de URL a partir de la posición guardada.
+
+Tarea 10
+Finalmente, extraiga el nombre del sitio web de la URL dada utilizando el corte de cadenas y la variable IND que definió anteriormente. En la URL dada, el nombre del sitio web es "EJEMPLEURL1". Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `URL` a una URL específica
+​
+url = "https://exampleurl1.com"
+​
+# Asignar `Ind` a la salida de aplicar` .index () `a` url` para extraer el índice inicial de ".com" en `url`
+​
+ind = url.index (". com")
+​
+# Extraer el nombre del sitio web en `url` y mostrarlo
+​
+Imprimir (URL [8: Ind])
+​
+Ejemplourl1
+Sugerencia 1
+Sugerencia 2
+Conclusión
+¿Cuáles son sus conclusiones clave de este laboratorio?
+
+Las cadenas son fundamentales para almacenar datos importantes relacionados con la seguridad, como ID de dispositivo y URL.
+La concatenación de cadena le permite combinar fácilmente la información en una cadena con la información almacenada en otra cadena.
+String Sleting es una técnica poderosa que le permite extraer cualquier subsección de una cadena.
+Python tiene muchas funciones y métodos que ayudan a los analistas a trabajar con valores de cadena, así como datos que desean convertir en formato de cadena.
+La función type () devuelve el tipo de datos de su entrada.
+La función str () convierte el objeto de entrada en una cadena. Por ejemplo, cuando se le pide en un entero, str () devuelve ese valor entero convertido a una cadena.
+La función len () devuelve el número de elementos en un objeto. Cuando se le llama a una cadena, Len () devuelve el número de caracteres en esa cadena.
+El método .index () encuentra la primera aparición de la entrada

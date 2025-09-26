@@ -1,0 +1,609 @@
+Ejemplar: desarrollar un algoritmo¶
+Introducción
+Un algoritmo es un conjunto de pasos que se pueden usar para resolver un problema. Los analistas de seguridad desarrollan algoritmos para proporcionar las soluciones que necesitan para su trabajo. Por ejemplo, un analista puede trabajar con usuarios que les traen dispositivos. El analista puede necesitar un algoritmo que primero verifique si un usuario está aprobado para acceder al sistema y luego verifica si el dispositivo que ha traído es el que se les asigna.
+
+En este laboratorio, desarrollará un algoritmo en Python que automatiza este proceso.
+
+Consejos para completar este laboratorio
+Guión
+En este laboratorio, está trabajando como analista de seguridad y es responsable de desarrollar un algoritmo que conecta a los usuarios con sus dispositivos asignados. Escribirá un código que indica si un usuario está aprobado en el sistema y ha llevado su dispositivo asignado al equipo de seguridad.
+
+Tarea 1
+Trabajará con una lista de nombres de usuario aprobados junto con una lista de los dispositivos aprobados asignados a estos usuarios. Los elementos de las dos listas están sincronizados. En otras palabras, el usuario en el índice 0 en aprobado_users usa el dispositivo en el índice 0 en aprobado_devices. Más tarde, esto le permitirá verificar si el nombre de usuario y la ID de dispositivo ingresado por un usuario corresponden entre sí.
+
+Primero, para explorar cómo funcionan los índices en las listas, ejecute la siguiente celda de código tal como está y observa la salida. Luego, reemplace cada 0 con otro índice y ejecute la celda para observar lo que sucede.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2YE3LZG", "4N482TS", "A307VIR"]
+​
+# Muestra el elemento en el índice especificado en `aprobado_users`
+​
+imprimir (aprobado_users [0])
+​
+# Muestra el elemento en el índice especificado en `aprobado_devices`
+​
+print (aprobado_devices [0])
+​
+elarson
+8RP2K75
+Pregunta 1
+¿Qué observó sobre la salida cuando se muestra_users [0] y cuando se muestra_devices [0]? ¿Qué sucede cuando reemplaza cada 0 con otro índice?
+
+Cuando se muestra_USERS [0], la salida es el primer nombre de usuario aprobado de aprobado_users. Cuando se muestra_devices [0], la salida es la primera ID de dispositivo de aprobado_devices. Cuando reemplaza cada 0 con otro índice, la salida es el elemento en ese índice en aprobado_users, seguido del elemento en ese índice en aprobado_devices. Por ejemplo, si reemplaza cada 0 con 2, la salida es el elemento en el índice 2 en aprobado_users, seguido del elemento en el índice 2 en aprobado_devices.
+
+Tarea 2
+Hay un nuevo empleado que se une a la organización, y deben recibir un nombre de usuario y una identificación de dispositivo. En la siguiente celda de código, se le otorga un nombre de usuario y una ID de dispositivo de este nuevo usuario, almacenado en las variables new_user y new_device, respectivamente. Use el método .Append () para agregar estas variables a la aprobada_users y aprobado_devices respectivamente. Posteriormente, muestre las variables aprobadas_users y aprobadas_devices para confirmar la información adicional. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2YE3LZG", "4N482TS", "A307VIR"]
+​
+# Asignar `new_user` al nombre de usuario de un nuevo usuario aprobado
+​
+new_user = "Gesparza"
+​
+# Asignar `new_device` a la ID del dispositivo del nuevo usuario aprobado
+​
+new_device = "3RCV4W6"
+​
+# Agregue el nombre de usuario y la ID de dispositivo de ese usuario a `aprobado_users` y` aprobado_devices` respectivamente
+​
+aprobado_users.append (new_user)
+aprobado_devices.append (new_device)
+​
+# Muestra el contenido de `aprobado_users`
+​
+Imprimir (aprobado_users)
+​
+# Diflay el contenido de `aprobado_devices`
+​
+imprimir (aprobado_devices)
+​
+['elarson', 'bmoreno', 'tshah', 'sgilmore', 'Eraab', 'gesparza']
+['8RP2K75', 'HL0S5O1', '2YE3LZG', '4N482TS', 'A307VIR', '3RCV4W6']
+Sugerencia 1
+Sugerencia 2
+Pregunta 2
+Después de agregar el nuevo usuario aprobado, ¿qué observó sobre la salida cuando se muestra_USers aprobado y cuando se muestra_devices aprobado?
+
+Después de que se agrega el nuevo usuario aprobado, su nombre de usuario está al final de los users aprobados y su ID de dispositivo está al final de los meditales aprobados.
+
+Tarea 3
+Un empleado ha dejado el equipo y ya no debería tener acceso al sistema. En la siguiente celda de código, se le otorga el nombre de usuario y el ID de dispositivo del usuario a eliminar, almacenarse en las variables eliminadas_user y eliminado_device respectivamente. Use el método .remove () para eliminar cada uno de estos elementos de la lista correspondiente. Posteriormente, muestre tanto las variables aprobadas_users y las variables aprobadas_devices para ver los usuarios eliminados. Ejecute el código y observe los resultados. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2ye3lzg", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `eliminado_user` al nombre de usuario del empleado que ha dejado al equipo
+​
+eliminado_user = "tshah"
+​
+# Asignar `eliminado_device` al ID de dispositivo del empleado que ha dejado al equipo
+​
+eliminado_device = "2ye3lzg"
+​
+# Eliminar el nombre de usuario y la ID del dispositivo de ese empleado de `aprobado_users` y` aprobado_devices` respectivamente
+​
+aprobado_users.remove (eliminado_user)
+aprobado_devices.remove (eliminado_device)
+​
+# Mostrar `aprobado_users`
+​
+Imprimir (aprobado_users)
+​
+# Diplay `aprobado_devices`
+​
+imprimir (aprobado_devices)
+​
+['Elarson', 'Bmoreno', 'Sgilmore', 'Eraab', 'Gesparza']
+['8RP2K75', 'HL0S5O1', '4N482TS', 'A307VIR', '3RCV4W6']
+Sugerencia 1
+Sugerencia 2
+Pregunta 3
+Después de que se elimina el usuario que dejó el equipo, ¿qué observó sobre la salida cuando se muestra_USers aprobado y cuando se muestra_devices?
+
+Después de que se retira al usuario que dejó el equipo, su nombre de usuario ya no forma parte de los usuarios aprobados y su ID de dispositivo ya no forma parte de los aprobados.
+
+Tarea 4
+Como parte de la verificación de la identidad de un usuario en el sistema, deberá verificar si el usuario es uno de los usuarios aprobados. Escriba una declaración condicional que verifique si un nombre de usuario dado es un elemento de la lista de nombres de usuario aprobados. Si es así, visualice "El usuario ______ está aprobado para acceder al sistema". De lo contrario, visualizar "El usuario ______ no está aprobado para acceder al sistema". Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Declaración condicional
+# Si `UserName` pertenece a` aprobado_users`, entonces muestre "El usuario ______ está aprobado para acceder al sistema".
+# De lo contrario, mostrar "El usuario ______ no está aprobado para acceder al sistema".
+Si el nombre de usuario en aprobado_users:
+    imprimir ("El nombre de usuario", nombre de usuario ", está aprobado para acceder al sistema").
+demás:
+    imprimir ("El nombre de usuario", nombre de usuario ", no está aprobado para acceder al sistema").
+    
+El nombre de usuario Sgilmore está aprobado para acceder al sistema.
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 4
+¿Qué mensaje observa en la salida cuando el nombre de usuario es "Sgilmore"?
+
+Cuando el nombre de usuario es "Sgilmore", el mensaje salido dice "El nombre de usuario Sgilmore está aprobado para acceder al sistema". Dado que "Sgilmore" es un elemento de los Users aprobados.
+
+Tarea 5
+La siguiente parte del algoritmo utiliza el método .Index () para encontrar el índice de nombre de usuario en la lista aprobada y almacena ese índice en una variable llamada Ind.
+
+Cuando se usa en una lista, el método .index () devolverá la posición del valor dado en la lista.
+
+Agregue una declaración para mostrar IND en la siguiente celda de código para explorar el valor que contiene. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+​
+ind = aprobado_users.index (nombre de usuario)
+​
+# Muestra el valor de `Ind`
+​
+Imprimir (Ind)
+​
+2
+Sugerencia 1
+Pregunta 5
+¿Qué observa de la salida cuando el nombre de usuario es "Sgilmore"?
+
+Cuando el nombre de usuario es "Sgilmore", la salida es 2, lo que indica que el valor de índice de "Sgilmore" es 2 en los users aprobados. En otras palabras, "Sgilmore" es el tercer elemento en los users aprobados. La indexación en Python comienza en 0.
+
+Tarea 6
+Esta tarea le permitirá desarrollar su comprensión de las operaciones de la lista para el algoritmo que eventualmente construirá. Demostrará cómo puede encontrar un índice en una lista y luego usará este índice para mostrar información conectada en otra lista. Primero, use el método .index () nuevamente para encontrar el índice de nombre de usuario en los users aprobados y almacenarlo en una variable llamada Ind. Luego, conecte IND a los meditales aprobados y muestre la ID del dispositivo ubicada en el índice IND. Luego, ejecute la celda para observar el resultado. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+Ejemplar: desarrollar un algoritmo¶
+Introducción
+Un algoritmo es un conjunto de pasos que se pueden usar para resolver un problema. Los analistas de seguridad desarrollan algoritmos para proporcionar las soluciones que necesitan para su trabajo. Por ejemplo, un analista puede trabajar con usuarios que les traen dispositivos. El analista puede necesitar un algoritmo que primero verifique si un usuario está aprobado para acceder al sistema y luego verifica si el dispositivo que ha traído es el que se les asigna.
+
+En este laboratorio, desarrollará un algoritmo en Python que automatiza este proceso.
+
+Consejos para completar este laboratorio
+Guión
+En este laboratorio, está trabajando como analista de seguridad y es responsable de desarrollar un algoritmo que conecta a los usuarios con sus dispositivos asignados. Escribirá un código que indica si un usuario está aprobado en el sistema y ha llevado su dispositivo asignado al equipo de seguridad.
+
+Tarea 1
+Trabajará con una lista de nombres de usuario aprobados junto con una lista de los dispositivos aprobados asignados a estos usuarios. Los elementos de las dos listas están sincronizados. En otras palabras, el usuario en el índice 0 en aprobado_users usa el dispositivo en el índice 0 en aprobado_devices. Más tarde, esto le permitirá verificar si el nombre de usuario y la ID de dispositivo ingresado por un usuario corresponden entre sí.
+
+Primero, para explorar cómo funcionan los índices en las listas, ejecute la siguiente celda de código tal como está y observa la salida. Luego, reemplace cada 0 con otro índice y ejecute la celda para observar lo que sucede.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2YE3LZG", "4N482TS", "A307VIR"]
+​
+# Muestra el elemento en el índice especificado en `aprobado_users`
+​
+imprimir (aprobado_users [0])
+​
+# Muestra el elemento en el índice especificado en `aprobado_devices`
+​
+print (aprobado_devices [0])
+​
+elarson
+8RP2K75
+Pregunta 1
+¿Qué observó sobre la salida cuando se muestra_users [0] y cuando se muestra_devices [0]? ¿Qué sucede cuando reemplaza cada 0 con otro índice?
+
+Cuando se muestra_USERS [0], la salida es el primer nombre de usuario aprobado de aprobado_users. Cuando se muestra_devices [0], la salida es la primera ID de dispositivo de aprobado_devices. Cuando reemplaza cada 0 con otro índice, la salida es el elemento en ese índice en aprobado_users, seguido del elemento en ese índice en aprobado_devices. Por ejemplo, si reemplaza cada 0 con 2, la salida es el elemento en el índice 2 en aprobado_users, seguido del elemento en el índice 2 en aprobado_devices.
+
+Tarea 2
+Hay un nuevo empleado que se une a la organización, y deben recibir un nombre de usuario y una identificación de dispositivo. En la siguiente celda de código, se le otorga un nombre de usuario y una ID de dispositivo de este nuevo usuario, almacenado en las variables new_user y new_device, respectivamente. Use el método .Append () para agregar estas variables a la aprobada_users y aprobado_devices respectivamente. Posteriormente, muestre las variables aprobadas_users y aprobadas_devices para confirmar la información adicional. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2YE3LZG", "4N482TS", "A307VIR"]
+​
+# Asignar `new_user` al nombre de usuario de un nuevo usuario aprobado
+​
+new_user = "Gesparza"
+​
+# Asignar `new_device` a la ID del dispositivo del nuevo usuario aprobado
+​
+new_device = "3RCV4W6"
+​
+# Agregue el nombre de usuario y la ID de dispositivo de ese usuario a `aprobado_users` y` aprobado_devices` respectivamente
+​
+aprobado_users.append (new_user)
+aprobado_devices.append (new_device)
+​
+# Muestra el contenido de `aprobado_users`
+​
+Imprimir (aprobado_users)
+​
+# Diflay el contenido de `aprobado_devices`
+​
+imprimir (aprobado_devices)
+​
+['elarson', 'bmoreno', 'tshah', 'sgilmore', 'Eraab', 'gesparza']
+['8RP2K75', 'HL0S5O1', '2YE3LZG', '4N482TS', 'A307VIR', '3RCV4W6']
+Sugerencia 1
+Sugerencia 2
+Pregunta 2
+Después de agregar el nuevo usuario aprobado, ¿qué observó sobre la salida cuando se muestra_USers aprobado y cuando se muestra_devices aprobado?
+
+Después de que se agrega el nuevo usuario aprobado, su nombre de usuario está al final de los users aprobados y su ID de dispositivo está al final de los meditales aprobados.
+
+Tarea 3
+Un empleado ha dejado el equipo y ya no debería tener acceso al sistema. En la siguiente celda de código, se le otorga el nombre de usuario y el ID de dispositivo del usuario a eliminar, almacenarse en las variables eliminadas_user y eliminado_device respectivamente. Use el método .remove () para eliminar cada uno de estos elementos de la lista correspondiente. Posteriormente, muestre tanto las variables aprobadas_users y las variables aprobadas_devices para ver los usuarios eliminados. Ejecute el código y observe los resultados. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "2ye3lzg", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `eliminado_user` al nombre de usuario del empleado que ha dejado al equipo
+​
+eliminado_user = "tshah"
+​
+# Asignar `eliminado_device` al ID de dispositivo del empleado que ha dejado al equipo
+​
+eliminado_device = "2ye3lzg"
+​
+# Eliminar el nombre de usuario y la ID del dispositivo de ese empleado de `aprobado_users` y` aprobado_devices` respectivamente
+​
+aprobado_users.remove (eliminado_user)
+aprobado_devices.remove (eliminado_device)
+​
+# Mostrar `aprobado_users`
+​
+Imprimir (aprobado_users)
+​
+# Diplay `aprobado_devices`
+​
+imprimir (aprobado_devices)
+​
+['Elarson', 'Bmoreno', 'Sgilmore', 'Eraab', 'Gesparza']
+['8RP2K75', 'HL0S5O1', '4N482TS', 'A307VIR', '3RCV4W6']
+Sugerencia 1
+Sugerencia 2
+Pregunta 3
+Después de que se elimina el usuario que dejó el equipo, ¿qué observó sobre la salida cuando se muestra_USers aprobado y cuando se muestra_devices?
+
+Después de que se retira al usuario que dejó el equipo, su nombre de usuario ya no forma parte de los usuarios aprobados y su ID de dispositivo ya no forma parte de los aprobados.
+
+Tarea 4
+Como parte de la verificación de la identidad de un usuario en el sistema, deberá verificar si el usuario es uno de los usuarios aprobados. Escriba una declaración condicional que verifique si un nombre de usuario dado es un elemento de la lista de nombres de usuario aprobados. Si es así, visualice "El usuario ______ está aprobado para acceder al sistema". De lo contrario, visualizar "El usuario ______ no está aprobado para acceder al sistema". Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Declaración condicional
+# Si `UserName` pertenece a` aprobado_users`, entonces muestre "El usuario ______ está aprobado para acceder al sistema".
+# De lo contrario, mostrar "El usuario ______ no está aprobado para acceder al sistema".
+Si el nombre de usuario en aprobado_users:
+    imprimir ("El nombre de usuario", nombre de usuario ", está aprobado para acceder al sistema").
+demás:
+    imprimir ("El nombre de usuario", nombre de usuario ", no está aprobado para acceder al sistema").
+    
+El nombre de usuario Sgilmore está aprobado para acceder al sistema.
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 4
+¿Qué mensaje observa en la salida cuando el nombre de usuario es "Sgilmore"?
+
+Cuando el nombre de usuario es "Sgilmore", el mensaje salido dice "El nombre de usuario Sgilmore está aprobado para acceder al sistema". Dado que "Sgilmore" es un elemento de los Users aprobados.
+
+Tarea 5
+La siguiente parte del algoritmo utiliza el método .Index () para encontrar el índice de nombre de usuario en la lista aprobada y almacena ese índice en una variable llamada Ind.
+
+Cuando se usa en una lista, el método .index () devolverá la posición del valor dado en la lista.
+
+Agregue una declaración para mostrar IND en la siguiente celda de código para explorar el valor que contiene. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+​
+ind = aprobado_users.index (nombre de usuario)
+​
+# Muestra el valor de `Ind`
+​
+Imprimir (Ind)
+​
+2
+Sugerencia 1
+Pregunta 5
+¿Qué observa de la salida cuando el nombre de usuario es "Sgilmore"?
+
+Cuando el nombre de usuario es "Sgilmore", la salida es 2, lo que indica que el valor de índice de "Sgilmore" es 2 en los users aprobados. En otras palabras, "Sgilmore" es el tercer elemento en los users aprobados. La indexación en Python comienza en 0.
+
+Tarea 6
+Esta tarea le permitirá desarrollar su comprensión de las operaciones de la lista para el algoritmo que eventualmente construirá. Demostrará cómo puede encontrar un índice en una lista y luego usará este índice para mostrar información conectada en otra lista. Primero, use el método .index () nuevamente para encontrar el índice de nombre de usuario en los users aprobados y almacenarlo en una variable llamada Ind. Luego, conecte IND a los meditales aprobados y muestre la ID del dispositivo ubicada en el índice IND. Luego, ejecute la celda para observar el resultado. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+probed_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]
+
+# Asignar `Nombre de usuario` a un nombre de usuario
+
+nombre de usuario = "sgilmore"
+
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+
+ind = aprobado_users.index (nombre de usuario)
+
+# Muestra la ID del dispositivo en el índice que coincide con el valor de `Ind` en` aprobado_devices`
+
+imprimir (aprobado_devices [ind])
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+​
+ind = aprobado_users.index (nombre de usuario)
+​
+# Muestra la ID del dispositivo en el índice que coincide con el valor de `Ind` en` aprobado_devices`
+​
+imprimir (aprobado_devices [ind])
+​
+4N482TS
+Sugerencia 1
+Sugerencia 2
+Pregunta 6
+¿Qué observa de la salida cuando el nombre de usuario es "Sgilmore"?
+
+Cuando el nombre de usuario es "Sgilmore", la salida es 4N482TS, que es la ID del dispositivo que corresponde a "Sgilmore". El tercer nombre de usuario aprobado en el_users aprobado es "Sgilmore", y de manera similar, la tercera ID de dispositivo en el GROUDADO_DEVICES es "4N482TS".
+
+Tarea 7
+Su siguiente paso para crear el algoritmo es determinar si se corresponde un nombre de usuario y una ID del dispositivo. Para hacer esto, escriba un condicional que verifique si el nombre de usuario es un elemento de los meditales aprobados y si el dispositivo_id almacenado en el mismo índice que el nombre de usuario coincide con el dispositivo_id ingresado. Utilizará el operador lógico y para conectar las dos condiciones. Cuando ambas condiciones se evalúen como verdaderas, muestre un mensaje de que el nombre de usuario está aprobado y otro mensaje que el usuario tiene su dispositivo asignado. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Asignar `dispositivo_id` a una ID de dispositivo
+​
+dispositivo_id = "4N482TS"
+​
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+​
+ind = aprobado_users.index (nombre de usuario)
+​
+# Declaración condicional
+# Si `UserName` pertenece a` aprobado_users`, y si la identificación del dispositivo en `ind` en` aprobado_devices` coincide con `dispositivo_id`,
+# luego muestre un mensaje que el nombre de usuario está aprobado,
+# seguido de un mensaje de que el usuario tiene el dispositivo correcto
+​
+Si el nombre de usuario en aprobado_users y dispositivo_id == aprobado_devices [ind]:
+    imprimir ("El nombre de usuario", nombre de usuario ", está aprobado para acceder al sistema").
+    print (dispositivo_id, "es el dispositivo asignado para", nombre de usuario)
+    
+El nombre de usuario Sgilmore está aprobado para acceder al sistema.
+4N482TS es el dispositivo asignado para Sgilmore
+Sugerencia 1
+Sugerencia 2
+Pregunta 7
+¿Qué observa de la salida cuando el nombre de usuario es "Sgilmore" y Device_ID es "4N482TS"?
+
+Cuando el nombre de usuario es "Sgilmore" y Device_ID es "4N482TS", la salida consiste en el nombre de usuario Sgilmore está aprobado para acceder al sistema. En la primera línea y 4N482TS es el dispositivo asignado para Sgilmore en la segunda línea.
+
+Tarea 8
+También sería útil que los usuarios reciban mensajes cuando su nombre de usuario no esté aprobado o su ID de dispositivo es incorrecta.
+
+Agregue al código escribiendo una instrucción ELIF. Esta instrucción ELIF debe ejecutarse cuando el nombre de usuario es parte de los users aprobados, pero el dispositivo_id no coincide con la ID del dispositivo correspondiente en el_devices aprobado. La declaración también debe mostrar dos mensajes que transmiten esa información.
+
+Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+(Después de ejecutar el código una vez con un dispositivo_id de "4N482TS", es posible que desee explorar qué sucede si asigna un valor diferente a Device_ID).
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario
+​
+nombre de usuario = "sgilmore"
+​
+# Asignar `dispositivo_id` a una ID de dispositivo
+​
+dispositivo_id = "4N482TS"
+​
+# Asignar `IND` al índice de` Nombre de usuario` en `aprobado_users`
+​
+ind = aprobado_users.index (nombre de usuario)
+​
+# If declaración
+# Si `UserName` pertenece a` aprobado_users`, y si el elemento en `ind` en` aprobado_devices` coincide con `dispositivos_id`,
+# luego muestre un mensaje que el nombre de usuario está aprobado,
+# seguido de un mensaje de que el usuario tiene el dispositivo correcto
+​
+Si el nombre de usuario en aprobado_users y dispositivo_id == aprobado_devices [ind]:
+    imprimir ("el usuario", nombre de usuario ", está aprobado para acceder al sistema").
+    print (dispositivo_id, "es el dispositivo asignado para", nombre de usuario)
+​
+# Declaración Elif
+# Maneja el caso cuando `Username` pertenece a` aprobado_users` pero el elemento en `ind` en` aprobado_devices` no coincide con `dispositivos_id`,,
+# y muestra dos mensajes en consecuencia
+​
+ELIF Nombre de usuario en aprobado_users y dispositivo_id! = aprobado_devices [ind]:
+    imprimir ("el usuario", nombre de usuario ", está aprobado para acceder al sistema, pero", dispositivo_id, "no es su dispositivo asignado").
+El usuario Sgilmore está aprobado para acceder al sistema.
+4N482TS es el dispositivo asignado para Sgilmore
+Sugerencia 1
+Sugerencia 2
+Pregunta 8
+¿Qué observa de la salida cuando el nombre de usuario es "Sgilmore" y Device_ID es "4N482TS"?
+
+Cuando el nombre de usuario es "Sgilmore" y Device_ID es "4N482TS", la salida consiste en el usuario Sgilmore está aprobado para acceder al sistema. En la primera línea y 4N482TS es el dispositivo asignado para Sgilmore en la segunda línea.
+
+Si el nombre de usuario no estuviera en la lista aprobada_devices, la salida sería un mensaje de que el usuario no está aprobado para acceder al sistema.
+
+Si el nombre de usuario estuviera en la lista aprobada de_devices pero dispositivos_ID no se correspondía con el nombre de usuario, la salida sería un mensaje de que el usuario está aprobado para acceder al sistema, pero la ID del dispositivo no se les asigna.
+
+Tarea 9
+En esta tarea, completará su algoritmo desarrollando una función que use parte del código que ha escrito en tareas anteriores. Esto automatizará el proceso de inicio de sesión.
+
+Hay múltiples formas de usar condicionales para automatizar el proceso de inicio de sesión. En el siguiente código, se utiliza un condicional anidado para lograr los objetivos del algoritmo. Hay una declaración condicional dentro de otra declaración condicional. El condicional externo maneja el caso cuando se aprueba el nombre de usuario y el caso cuando no se aprueba el nombre de usuario. El condicional interno, que se coloca dentro de la primera declaración IF, maneja el caso cuando se aprueba el nombre de usuario y el dispositivo_id es correcto, así como el caso cuando se aprueba el nombre de usuario y el dispositivo_id es incorrecto.
+
+Para completar esta tarea, debe definir una función llamada Inicio de sesión que toma dos parámetros, nombre de usuario y dispositivo_id. Posteriormente, llame a la función y pase en diferentes combinaciones de nombre de usuario y ID del dispositivo para experimentar y observar el comportamiento de la función. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `aprobado_users` a una lista de nombres de usuario aprobados
+​
+aprobado_users = ["elarson", "bmoreno", "sgilmore", "Eraab", "gesparza"]
+​
+# Asignar `aprobado_devices` a una lista de ID de dispositivo que corresponden a los nombres de usuario en 'aprobado_users`
+​
+aprobado_devices = ["8RP2K75", "HL0S5O1", "4N482TS", "A307VIR", "3RCV4W6"]]
+​
+# Defina una función llamada `Login` que toma dos parámetros,` Username` y `Device_ID`
+​
+Def login (nombre de usuario, dispositivo_id):
+​
+    # Si `Username` pertenece a` aprobado_users`, 
+​
+    Si el nombre de usuario en aprobado_users:
+​
+        # luego muestre "El usuario ______ está aprobado para acceder al sistema".
+​
+        imprimir ("el usuario", nombre de usuario ", está aprobado para acceder al sistema").
+​
+        # Asignar `Ind` al índice de 'UserName` en` aprobado_users`,
+​
+        ind = aprobado_users.index (nombre de usuario)
+​
+        # y ejecutar el siguiente condicional
+        # Si `dispositivo_id` coincide con el elemento en el índice` ind` en `aprobado_devices`,
+​
+        if dispositivo_id == aprobado_devices [ind]:
+​
+          # luego visualizar "______ es el dispositivo asignado para ______" 
+​
+          print (dispositivo_id, "es el dispositivo asignado para", nombre de usuario)
+​
+        # De lo contrario,
+​
+        demás:
+​
+          # visualización "______ no es su dispositivo asignado"
+​
+          print (dispositivo_id, "no es su dispositivo asignado")
+  
+    # De lo contrario (parte del condicional externo y maneja el caso cuando 'UserName` no pertenece a' aprobado_users`),
+​
+    demás:
+​
+        # Pantalla "El usuario ______ no está aprobado para acceder al sistema".
+​
+        imprimir ("El nombre de usuario", nombre de usuario ", no está aprobado para acceder al sistema").
+​
+# Llame a la función que acaba de definir para experimentar con diferentes combinaciones de nombre de usuario y dispositivo_id
+​
+Iniciar sesión ("Bmoreno", "HL0S5O1")
+Iniciar sesión ("Elarson", "R2S5R9G")
+Iniciar sesión ("Abernard", "4N482TS")
+​
+El usuario Bmoreno está aprobado para acceder al sistema.
+HL0S5O1 es el dispositivo asignado para bmoreno
+El usuario Elarson está aprobado para acceder al sistema.
+R2S5R9G no es su dispositivo asignado.
+El nombre de usuario Abernard no está aprobado para acceder al sistema.
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 9
+Después de que Python ingresa al condicional interno, ¿qué sucede cuando el dispositivo_id es correcto y qué sucede cuando el dispositivo_id es incorrecto?
+
+Lo siguiente sucede después de que Python ingresa al condicional interno:
+
+Cuando el dispositivo_id es correcto, la condición interna IF se evalúa como verdadera y se muestra un mensaje de que se asigna la ID del dispositivo al usuario.
+
+Cuando el dispositivo_id es incorrecto, la condición interna IF se evalúa en falso, Python ingresa al caso de lo contrario y se muestra un mensaje de que la ID del dispositivo no es el dispositivo diseñado por el usuario.
+
+Conclusión
+¿Cuáles son sus conclusiones clave de este laboratorio?
+
+La indexación de una lista es similar a la indexación de una cadena. Los valores de índice comienzan en 0.
+El método .Append () le ayuda a agregar nuevos elementos al final de las listas.
+El método .remove () lo ayuda a eliminar elementos de las listas.
+El método .index () se puede usar en diferentes tipos de secuencias. Se pueden usar no solo con cadenas, sino también con listas.
+Con una lista, el método .index () le permite identificar la posición donde se encuentra un elemento especificado en esa lista.
+Si dos listas contienen información que corresponde entre sí en un orden específico, puede usar índices para emparejar elementos de las listas juntas.
+Las funciones se pueden usar para desarrollar algoritmos. Al definir una función, debe especificar los parámetros que recibe y las acciones que debe ejecutar.
