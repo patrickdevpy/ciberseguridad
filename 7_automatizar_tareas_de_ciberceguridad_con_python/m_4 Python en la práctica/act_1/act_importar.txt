@@ -1,0 +1,249 @@
+Importar y analizar un archivo de texto
+
+Ejemplar_import y analizar un archivo de texto
+Introducción
+Los registros de seguridad a menudo se almacenan en archivos de texto. Para analizar los registros de seguridad en estos archivos, los analistas de seguridad deben importar y analizar estos archivos. Python tiene algunas funciones que son útiles para estas tareas, lo que permite a los analistas acceder a la información de manera eficiente desde los archivos de texto.
+
+En este laboratorio, practicará el uso de funciones y otras sintaxis en Python para importar y analizar archivos de texto.
+
+Nota: ¿Ya ha completado este laboratorio una vez? Debido a cómo Coursera maneja los archivos, deberá restablecer el archivo Data/Login.txt "utilizado en este laboratorio a su contenido original si desea completar este laboratorio más de una vez. La sección de reinicio de contenido del archivo al final de este cuaderno contiene código que le permite restablecer los datos de datos/login.txt" a sus contenidos originales. Después de ejecutar el código en esa sección, puede comenzar el laboratorio nuevamente.
+
+Consejos para completar este laboratorio
+Guión
+En este laboratorio, estás trabajando como analista de seguridad. Usted es responsable de preparar un archivo de registro de seguridad para el análisis y crear un archivo de texto con direcciones IP que se les permita acceder a la información restringida.
+
+Tarea 1
+En esta tarea, importará un archivo de texto de registro de seguridad y lo almacenará como una cadena para prepararlo para el análisis.
+
+En Python, una instrucción a menudo se usa en el manejo de archivos para abrir un archivo y luego cerrar automáticamente el archivo después de leerlo.
+
+Se le da una variable llamada import_file que contiene el nombre del archivo de registro que desea importar. Comience escribiendo la primera línea de la declaración con la siguiente celda de código. Use la función Open (), configurando el segundo parámetro en "R". Tenga en cuenta que ejecutar este código producirá un error porque solo contendrá la primera línea de la declaración con la declaración; Completará esto con la declaración en la tarea después de esto. Asegúrese de reemplazar el ### su código aquí ### con su propio código.
+
+# Asignar `import_file` al nombre del archivo de texto que contiene el archivo de registro de seguridad
+​
+import_file = "data/login.txt"
+​
+# Primera línea de la declaración `con`
+# Use `Open ()` para importar el archivo de registro de seguridad y almacenarlo como una cadena
+​
+con Open (import_file, "r") como archivo:
+Sugerencia 1
+Sugerencia 2
+Tarea 2
+Ahora, usará el método .read () para leer el archivo importado, y almacenará el resultado en un texto con llamado variable. Luego, muestre el texto y explore lo que contiene ejecutando la celda. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+
+() `para importar el archivo de registro de seguridad y almacenarlo como una cadena
+
+con Open (import_file, "r") como archivo:
+
+  # Use `.Read ()` para leer el archivo importado y almacenar el resultado en una variable llamada 'Text`
+
+  text = file.read ()
+
+# Muestra el contenido de `Text`
+
+imprimir (texto)# Asignar `import_file` al nombre del archivo de texto que contiene el archivo de registro de seguridad
+
+import_file = "data/login.txt"
+
+# La declaración'with '
+# Use `Abierto
+
+
+Tarea 3
+La salida en el paso anterior es una cadena grande. En esta tarea, explorará cómo puede dividir la cadena que contiene todo el archivo de registro importado en una lista de cadenas, una cadena por línea.
+
+Use el método .split () para realizar esta división y luego mostrar el resultado. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+Tenga en cuenta que mostrar .split () no cambia lo que se almacena en la variable de texto. La reasignación variable sería necesaria si desea almacenar el resultado después de dividir.
+
+# Asignar `import_file` al nombre del archivo de texto que contiene el archivo de registro de seguridad
+​
+import_file = "data/login.txt"
+​
+# La declaración'with '
+# Use `Open ()` para importar el archivo de registro de seguridad y almacenarlo como una cadena
+​
+con Open (import_file, "r") como archivo:
+​
+  # Use `.Read ()` para leer el archivo importado y almacenar el resultado en una variable llamada 'Text`
+​
+  text = file.read ()
+​
+# Muestra el contenido de 'Text' dividido en líneas separadas 
+​
+print (text.split ())
+Sugerencia 1
+Sugerencia 2
+Pregunta 1
+¿Qué nota sobre la salida antes y después de usar el método .split ()?
+
+Antes de usar el método .split (), la salida es una cadena larga que contiene todas las líneas desde el archivo de registro. Después de usar el método .split (), la salida es una lista de cadenas; Cada cadena corresponde a una línea desde el archivo de registro.
+
+Tarea 4
+Hay una entrada faltante en el archivo de registro. Deberá tener en cuenta eso al agregarlo al archivo de registro. Se le da la entrada que falta en una variable llamada INTERSE_Entry.
+
+Use el método .Write () y el parámetro "A" en la función Open (). Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+Después de la parte del código que se escribe en el archivo, otro con la declaración usa el método .read () para leer el archivo actualizado en la variable de texto y luego mostrarlo.
+
+# Asignar `import_file` al nombre del archivo de texto que contiene el archivo de registro de seguridad
+​
+import_file = "data/login.txt"
+​
+# Asignar `Entrada faltante 'a un registro que no se registró en el archivo de registro
+​
+talls_entry = "Jrafael, 192.168.243.140,4: 56: 27,2022-05-09"
+​
+# Use `Open ()` para importar el archivo de registro de seguridad y almacenarlo como una cadena
+# Pase en "A" como el segundo parámetro para indicar que el archivo se está abriendo para fines de agregado
+​
+con Open (import_file, "a") como archivo:
+​
+    # Use `.Write ()` para agregar `fallas_entry 'al archivo de registro
+​
+    file.write (fallas_entry)
+​
+# Use `Open ()` con el parámetro "R" para abrir el archivo de registro de seguridad para fines de lectura
+​
+con Open (import_file, "r") como archivo:
+​
+    # Use `.Read ()` para leer en el contenido del archivo de registro y almacenar en una variable llamada `Text`
+​
+    text = file.read ()
+​
+# Muestra el contenido de `Text`
+​
+Imprimir (texto)
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 2
+¿Qué nota sobre la posición de la entrada que se agregó al archivo de registro?
+
+La entrada adicional se agregó al final del archivo de registro, por lo que aparece en la última línea de la salida.
+
+Tarea 5
+La siguiente tarea de la que usted es responsable es crear un archivo de texto. Este archivo de texto debe incluir una lista de direcciones IP que pueden acceder a la información restringida. Documentar esto en un archivo de texto lo ayudará a comunicar sus hallazgos a su equipo de seguridad.
+
+Comience creando una variable llamada import_file que almacene el nombre del archivo, que debería ser "tampion_list.txt".
+
+También se le da una variable llamada IP_Addresses que almacena una cadena que contiene las direcciones IP que están permitidas.
+
+Ejecute el código para mostrar las dos variables y explorar lo que contienen. Asegúrese de reemplazar el ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `import_file` al nombre del archivo de texto que desea crear
+​
+import_file = "data/dign_list.txt"
+​
+# Asignar `IP_Addresses` a una lista de direcciones IP que pueden acceder a la información restringida
+​
+ip_addresses = "192.168.218.160 192.168.97.225 192.168.145.158 192.168.108.13 192.168.60.153 192.168.96.200 192.168.247.153 192.168.3.252 192.168.116.187. 192.168.15.110 192.168.39.246 "
+​
+# Display `import_file`
+​
+imprimir (import_file)
+​
+# Display `IP_Addresses`
+​
+Imprimir (IP_Addresses)
+Sugerencia 1
+Tarea 6
+Su próximo objetivo es crear una declaración con una declaración para escribir las direcciones IP en el archivo de texto que creó en el paso anterior.
+
+Primero abrirá el archivo usando el parámetro "W". Luego, escribirá las direcciones IP en el archivo. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda. Tenga en cuenta que la celda de código contendrá una declaración que escriba en un archivo pero no muestra información en la pantalla, por lo que ejecutarla no producirá una salida.
+
+# Asignar `import_file` al nombre del archivo de texto que desea crear
+​
+import_file = "data/dign_list.txt"
+​
+# Asignar `IP_Addresses` a una lista de direcciones IP que pueden acceder a la información restringida
+​
+ip_addresses = "192.168.218.160 192.168.97.225 192.168.145.158 192.168.108.13 192.168.60.153 192.168.96.200 192.168.2
+
+Tarea 7
+En este último paso, completará el código que ha estado escribiendo hasta este punto. Agregará código para leer el archivo que contiene direcciones IP.
+
+Complete A con una declaración que lea el archivo de texto y lo almacene en una nueva variable llamada texto.
+
+Luego, muestre el contenido del texto y ejecute la celda para explorar el resultado. Asegúrese de reemplazar cada ### su código aquí ### con su propio código antes de ejecutar la siguiente celda.
+
+# Asignar `import_file` al nombre del archivo de texto que desea crear
+​
+import_file = "data/dign_list.txt"
+​
+# Asignar `IP_Addresses` a una lista de direcciones IP que pueden acceder a la información restringida
+​
+ip_addresses = "192.168.218.160 192.168.97.225 192.168.145.158 192.168.108.13 192.168.60.153 192.168.96.200 192.168.247.153 192.168.3.252 192.168.116.187. 192.168.15.110 192.168.39.246 "
+​
+# Crear una declaración `con 'para escribir en el archivo de texto 
+​
+con Open (import_file, "w") como archivo:
+​
+    # Escribir `ip_addresses` en el archivo de texto
+​
+    File.write (IP_Addresses)
+​
+# Crear una declaración `con 'para leer en el archivo de texto 
+​
+con Open (import_file, "r") como archivo:
+​
+    # Lea el archivo y almacene el resultado en una variable llamada `Text`
+​
+    text = file.read ()
+​
+# Muestra el contenido de `Text`
+​
+Imprimir (texto)
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Conclusión
+¿Cuáles son sus conclusiones clave de este laboratorio?
+
+Python tiene funciones y sintaxis que lo ayudan a importar y analizar archivos de texto.
+La instrucción With le permite manejar los archivos de manera eficiente.
+La función Open () le permite importar o abrir un archivo. Toma el nombre del archivo como el primer parámetro y una cadena que indica el propósito de abrir el archivo como el segundo parámetro.
+Especifique "R" como el segundo parámetro si está abriendo el archivo para fines de lectura.
+Especifique "A" como el segundo parámetro si está abriendo el archivo para fines de agregado.
+Especifique "W" como el segundo parámetro si está abriendo el archivo para fines de escritura.
+El método .read () le permite leer en un archivo.
+El método .Write () le permite agregar o escribir a un archivo.
+El método .split () en Python le permite convertir una cadena en una lista.
+
+Reiniciar el contenido del archivo
+Puede ejecutar el siguiente código para restablecer el archivo "data/login.txt" a su contenido original. Debido a cómo Coursera maneja los archivos, esto será necesario si desea completar este laboratorio más de una vez o si ha cambiado involuntariamente el archivo de una manera que no corresponde a las tareas de laboratorio.
+
+# Restablece el archivo `" data/login.txt "` a su contenido original
+# Permite a los alumnos completar el laboratorio más de una vez
+​
+# Asigna el contenido original del archivo a la variable `login_file`
+Login_file = "" "" Nombre de usuario, IP_address, hora, fecha
+TSHAH, 192.168.92.147,15: 26: 08,2022-05-10
+Dtanaka, 192.168.98.221,9: 45: 18,2022-05-09
+Tmitchel, 192.168.110.131,14: 13: 41,2022-05-11
+Daquino, 192.168.168.144,7: 02: 35,2022-05-08
+ERAAB, 192.168.170.243,1: 45: 14,2022-05-11
+Jlansky, 192.168.238.42,1: 07: 11,2022-05-11
+Acook, 192.168.52.90,9: 56: 48,2022-05-10
+Asundara, 192.168.58.217,23: 17: 52,2022-05-12
+JClark, 192.168.214.49,20: 49: 00,2022-05-10
+Cjackson, 192.168.247.153,19: 36: 42,2022-05-12
+JClark, 192.168.197.247,14: 11: 04,2022-05-12
+Apatel, 192.168.46.207,17: 39: 42,2022-05-10
+Mabadi, 192.168.96.244,10: 24: 43,2022-05-12
+Iuduike, 192.168.131.147,17: 50: 00,2022-05-11
+Abellmas, 192.168.60.111,13: 37: 05,2022-05-10
+Gesparza, 192.168.148.80,6: 30: 14,2022-05-11
+Cgriffin, 192.168.4.157,23: 04: 05,2022-05-09
+ALEVITSK, 192.168.210.228,8: 10: 43,2022-05-08
+ERAAB, 192.168.24.12,11: 29: 27,2022-05-11
+JSOTO, 192.168.25.60,5: 09: 21,2022-05-09
+"" "
+​
+# Escribe `login_file` en el archivo` "data/login.txt` `
+con Open ("data/login.txt", "w") como archivo:
+          file.write (login_file)
+
+          

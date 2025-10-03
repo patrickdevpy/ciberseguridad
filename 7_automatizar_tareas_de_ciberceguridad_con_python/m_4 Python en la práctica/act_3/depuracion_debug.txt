@@ -1,0 +1,219 @@
+Debug Python Code
+
+Código de depuración de python
+Introducción
+Uno de los mayores desafíos que enfrentan los analistas es garantizar que los procesos automatizados funcionen sin problemas. La depuración es una práctica importante que los analistas de seguridad incorporan en su trabajo para identificar errores en el código y resolverlos para que el código logre el resultado deseado.
+
+A través de una serie de tareas en este laboratorio, desarrollará y aplicará sus habilidades de depuración en Python.
+
+Consejos para completar este laboratorio
+Guión
+En su trabajo como analista de seguridad, debe aplicar estrategias de depuración para garantizar que su código funcione correctamente.
+
+A lo largo de este laboratorio, trabajará con un código similar a lo que ha escrito antes, pero ahora tiene algunos errores que deben solucionarse. Deberá leer celdas de código, ejecutarlas, identificar los errores y ajustar el código para resolver los errores.
+
+Tarea 1
+La siguiente celda de código contiene un error de sintaxis. En esta tarea, ejecutará el código, identificará por qué ocurre el error y modificará el código para resolverlo. (Para asegurarse de que se haya resuelto, ejecute el código nuevamente para verificar si ahora funciona correctamente).
+
+# Para bucle que itera en un rango de números
+# y muestra un mensaje en cada iteración
+​
+para i en el rango (10):
+    imprimir ("no se puede establecer la conexión")
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+La conexión no se puede establecer
+Sugerencia 1
+Sugerencia 2
+Pregunta 1
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Cómo puedes arreglar esto?
+
+Cuando el código se ejecuta antes de modificar, la salida muestra sintaxerRor: sintaxis no válida, lo que indica que hay un error de sintaxis. El error de sintaxis es causado por los faltantes: al final del encabezado For Loop. Para solucionar esto, puede agregar: en esa posición.
+
+Tarea 2
+En la siguiente celda de código, se le proporciona una lista de nombres de usuario. Hay un problema con la sintaxis. En esta tarea, ejecutará la celda, observará lo que sucede y modificará el código para solucionar el problema.
+
+# Asignar `usernames_list` a una lista de nombres de usuario
+​
+usernames_list = ["djames", "jpark", "tbailey", "zdutchma", "esmith", "sroBinso", "dcoleman", "fbautist"]
+​
+# Mostrar `usernames_list`
+​
+imprimir (usernames_list)
+['djames', 'jpark', 'tbailey', 'zdutchma', 'esmith', 'sroBinso', 'dcoleman', 'fbautist']
+Sugerencia 1
+Sugerencia 2
+Pregunta 2
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Cómo puedes arreglarlo?
+
+Cuando el código se ejecuta antes de modificar, la salida muestra sintaxerRor: sintaxis no válida. El problema ocurrió al asignar un valor a UserNames_List. Al cuarto nombre de usuario le falta una cita de cierre, y faltan coma entre los nombres de usuario cuarto y quinto. Cada nombre de usuario en la lista debe ser una cadena, y las comas deben usarse para separar un nombre de usuario de la siguiente. Para corregir el error de sintaxis, puede agregar una comilla de cierre para especificar correctamente el cuarto nombre de usuario como una cadena y luego agregar una coma entre los nombres de usuario cuarto y quinto para separarlos. Entonces, en lugar de "Zdutchma" Esmith ", debería decir" Zdutchma "," Esmith ",.
+
+Tarea 3
+En la siguiente celda de código, hay un error de sintaxis. Su tarea es ejecutar la celda, identificar qué está causando el error y solucionarlo.
+
+# Muestra un mensaje en la caja superior 
+​
+Imprimir ("Actualización necesaria" .Upper ())
+Actualización necesaria
+Sugerencia 1
+Sugerencia 2
+Pregunta 3
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Qué está causando el error de sintaxis? ¿Cómo puedes arreglarlo?
+
+Cuando el código se ejecuta antes de modificar, la salida muestra sintaxerRor: EOF inesperado mientras se analiza. Esto es causado por la parántesis de cierre faltante al final de la declaración impresa (). Para solucionar esto, puede agregar) al final de la línea.
+
+Tarea 4
+En la siguiente celda de código, se le proporciona un UserNames_List, un nombre de usuario y un código que determina si el nombre de usuario está aprobado. Hay dos errores de sintaxis y una excepción. Su tarea es encontrarlos y arreglar el código. Una estrategia de depuración útil es centrarse en un error a la vez y ejecutar el código después de arreglar cada uno.
+
+# Asignar `usernames_list` a una lista de nombres de usuario que representan usuarios aprobados
+​
+usernames_list = ["djames", "jpark", "tbailey", "zdutchma", "esmith", "sroBinso", "dcoleman", "fbautist"]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario específico 
+​
+nombre de usuario = "Esmith"
+​
+# Para el bucle que itera sobre los elementos de `usernames_list` y determina si cada elemento corresponde a un usuario aprobado
+​
+Para el nombre en UserNames_List:
+​
+    # Compruebe si `name` coincide con el nombre de usuario" 
+    # Si coincide, muestre un mensaje en consecuencia 
+​
+    si nombre == nombre de usuario:
+        imprimir ("El usuario es un usuario aprobado")
+El usuario es un usuario aprobado
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 4
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Qué está causando los errores? ¿Cómo puedes arreglarlo?
+
+Cuando el código se ejecuta antes de modificar, la salida muestra sintaxerRor: sintaxis no válida, ya que ese es el primer error que Python encuentra en este código. Hay tres problemas en el código:
+
+En la condición if, el operador de asignación = se usa en lugar del operador de comparación ==, causando un error de sintaxis. Para solucionar esto, puede reemplazar = con ==.
+Dentro de la declaración IF, falta la sangría, causando un error de sintaxis. Para solucionar esto, puede agregar la sangría apropiada antes de la instrucción print ().
+La variable usernames_list está mal escrita en la condición for bucle for bucle. Se escribe como nombre de usuario_list allí, causando una excepción. Para solucionar esto, puede agregar el S faltante en el lugar apropiado.
+Tarea 5
+En esta tarea, examinará el siguiente código e identificará el tipo de error que ocurre. Luego, ajustará el código para corregir el error.
+
+# Asignar `usernames_list` a una lista de nombres de usuario
+​
+usernames_list = ["elarson", "bmoreno", "tshah", "sgilmore", "Eraab"]
+​
+# Asignar `Nombre de usuario` a un nombre de usuario específico
+​
+nombre de usuario = "Eraab"
+​
+# Determinar si 'UserName` es el nombre de usuario final en' UserNames_List` 
+# Si es así, muestre un mensaje en consecuencia 
+​
+if username == usernames_list [4]:
+    imprimir ("Este nombre de usuario es el último en la lista").
+Este nombre de usuario es el último en la lista.
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 5
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Qué tipo de error es este? ¿Cómo puedes arreglarlo?
+
+Cuando el código se ejecuta antes de modificado, la salida muestra indexError: Índice de lista fuera de rango, lo que significa que hay un error de índice y es causado por un valor de índice no válido que se está utilizando con una lista. Tenga en cuenta que un error de índice es un tipo de excepción en Python. Además, recuerde que la indexación en Python comienza en 0 y el UserNames_List tiene una longitud de 5. Por lo tanto, 4 es que el valor de índice corresponde al elemento final en UserNames_List. 5 no es un índice válido en UserNames_List. Puede corregir el error reemplazando 5 con 4.
+
+Tarea 6
+En esta tarea, examinará el siguiente código. El código importa un archivo de texto en Python, lee su contenido y almacena el contenido como una lista en una variable llamada IP_Addresses. Luego elimina los elementos de IP_Addresses si están en remove_list. Hay dos errores en el código: primero un error de sintaxis y luego una excepción relacionada con un método de cadena. Su objetivo es encontrar estos errores y arreglarlos.
+
+# Asignar `import_file` al nombre del archivo de texto
+​
+import_file = "allow_list.txt"
+​
+# Asignar `remove_list` a una lista de direcciones IP que ya no están permitidas para acceder a la red 
+​
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]]
+​
+# Con una declaración que se lee en el archivo de texto y almacena su contenido en `ip_address`
+​
+con Open (import_file, "r") como archivo:
+    ip_addresses = file.read ()
+​
+# Convertir `ip_addresses` de una cadena a una lista
+​
+ip_addresses = ip_addresses.split ()
+​
+# Para bucle que itera sobre los elementos en `remove_list`,
+# verifica si cada elemento está en `ip_addresses`,
+# y elimina cada elemento que corresponde a una dirección IP que ya no está permitida
+​
+para elemento en remove_list:
+    if elemento en ip_addresses:
+        ip_addresses.remove (elemento)
+​
+# Display `IP_Addresses` después del proceso de eliminación
+​
+Imprimir (IP_Addresses)
+['ip_address', '192.168.25.60', '192.168.205.12', '192.168.6.9', '192.168.52.90', '192.168.90.124', '192.168.186.176', '12.168.133.188 ', '192.168.203.198', '192.168.218.219', '192.168.52.37', '192.168.156.224', '192.168.60.153', '192.168.69.116']]
+Sugerencia 1
+Sugerencia 2
+Pregunta 6
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Qué está causando los errores? ¿Cómo puedes arreglarlos?
+
+Cuando el código se ejecuta antes de modificar, la salida muestra sintaxerRor: sintaxis no válida, ya que ese es el primer error que Python encuentra en este código. Hay dos errores en el código:
+
+Hay un error de sintaxis porque el encabezado de la declaración con la declaración está a la que le faltan: al final. Para solucionar esto, puede agregar: allí.
+Hay una excepción relacionada con el método de cadena .split (). Para llamar a este método, debe escribir el nombre de la variable que contiene la cadena que desea usar, seguido de A., Y luego el nombre del método. Entonces, para solucionar, puede reemplazar split.ip_addresses () con ip_addresses.split ().
+Tarea 7
+En esta tarea final, hay tres sistemas operativos: OS 1, OS 2 y OS 3. Cada sistema operativo necesita un parche de seguridad en una fecha específica. La fecha del parche para el OS 1 es "1 de marzo", la fecha del parche para OS 2 es "1 de abril", y la fecha del parche para OS 3 es "1 de mayo".
+
+El siguiente código almacena uno de estos sistemas operativos en un sistema variable con nombre. Luego, utiliza condicionales para generar la fecha del parche para este sistema operativo.
+
+Sin embargo, este código tiene errores lógicos. Su objetivo es asignar la variable del sistema a diferentes valores, ejecutar el código para examinar la salida, identificar el error y solucionarlo.
+
+# Asignar `Sistema` a un sistema operativo específico como una cadena
+​
+System = "OS 2"
+​
+# Asignar `Patch_schedule` a una lista de fechas de parche en orden del sistema operativo
+​
+Patch_schedule = ["1 de marzo", "1 de abril", "1 de mayo"]
+​
+# Declaración condicional de que verifica qué sistema operativo se almacena en `System` y muestra un mensaje que muestra la fecha de parche correspondiente 
+​
+Si sistema == "OS 1":
+    imprimir ("fecha de parche:", parche_schedule [0])
+​
+Sistema Elif == "OS 2":
+    imprimir ("fecha de parche:", parche_schedule [1])
+​
+Sistema Elif == "OS 3":
+    imprimir ("fecha de parche:", parche_schedule [2])
+Fecha del parche: 1 de abril
+Sugerencia 1
+Sugerencia 2
+Sugerencia 3
+Pregunta 7
+¿Qué sucede cuando ejecuta el código antes de modificarlo? ¿Qué está causando los errores lógicos? ¿Cómo puedes arreglarlos?
+
+Cuando el código se ejecuta antes de modificarse, la variable del sistema se asigna a "OS 2", pero la salida es Fecha del parche: 1 de marzo. Esta no es la fecha de parche correcta para OS 2.
+
+Al asignar el sistema a "OS 1", la salida es la fecha del parche: 1 de mayo. Esta no es la fecha de parche correcta para OS 1.
+
+Estos errores lógicos se deben a los valores de índice incorrectos en las declaraciones de primera y segunda impresión () en el código. Tenga en cuenta que la indexación en Python comienza en 0 y Patch_schedule está en orden de sistema operativo desde OS 1 a OS 3. Para corregir los errores lógicos, puede usar Patch_Schedule [0] para obtener la fecha de parche correcta para OS 1 y Patch_Schedule [1] para obtener la fecha de parche correcta para OS 2.
+
+Conclusión
+¿Cuáles son sus conclusiones clave de este laboratorio?
+
+La depuración es una práctica esencial que los analistas usan para identificar errores en el código y solucionarlos para garantizar que el código se ejecute sin problemas.
+Python ejecuta código de arriba a abajo y se detiene una vez que encuentra un error. Entonces, si hay múltiples errores en una celda de código, el mensaje de error salido generalmente mostrará el primer error.
+En Python, los tipos comunes de errores incluyen errores de sintaxis, errores lógicos y excepciones.
+Los errores de sintaxis a menudo implican puntuación como una falta: al final de un encabezado con declaración y un faltante, entre elementos en una lista.
+Los errores lógicos pueden involucrar índices incorrectos al acceder a elementos desde una lista.
+Las excepciones podrían implicar nombres de variables mal escritos o métodos de cadena llamados incorrectamente.
+Una estrategia clave para la depuración es ejecutar código y examinar si produce los resultados previstos. Si la salida no es correcta, o si muestra un mensaje de error, use esto para identificar qué línea (s) del código podrían estar causando el problema. Después de arreglar el código, es importante ejecutarlo nuevamente para asegurarse de que todo funcione como se esperaba.
+
+

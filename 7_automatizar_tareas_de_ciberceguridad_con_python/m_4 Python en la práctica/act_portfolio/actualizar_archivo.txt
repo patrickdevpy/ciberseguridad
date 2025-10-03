@@ -1,0 +1,23 @@
+Actualizar un archivo mediante un algoritmo Python
+
+Escenario
+
+Revise el siguiente escenario. A continuación, complete las instrucciones paso a paso.
+
+Usted es un profesional de la seguridad que trabaja en una empresa de atención sanitaria. Como parte de su trabajo, se le pide que actualice regularmente un archivo que identifica a los empleados que pueden acceder a contenido restringido. El contenido del archivo se basa en quién trabaja con registros personales de pacientes. El acceso de los empleados está restringido en función de su dirección IP. Existe una lista de direcciones IP autorizadas a acceder a la subred restringida. También hay una lista de eliminados que identifica qué empleados debes eliminar de esta lista de permitidos.
+
+Tu tarea es crear un algoritmo que utilice código Python para comprobar si la lista de permitidos contiene alguna dirección IP identificada en la lista de eliminados. Si es así, debes eliminar esas direcciones IP del archivo que contiene la lista de permitidos.
+
+Nota: Este escenario implica desarrollar el mismo algoritmo que se desarrolla en las Tareas 2-7 del laboratorio 
+Crear otro algoritmo
+. (No necesita consultar la Tarea 1 y las Tareas 8-10 del laboratorio para completar esta actividad del portafolio) Deberá volver a visitar el laboratorio para obtener capturas de pantalla para incluir en su documento de portafolio.
+
+Instrucciones paso a paso
+
+Sigue las instrucciones para completar cada paso de la actividad. A continuación, responda a las 9 preguntas al final de la actividad antes de pasar al siguiente elemento del curso para comparar su trabajo con un ejemplo completado.
+
+Paso 1: Acceder a la plantilla
+Para utilizar la plantilla para este elemento del curso, haga clic en el enlace y seleccione Usar plantilla. (En este paso, sólo abrirá la plantilla. En pasos posteriores se incluirán más instrucciones sobre cómo utilizar la plantilla)
+
+Enlace a la plantilla: 
+Algoritmo para actualización de archivos en Python
